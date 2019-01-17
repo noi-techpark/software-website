@@ -1,0 +1,32 @@
+<!-- Wrapper Start -->
+<section id="intro">
+    <div class="container">
+        <!-- Intro -->
+        <div class="row">
+            <div class="section-title">
+                <h2>{{ .Site.Data.service.title }}</h2>
+                <p>{{ .Site.Data.service.subtitle }}</p>
+            </div>
+        </div>
+        {{ range .Site.Data.service.content }}
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <div class="block">
+                    <div class="section-title">
+                        <h2>{{ .name }}</h2>
+                    </div>
+                    <p>{{ .text }}</p>
+                    <i>{{ .suppliers }}</i>
+                </div>
+            </div>
+            <!-- .col-md-7 close -->
+            <div class="col-md-5 col-sm-12">
+                <div class="block">
+                    <img src="/img/{{ .image }}" alt="Img">
+                </div>
+            </div>
+            <!-- .col-md-5 close -->
+        </div>
+        {{ end }}
+    </div>
+</section>
