@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        sh 'test -f src/index.html'
+        sh 'test -f target/index.html'
       }
     }
   }

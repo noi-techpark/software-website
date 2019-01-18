@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('upload') {
       steps {
-        s3Upload(bucket: 'it.bz.freesoftwarelab', acl: 'PublicRead', file: './src')
+        s3Upload(bucket: 'it.bz.freesoftwarelab', acl: 'PublicRead', file: './target')
       }
     }
   }
