@@ -1,5 +1,6 @@
 title = "Free Software Lab at NOI Techpark"
 baseURL = "https://software.bz.it/"
+#baseURL = "localhost"
 languageCode = "en-us"
 theme = "airspace-hugo"
 
@@ -66,8 +67,9 @@ theme = "airspace-hugo"
   [params.wrapper]
     enable = true
     title = "About Us"
+    image = "./img/action.jpg"
     #italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-    paragraph = "The Free Software Lab will become a meeting point between research and innovation activities and the needs of companies, taking advantage of the consolidated experience in the field of free software."
+    paragraph = "The Free Software Lab at NOI Techpark is a meeting point between research and innovation activities and the needs of companies.The target groups are companies that work in the ICT field or that use ICT at the base of their services. The laboratory is therefore a platform for the development of R & D projects related to the Information Technology themes and the attention, in particular, to open technologies. The Free Software Lab deploys its own experience and that of its network of experts to provide services close to the needs of local companies. These services will range from the testing of usability of applications on new generation devices, to the introduction of SW development techniques through agile methodologies to the testing of new ICT standards."
 
   [params.blog]
     enable = true

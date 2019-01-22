@@ -3,20 +3,20 @@ title: Services offered by the Free Software Lab
 subtitle: >
 content:
 
-  - image: wrapper-img.png
+  - image: kanban.jpg
     name: Get your Kanban in one day
     text: >
       Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. Participants will have the opportunity to create their own Kanban boards, and learn how to apply each of the six principles to continually improve the delivery process. At the end of the day we will compare Kanban and Scrum to see some key differences between this two major frameworks.
     suppliers: 
 
-  - image: wrapper-img.png
+  - image: continous.jpg
     name: Get your continuos delivery pipeline in one day
     text: >
      Continuous Integration and Continuous Delivery can help to build and deliver quality software in a reliable way. We will cover a set of of principles and techniques that allow you to have control over the release process and its automation while keeping an eye on efficiency, costs and risks.
      When you've finished this workshop, you'll have a foundational knowledge of the concepts of Continuous Integration and Continuous Delivery that will help you to get your organization ready to deliver great software.
     suppliers: 
 
-  - image: wrapper-img.png
+  - image: user-interface.png
     name: Application UI testing 
     text: >
       Il test di usabilità è un servizio di valutazione di un’interfaccia web o applicazione, effettuato tramite tecniche specifiche di analisi tese a comprendere se gli utenti percepiranno l’interazione come efficace e soddisfacente in un determinato contesto d’uso. 
