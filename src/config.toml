@@ -1,5 +1,5 @@
 title = "Free Software Lab at NOI Techpark"
-baseURL = "https://software.bz.it/"
+baseURL = ""
 languageCode = "en-us"
 theme = "airspace-hugo"
 
