@@ -33,7 +33,7 @@ theme = "airspace-hugo"
   [[menu.footer]]
     weight = 2
     name = "Contact us"
-    url = "#"
+    url = "/contact"
   #[[menu.footer]]
   #  weight = 3
   #  name = "How it works"
@@ -42,10 +42,10 @@ theme = "airspace-hugo"
   #  weight = 4
   #  name = "Blog"
   #  url = "#"
-  [[menu.footer]]
-    weight = 5
-    name = "Terms"
-    url = "#"
+  #[[menu.footer]]
+  #  weight = 5
+  #  name = "Terms"
+  #  url = "#"
 
 # The site's parameters
 [params]
@@ -67,7 +67,7 @@ theme = "airspace-hugo"
     enable = true
     title = "Free Software Lab"
     #italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-    paragraph = "The Free Software Lab will become a meeting point between research and innovation activities and the needs of companies, taking advantage of the consolidated experience in the field of free software."
+    paragraph = "The Free Software Lab is a meeting point between research institutions and companies involved in Research & Development projects in the digital field. The laboratory is therefore an open platform for the development and support of R&D projects related to information technology. The Free Software Lab deploys the experience of a network of experts to provide services close to the needs of local companies."
 
   [params.blog]
     enable = true
@@ -77,7 +77,7 @@ theme = "airspace-hugo"
   [params.feature]
     enable = true
     title = "Services"
-    content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+    content = "Free Software Lab provides different services to support your R&D activities. Take a look at our service catalog."
     [params.feature.button]
       caption = "Explore Services"
       url = "/service"
@@ -100,7 +100,7 @@ theme = "airspace-hugo"
     [params.contact.box]
       title = "Our contacts"
       address = "NOI Techpark - Via Volta 13A, Bolzano/Bozen - Italy"
-      email = "Email: info@opendatahub.bz.it"
+      email = "Email: info@software.bz.it"
       phone = "Phone: +39 0471 096 675"
     [params.contact.gmaps]
       title = "How to reach us"
