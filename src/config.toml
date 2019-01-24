@@ -1,6 +1,5 @@
 title = "Free Software Lab at NOI Techpark"
-baseURL = "https://software.bz.it/"
-#baseURL = "localhost"
+baseURL = ""
 languageCode = "en-us"
 theme = "airspace-hugo"
 
@@ -10,10 +9,10 @@ theme = "airspace-hugo"
   #  weight = 2
   #  name = "Work"
   #  url = "/work"
-  [[menu.header]]
-    weight = 2
-    name = "Digital Stations"
-    url = "/stations"
+  #[[menu.header]]
+  #  weight = 2
+  #  name = "Digital Stations"
+  #  url = "/stations"
   #[[menu.header]]
   #  weight = 3
   #  name = "Blog"
@@ -29,20 +28,20 @@ theme = "airspace-hugo"
 
   [[menu.footer]]
     weight = 1
-    name = "About us"
-    url = "#"
+    name = "NOI Techpark"
+    url = "https://noi.bz.it"
   [[menu.footer]]
     weight = 2
     name = "Contact us"
     url = "#"
-  [[menu.footer]]
-    weight = 3
-    name = "How it works"
-    url = "#"
-  [[menu.footer]]
-    weight = 4
-    name = "Blog"
-    url = "#"
+  #[[menu.footer]]
+  #  weight = 3
+  #  name = "How it works"
+  #  url = "#"
+  #[[menu.footer]]
+  #  weight = 4
+  #  name = "Blog"
+  #  url = "#"
   [[menu.footer]]
     weight = 5
     name = "Terms"
@@ -66,8 +65,7 @@ theme = "airspace-hugo"
 
   [params.wrapper]
     enable = true
-    title = "About Us"
-    image = "./img/action.jpg"
+    title = "Free Software Lab"
     #italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
     paragraph = "The Free Software Lab at NOI Techpark is a meeting point between research and innovation activities and the needs of companies.The target groups are companies that work in the ICT field or that use ICT at the base of their services. The laboratory is therefore a platform for the development of R & D projects related to the Information Technology themes and the attention, in particular, to open technologies. The Free Software Lab deploys its own experience and that of its network of experts to provide services close to the needs of local companies. These services will range from the testing of usability of applications on new generation devices, to the introduction of SW development techniques through agile methodologies to the testing of new ICT standards."
 
@@ -78,19 +76,19 @@ theme = "airspace-hugo"
 
   [params.feature]
     enable = true
-    title = "We believe in great ideas"
+    title = "Services"
     content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
     [params.feature.button]
-      caption = "View Works"
-      url = "#"
+      caption = "Explore Services"
+      url = "/service"
 
   [params.call]
-    enable = true
+    enable = false
     title = "We design delightful digital experiences."
     paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
 
   [params.contact]
-    enable = true
+    enable = false
     title = "Drop us a note"
     subtitle = "Don’t just take our word for it. Check out some of our latest work."
     [params.contact.form]
@@ -100,9 +98,9 @@ theme = "airspace-hugo"
       message = "Your message"
       button = "Send message"
     [params.contact.box]
-      title = "Stop by for a visit"
-      address = "North Main Street, Brooklyn Australia"
-      email = "Email: contact@mail.com"
-      phone = "Phone: +88 01672 506 744"
+      title = "Our contacts"
+      address = "NOI Techpark - Via Volta 13A, Bolzano/Bozen - Italy"
+      email = "Email: info@opendatahub.bz.it"
+      phone = "Phone: +39 0471 096 675"
     [params.contact.gmaps]
-      title = "We Also Count in Google Maps"
+      title = "How to reach us"
