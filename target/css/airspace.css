@@ -37,6 +37,7 @@ h6 {
 h2 {
   font-size: 30px;
   font-weight: 400;
+  color: #555;
 }
 h3 {
   font-size: 28px;
@@ -107,6 +108,7 @@ header .navbar {
 }
 header .navbar-brand {
   padding-top: 5px;
+  height: 70px;
 }
 header .navbar-default {
   background: none;
@@ -116,9 +118,9 @@ header .navbar-default .navbar-nav {
   padding-top: 10px;
 }
 header .navbar-default .navbar-nav li a {
-  color: #333333;
+  color: #555;
   padding: 10px 26px;
-  font-size: 15px;
+  font-size: 18px;
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
@@ -291,7 +293,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 30px;
 }
 #feature p {
-  color: #000000;
+  color: #47494c;
   margin-bottom: 20px;	
 }
 #feature .btn-view-works {
