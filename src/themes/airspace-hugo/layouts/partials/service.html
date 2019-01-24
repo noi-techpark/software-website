@@ -16,19 +16,19 @@
                         <h2>{{ .name }}</h2>
                     </div>
                     <p>{{ .text }}</p>
-		<p>		
-		{{ if .need }}                    
-		<b>What you need:</b> {{ .need }}</br>
-		{{ end }}
-		<b>What you get:</b> {{ .get }}</br>
-		{{ if .duration }}		
-			<b>Duration:</b> {{ .duration }}</br>
-		{{ end }}
-		{{ if .cost }}
-      			<b>Cost:</b> {{ .cost }}
-      		{{ end }}
-		</p>
-      		<a href="mailto:info@software.bz.it?subject={{ .name }}&body={{ .mailtext }}" class="btn btn-main">BUY NOW</a>
+			<p>		
+				{{ if .need }}                    
+					<b>What you need:</b> {{ .need }}</br>
+				{{ end }}
+					<b>What you get:</b> {{ .get }}</br>
+				{{ if .duration }}		
+					<b>Duration:</b> {{ .duration }}</br>
+				{{ end }}
+				{{ if .cost }}
+      					<b>Cost:</b> {{ .cost }}
+      				{{ end }}
+			</p>
+      			<a href="mailto:info@software.bz.it?subject={{ .name }}&body={{ .mailtext }}" class="btn btn-main">BUY NOW</a>
                 </div>
             </div>
             <!-- .col-md-7 close -->
@@ -39,6 +39,7 @@
             </div>
             <!-- .col-md-5 close -->
         </div>
+	</br>
         {{ end }}
     </div>
 </section>
