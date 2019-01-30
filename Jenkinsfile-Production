@@ -12,12 +12,12 @@ pipeline {
     }
 
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
                 sh 'hugo -s src -d ../target'
             }
         }
-        stage('upload') {
+        stage('Upload') {
             steps {
                 s3Upload(bucket: 'it.bz.freesoftwarelab', acl: 'PublicRead', file: './target')
             }
