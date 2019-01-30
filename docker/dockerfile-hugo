@@ -1,0 +1,14 @@
+FROM debian:9
+
+ARG JENKINS_GROUP_ID=1000
+ARG JENKINS_USER_ID=1000
+
+RUN groupadd --gid $JENKINS_GROUP_ID jenkins && \
+    useradd --uid $JENKINS_USER_ID --gid $JENKINS_GROUP_ID --create-home jenkins
+
+ADD https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_0.53_Linux-64bit.tar.gz /root/hugo.tar.gz
+
+RUN mkdir ~/hugo && \
+    tar xzf ~/hugo.tar.gz -C ~/hugo && \
+    mv ~/hugo/hugo /usr/bin/hugo && \
+    rm -rf ~/hugo ~/hugo.tar.gz
