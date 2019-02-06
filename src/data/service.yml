@@ -10,7 +10,7 @@ content:
     need: 
     get: A fully developed Kanban board tailored your needs
     duration: 1 day of active workshop for you and your team at the Free Software Lab
-    cost: € 1.500,00	 
+    cost: € 1.500,00 + VAT	 
     mailtext: Hi Free Software Lab, I want to buy this service. Here my contact information ...
 
   - image: CI.png
@@ -21,16 +21,16 @@ content:
     need: 
     get: A continuous integration/delivery boilerplate pipeline tailored for your needs
     duration: 
-    cost: € 2.000,00	 
+    cost: € 2.000,00 + VAT	 
     mailtext: Hi Free Software Lab, I want to buy this service. Here my contact information ...
 
   - image: Usability.jpg
     name: Usability testing of applications and web interfaces 
     text: >
       The usability test is an evaluation service of web interfaces or applications, performed through specific analysis techniques aimed at understanding if users will perceive the interaction as effective and satisfying in a given context of use. 
-    need: A web interface or an application to test
+    need: A web interface or an application to test (Up to 10 screens)
     get: Detailed report describing problems identified and suggestions identified
     duration:
-    cost: € 3.000,00
+    cost: € 3.000,00 + VAT
     mailtext:  Hi Free Software Lab, I want to buy this service. Here my contact information ...
 
