@@ -77,7 +77,7 @@ theme = "airspace-hugo"
   [params.feature]
     enable = true
     title = "Services"
-    content = "Free Software Lab provides different services to support your R&D activities. Take a look at our service catalog."
+    content = "Free Software Lab provides different services to support your R&D activities. Take a look at our service catalog.."
     [params.feature.button]
       caption = "Explore Services"
       url = "/service"
