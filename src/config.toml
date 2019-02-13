@@ -90,7 +90,7 @@ theme = "airspace-hugo"
   [params.contact]
     enable = false
     title = "Drop us a note"
-    subtitle = "Don’t just take our word for it. Check out some of our latest work."
+    subtitle = "Don’t just take our word for it. Check out some of our latest work,"
     [params.contact.form]
       name = "Your name"
       email = "Your email"
