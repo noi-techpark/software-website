@@ -3,44 +3,34 @@ title: Services offered by the Free Software Lab
 subtitle: >
 content:
 
-<<<<<<< HEAD
-  - image: kanban.jpg
-=======
   - image: Kanban.jpg
->>>>>>> upstream/master
     name: Get your Kanban in one day
     text: >
-      Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. Participants will have the opportunity to create their own Kanban boards, and learn how to apply each of the six principles to continually improve the delivery process. At the end of the day we will compare Kanban and Scrum to see some key differences between this two major frameworks.
-    suppliers: 
+      Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. Participants will have the opportunity to create their own Kanban boards, and learn how to apply each of the six principles to continually improve the delivery process. At the end of the day we will compare Kanban and Scrum to see some key differences between these two major frameworks.
+    need: 
+    get: A fully developed Kanban board tailored your needs
+    duration: 1 day of active workshop for you and your team at the Free Software Lab
+    cost: € 1.500,00 + VAT	 
+    mailtext: Hi Free Software Lab, I want to buy this service. Here my contact information ...
 
-<<<<<<< HEAD
-  - image: continous.jpg
-=======
   - image: CI.png
->>>>>>> upstream/master
-    name: Get your continuos delivery pipeline in one day
+    name: Build your continuous integration and delivery pipeline with Jenkins
     text: >
      Continuous Integration and Continuous Delivery can help to build and deliver quality software in a reliable way. We will cover a set of of principles and techniques that allow you to have control over the release process and its automation while keeping an eye on efficiency, costs and risks.
      When you've finished this workshop, you'll have a foundational knowledge of the concepts of Continuous Integration and Continuous Delivery that will help you to get your organization ready to deliver great software.
-    suppliers: 
+    need: 
+    get: A continuous integration/delivery boilerplate pipeline tailored for your needs
+    duration: 
+    cost: € 2.000,00 + VAT	 
+    mailtext: Hi Free Software Lab, I want to buy this service. Here my contact information ...
 
-<<<<<<< HEAD
-  - image: user-interface.png
-=======
   - image: Usability.jpg
->>>>>>> upstream/master
-    name: Application UI testing 
+    name: Usability testing of applications and web interfaces 
     text: >
-      Il test di usabilità è un servizio di valutazione di un’interfaccia web o applicazione, effettuato tramite tecniche specifiche di analisi tese a comprendere se gli utenti percepiranno l’interazione come efficace e soddisfacente in un determinato contesto d’uso. 
-    suppliers: 
-
-  - image: Agile_Health.jpg
-    name: Agile health check
-    text: >
-      We help you to verify if you are ready to move to the next level of practice or adoption, recognize what has been mastered and identify the next things that you could work on given these new skills and/or capabilities.
-      The Agile health-check reinforces the Transformation Strategy and Agile adoption by gathering expectations of both management and delivery teams. This helps you to narrow the focus and set the context for organizational change.    
-    suppliers: 
-
-      
-
+      The usability test is an evaluation service of web interfaces or applications, performed through specific analysis techniques aimed at understanding if users will perceive the interaction as effective and satisfying in a given context of use. 
+    need: A web interface or an application to test (Up to 10 screens)
+    get: Detailed report describing problems identified and suggestions identified
+    duration:
+    cost: € 3.000,00 + VAT
+    mailtext:  Hi Free Software Lab, I want to buy this service. Here my contact information ...
 
