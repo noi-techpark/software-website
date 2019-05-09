@@ -67,7 +67,7 @@ theme = "airspace-hugo"
     enable = true
     title = "Free Software Lab"
     #italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-    paragraph = "The Free Software Lab is a meeting point between research institutions and companies involved in Research & Development projects in the digital field. The laboratory is therefore an open platform for the development and support of R&D projects related to information technology. The Free Software Lab deploys the experience of a network of experts to provide services close to the needs of local companies."
+    paragraph = "Software development teams often need a test environment to consider investment in new software development trends. The Free Software Lab offers a technically equipped room and expert support to develop software prototypes with a variety of new technologies (LoRaWAN, Beacon, 5G, ...) and instruments (Speech Assistants, ...). Software development teams can learn about new software development processes and technologies in the Free Software Lab to prepare for R&D projects."
 
   [params.blog]
     enable = true
