@@ -1,0 +1,21 @@
+enable: true
+title: Collaborate with us 
+subtitle: >
+        If you are a supplier and you want to collaborate with us, then feel free to send us your proposal for new services. 
+        Consider that any service must match with following criterias:
+footertext: >
+        To send us your proposal please fill the form below and send itto your service proposal and all required informations in a dedicated document and send it to: info@software.bz.it
+document: servicerequestform.odt
+content:
+  - text: >
+       Our services are designed for software development teams and are oriented to R&D 
+  - text: >
+       Any service includes not only knowledge transfer, but delivers a well defined output to our customers (like reports, prototypes, etc.)
+  - text: >
+       Any service must never require more than one day of effort for our customers
+  - text: >
+       Any service must have a fix-price for a well defined effort and output
+
+
+    
+

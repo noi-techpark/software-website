@@ -1,0 +1,22 @@
+<!-- Wrapper Start -->
+<section id="intro">
+    <div class="container">
+        <!-- Intro -->
+        <div class="row">
+            <div class="section-title" style="text-align: center">
+                <h2>{{ .Site.Data.collaborate.title }}</h2>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <hr/>
+        <div class="row block">
+            <p>{{ .Site.Data.collaborate.subtitle }} {{ range .Site.Data.collaborate.content }}
+                <br/><i>- {{ .text }}</i> {{ end }}
+                </br>
+                {{ .Site.Data.collaborate.footertext }}</p>
+        </div>
+        <div style="text-align:center">
+            <a href="{{ $.Site.BaseURL }}documents/{{ .Site.Data.collaborate.document }}" class="btn btn-main">Download Form</a>
+        </div>
+    </div>
+</section>
