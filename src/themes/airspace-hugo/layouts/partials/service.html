@@ -45,10 +45,9 @@
                     <br /> {{ .name }}
                 </div>
                 {{ end }}
-                <!-- <div class="col-md-6" style="text-align:left">
-                    <a href="mailto:info@software.bz.it?subject={{ .name }}&body={{ .mailtext }}" class="btn btn-main">BECOME A PARTNER</a>
-                </div>-->
                 <div class="col-md-12" style="text-align:right">
+                    {{ if .marketresearch }}
+                    <a target="_blank" href="{{ $.Site.BaseURL }}{{ .marketresearch }}" class="btn btn-main">BECAME A PARTNER</a> {{ end }}
                     <a href="mailto:info@software.bz.it?subject={{ .name }}&body={{ .mailtext }}" class="btn btn-main">BUY NOW</a>
                 </div>
             </div>

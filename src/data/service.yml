@@ -13,12 +13,13 @@ content:
     duration: 1 day of active workshop for you and your team at the Free Software Lab
     cost: € 1.500,00 + VAT	 
     mailtext: Hi Free Software Lab, I want to buy this service and I want to choose {...}  as my partner. Here my contact information {...}
-   # supplier: Smart Data Factory (DE,IT,EN), XPeppers (IT,EN), Seppi Ulrich (DE)
+    #supplier: Smart Data Factory (DE,IT,EN), XPeppers (IT,EN), Seppi Ulrich (DE)
+    marketresearch: /documents/marketresearch_kanban.pdf
     logo:
             - name: 
-              #imgurl: https://software.bz.it/img/logo.png
+             # imgurl: https://software.bz.it/img/logo.png
             - name: 
-              #imgurl: /img/xpeppers.png
+             # imgurl: /img/xpeppers.png
 
   - image: CI.png
     name: Automate your software development process!
@@ -32,6 +33,7 @@ content:
     cost: € 2.000,00 + VAT	 
     mailtext:  Hi Free Software Lab, I want to buy this service and I want to choose {...} as my partner. Here my contact information {...} 
   #  supplier: XPeppers (IT,EN), Alex Lanz (DE)
+    #marketresearch: /documents/marketresearch_ci.pdf
 
   - image: Usability.jpg
     name: Test your apps usability!
@@ -45,5 +47,6 @@ content:
     cost: € 3.000,00 + VAT
     mailtext:   Hi Free Software Lab, I want to buy this service and I want to choose {...} as my partner. Here my contact information {...} 
    # supplier: Smart Data Factory (UNIBZ), Made in Cima, FlashBeing, B-works, Philipp von Hellberg
+    marketresearch: /documents/marketresearch_testing_ui.pdf
 
 
