@@ -33,7 +33,7 @@ content:
     cost: € 2.000,00 + VAT	 
     mailtext:  Hi Free Software Lab, I want to buy this service and I want to choose {...} as my partner. Here my contact information {...} 
   #  supplier: XPeppers (IT,EN), Alex Lanz (DE)
-    #marketresearch: /documents/marketresearch_ci.pdf
+    marketresearch: /documents/marketresearch_ci.pdf
 
   - image: Usability.jpg
     name: Test your apps usability!
