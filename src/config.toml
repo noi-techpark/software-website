@@ -55,8 +55,9 @@ theme = "airspace-hugo"
   # For information see https://github.com/gohugoio/hugoThemes/issues/260
 
   dateFormat = "6 January 2006"
-
   home = "Home"
+  baseEmailAddress = "info@freesoftwarelab.noi.bz.it"
+  
 
   [params.slider]
     enable = true
