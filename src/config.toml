@@ -1,5 +1,5 @@
 title = "Free Software Lab at NOI Techpark"
-baseURL = "https://software.bz.it/"
+baseURL = "https://freesoftwarelab.noi.bz.it"
 languageCode = "en-us"
 theme = "airspace-hugo"
 
@@ -104,7 +104,7 @@ theme = "airspace-hugo"
     [params.contact.box]
       title = "Our contacts"
       address = "NOI Techpark - Via Volta 13A, Bolzano/Bozen - Italy"
-      email = "Email: info@software.bz.it"
+      email = "Email: info@freesoftwarelab.noi.bz.it"
       phone = "Phone: +39 0471 096 675"
     [params.contact.gmaps]
       title = "How to reach us"
