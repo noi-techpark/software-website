@@ -26,8 +26,8 @@ content:
   - image: mvp.png
     name: Get your successful MVP!
     text: >
-      To streamline innovation and to discover what features are truly valued by your customers, in this workshop we follow a structured approach to understanding what it takes to build a successful product. This leads to an ordered list of user stories, which is prioritized by business value and estimated for effort. After this workshop you will be able to write concise user stories and to launch your most promising ideas in the form of an MVP, with the least effort, to test and validate your assumptions. 
-    need: A product idea to develop
+      To streamline innovation and to discover what features are truly valued by your customers, in this workshop we follow a structured approach to understand what it takes to build a successful product. This leads to an ordered list of user stories, which are prioritized by business value and estimated for effort. After this workshop you will be able to write concise user stories and to launch your most promising ideas in the form of an MVP, with the least effort, to test and validate your assumptions. 
+    need: A product idea to be developed
     get: A detailed report covering all relevant aspects and a complete MVP canvas, which is a blueprint for developing your product.
     duration: 1 day of active workshop for you and your team at the Free Software Lab
     cost: € 3.000,00 + VAT	 
@@ -43,10 +43,10 @@ content:
     name: Test your apps usability!
 #    name: Usability testing of applications and web interfaces 
     text: >
-       The usability test is an evaluation service of web interfaces or applications, performed through specific analysis techniques aimed at understanding if users will perceive the interaction as effective and satisfying in a given context of use. Test will be performed by internal experts of the supplier.
+       The usability test is an evaluation service of web interfaces or applications, performed through specific analysis techniques aimed at understanding if users will perceive the interaction as effective and satisfying in a given context of use. The tests will be performed by internal experts.
 
-    need: A web interface or an application to test (up to 10 screens can be tested)
-    get: Detailed report describing problems and suggestions identified
+    need: A web interface or an application to be tested (up to 10 screens can be tested)
+    get: A detailed report describing problems and suggestions identified
     duration:
     cost: € 3.000,00 + VAT
     mailtext:   Hi Free Software Lab, I want to buy this service. Here my contact information {...} 
@@ -63,7 +63,7 @@ content:
     text: >
       Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. Participants will have the opportunity to create their own Kanban boards, and learn how to apply each of the six principles to continually improve the delivery process. At the end of the day we will compare Kanban and Scrum to see some key differences between these two major frameworks.
     need: 
-    get: A fully developed Kanban board tailored your needs
+    get: A fully developed Kanban board tailored to your needs
     duration: 1 day of active workshop for you and your team at the Free Software Lab
     cost: € 1.500,00 + VAT	 
     mailtext: Hi Free Software Lab, I want to buy this service. Here my contact information {...}
