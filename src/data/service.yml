@@ -1,7 +1,7 @@
 enable: true
-title: Our services
+title: Our Services
 #subtitle:  If you are a supplier feel free to send us your proposal for new services. Click here 
-subtitle: Free Software Lab offers following services through our partner and expoerts.
+subtitle: Together with our partner and expert network we offer the following services.
 content:
 
   - image: CI.png
