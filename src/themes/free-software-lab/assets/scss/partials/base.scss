@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
+html,
+body {
+    background: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.font-small {
+    font-size: 0.75rem;
+}
+
+// Layout 
+.container {
+    max-width: 1920px;
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+    @media (max-width: 1499px) {
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+
+.desktop-half {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    @media (max-width: 979px) {
+        width: 100%;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &.no-space {
+        justify-content: left;
+    }
+}
+
+.center-area {
+    display: flex;
+}
+
+.center-y {
+    margin: auto 0;
+}
+
+.section-footer {
+    margin: 80px 0;
+}
+
+// Style
+.image {
+    background-color: #dbdbdb;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid $dark-border;
+    color: black;
+    background: transparent;
+    cursor: pointer;
+}
+
+input {
+    height: 60px;
+    font-size: 1.1rem;
+    background: white;
+    color: black;
+    border: none;
+    border-bottom: 1px solid $dark-border;
+    &::placeholder {
+        font-style: italic;
+        color: $dark-border !important;
+        opacity: 1;
+    }
+    &[type=checkbox] {
+        height: 1rem !important;
+        width: 1rem !important;
+        margin: 0 10px 0 0;
+    }
+}
+
+// Components
+.menu-horizontal {
+    font-size: 0;
+    a {
+        text-transform: uppercase;
+        color: rgba(33, 33, 33, 0.3);
+        padding: 10px;
+        font-size: 1rem;
+        margin: 0;
+        &.current {
+            color: black;
+            font-weight: 600;
+        }
+        &:hover {
+            color: black;
+        }
+        &+a {
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 22px;
+                background-color: rgba(33, 33, 33, 0.3);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+            }
+        }
+    }
+}
+
+.privacy {
+    max-width: 800px;
+}
+
+.loader {
+    display: none;
+    &.is-active {
+        display: inline-block;
+    }
+    height: 20px;
+    width: 20px;
+    margin-bottom: -7px;
+    margin-left: 10px;
+    border: 1px solid $light-border;
+    border-top: 1px solid $dark-border;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// Shortcodes
+.tag {
+    margin: 10px 0;
+    font-size: .75rem;
+    span {
+        align-items: center;
+        background-color: #BA1E40;
+        border-radius: 4px;
+        color: white;
+        display: inline-flex;
+        height: 2em;
+        justify-content: center;
+        line-height: 1.5;
+        padding-left: .75em;
+        padding-right: .75em;
+        white-space: nowrap;
+        margin: 0 10px 0 0;
+    }
+}

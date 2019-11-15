@@ -1,0 +1,13 @@
+$link: #212121;
+$dark-border: #7e7e7e;
+$light-border: #cccccc;
+$light-bg: #f9f9f9;
+$dark-bg: #262626;
+@import "partials/base";
+@import "hamburgers/hamburgers";
+@import "partials/header";
+@import "partials/footer";
+@import "pages/home";
+@import "pages/services";
+@import "pages/services_single";
+@import "pages/contact";

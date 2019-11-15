@@ -1,114 +1,70 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Free Software Lab at NOI Techpark</title>
-    <link>https://www.highvolume.it/fsl/</link>
-    <description>Recent content on Free Software Lab at NOI Techpark</description>
+    <title>Free Software Lab</title>
+    <link>http://freesoftwarelab.noi.bz.it/</link>
+    <description>Recent content on Free Software Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2015 13:07:31 +0200</lastBuildDate>
     
-	<atom:link href="https://www.highvolume.it/fsl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://freesoftwarelab.noi.bz.it/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Migrate from Jekyll</title>
-      <link>https://www.highvolume.it/fsl/blog/migrate-from-jekyll/</link>
-      <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/blog/migrate-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
-▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
-    </item>
     
     <item>
-      <title>Linked post</title>
-      <link>https://www.highvolume.it/fsl/blog/linked-post/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/blog/linked-post/</guid>
-      <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
-menu = &amp;quot;main&amp;quot;  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus. Aliquam id pharetra tellus.</description>
-    </item>
-    
-    <item>
-      <title>Go is for lovers</title>
-      <link>https://www.highvolume.it/fsl/blog/go-is-for-lovers/</link>
-      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/blog/go-is-for-lovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Hugo is for lovers</title>
-      <link>https://www.highvolume.it/fsl/blog/hugo-is-for-lovers/</link>
-      <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/blog/hugo-is-for-lovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
-    </item>
-    
-    <item>
-      <title>Creating a new theme</title>
-      <link>https://www.highvolume.it/fsl/blog/creating-a-new-theme/</link>
-      <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/blog/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Collaborate with us</title>
-      <link>https://www.highvolume.it/fsl/collaborate/</link>
+      <title>App usability test</title>
+      <link>http://freesoftwarelab.noi.bz.it/services/app_usability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.highvolume.it/fsl/collaborate/</guid>
-      <description></description>
+      <guid>http://freesoftwarelab.noi.bz.it/services/app_usability/</guid>
+      <description>The usability test is an evaluation service of web interfaces or applications, performed through specific analysis techniques aimed at understanding if users will perceive the interaction as effective and satisfying in a given context of use. The tests will be performed by internal experts.
+ Required Web interface to be tested. </description>
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>https://www.highvolume.it/fsl/contact/</link>
+      <title>Learn and get support with our services.</title>
+      <link>http://freesoftwarelab.noi.bz.it/home02/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.highvolume.it/fsl/contact/</guid>
-      <description></description>
+      <guid>http://freesoftwarelab.noi.bz.it/home02/</guid>
+      <description>Lab software prototypes can be developed, digital R&amp;amp;D projects can be prepared and new methods of software development can be tested, with special consideration of open technologies (Open Standard, Open Data and Free Open Source Software).</description>
     </item>
     
     <item>
-      <title>Service</title>
-      <link>https://www.highvolume.it/fsl/service/</link>
+      <title>MVP Setup</title>
+      <link>http://freesoftwarelab.noi.bz.it/services/mvp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.highvolume.it/fsl/service/</guid>
-      <description></description>
+      <guid>http://freesoftwarelab.noi.bz.it/services/mvp/</guid>
+      <description>To streamline innovation and to discover what features are truly valued by your customers, in this workshop we follow a structured approach to understand what it takes to build a successful product.
+ Required A product idea to be developed.  Duration 1 day of active workshop for you and your team at the Free Software Lab. </description>
     </item>
     
     <item>
-      <title>Work</title>
-      <link>https://www.highvolume.it/fsl/work/</link>
+      <title>Software development automation</title>
+      <link>http://freesoftwarelab.noi.bz.it/services/automation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.highvolume.it/fsl/work/</guid>
-      <description></description>
+      <guid>http://freesoftwarelab.noi.bz.it/services/automation/</guid>
+      <description>Continuous Integration and Continuous Delivery can help to build and deliver quality software in a reliable way. We will cover a set of principles and techniques that allow you to have control over the release process and its automation while keeping an eye on efficiency, costs and risks.</description>
     </item>
     
     <item>
-      <title>stations</title>
-      <link>https://www.highvolume.it/fsl/stations/</link>
+      <title>Understand Kanban</title>
+      <link>http://freesoftwarelab.noi.bz.it/services/kanban/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.highvolume.it/fsl/stations/</guid>
-      <description></description>
+      <guid>http://freesoftwarelab.noi.bz.it/services/kanban/</guid>
+      <description>Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. At the end of the day we will compare Kanban and Scrum to see some key differences between these two major frameworks.
+ Duration 1 day of active workshop for you and your team at the Free Software Lab. </description>
+    </item>
+    
+    <item>
+      <title>Your free test environment.</title>
+      <link>http://freesoftwarelab.noi.bz.it/home01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://freesoftwarelab.noi.bz.it/home01/</guid>
+      <description>This experimental laboratory is the appropriate test environment for software developers, CIOs, and CTOs to evaluate investments in new trends and technologies. It offers premises that are equipped with the latest technologies such as LoRaWAN, Beacon or 5G and instruments such as virtual assistants, as well as, if required, the support of digital experts.</description>
     </item>
     
   </channel>
