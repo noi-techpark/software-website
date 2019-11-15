@@ -1,69 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Free Software Lab at NOI Techpark</title>
-    <link>https://www.highvolume.it/fsl/tags/</link>
-    <description>Recent content in Tags on Free Software Lab at NOI Techpark</description>
+    <title>Tags on Free Software Lab</title>
+    <link>http://freesoftwarelab.noi.bz.it/tags/</link>
+    <description>Recent content in Tags on Free Software Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Sep 2015 13:47:08 +0200</lastBuildDate>
     
-	<atom:link href="https://www.highvolume.it/fsl/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://freesoftwarelab.noi.bz.it/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Go</title>
-      <link>https://www.highvolume.it/fsl/tags/go/</link>
-      <pubDate>Thu, 17 Sep 2015 13:47:08 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Golang</title>
-      <link>https://www.highvolume.it/fsl/tags/golang/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://www.highvolume.it/fsl/tags/hugo/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ipsum</title>
-      <link>https://www.highvolume.it/fsl/tags/ipsum/</link>
-      <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/tags/ipsum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programming</title>
-      <link>https://www.highvolume.it/fsl/tags/programming/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Theme</title>
-      <link>https://www.highvolume.it/fsl/tags/theme/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
-      
-      <guid>https://www.highvolume.it/fsl/tags/theme/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>

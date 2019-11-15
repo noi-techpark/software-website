@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://freesoftwarelab.noi.bz.it/de/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://freesoftwarelab.noi.bz.it/it/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://freesoftwarelab.noi.bz.it/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://freesoftwarelab.noi.bz.it/de/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://freesoftwarelab.noi.bz.it/de/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://freesoftwarelab.noi.bz.it/it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://freesoftwarelab.noi.bz.it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://freesoftwarelab.noi.bz.it/de/"
+                />
+  </url>
+  
+  <url>
+    <loc>http://freesoftwarelab.noi.bz.it/de/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="http://freesoftwarelab.noi.bz.it/it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://freesoftwarelab.noi.bz.it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="http://freesoftwarelab.noi.bz.it/de/tags/"
+                />
+  </url>
+  
+</urlset>

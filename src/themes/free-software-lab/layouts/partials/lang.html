@@ -1,0 +1,4 @@
+<div class="languages menu-horizontal">
+    {{ range .Site.Home.AllTranslations }}
+    <a href="{{ .Permalink }}">{{ .Language }}</a> {{ end }}
+</div>

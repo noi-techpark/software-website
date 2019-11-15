@@ -1,0 +1,46 @@
+.contact {
+    width: 800px;
+    margin-bottom: 75px;
+    form {
+        div {
+            margin-top: 75px;
+            &.no-margin {
+                margin-top: 10px;
+            }
+        }
+        input {
+            width: 45%;
+            &#message {
+                width: 100%;
+            }
+        }
+        button {
+            margin: 75px 0 25px 0;
+        }
+        #response {
+            display: inline-block;
+            color: $dark-border;
+            margin-left: 10px;
+        }
+    }
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+    @media (max-width: 500px) {
+        form {
+            div {
+                margin: 0;
+            }
+            .description {
+                margin-top: 50px;
+            }
+            input {
+                width: 100%;
+                margin-top: 25px;
+            }
+            #agreement {
+                margin-top: 75px;
+            }
+        }
+    }
+}

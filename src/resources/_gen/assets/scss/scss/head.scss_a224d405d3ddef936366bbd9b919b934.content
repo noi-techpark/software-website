@@ -1,0 +1,39 @@
+html,
+body {
+  background: blue; }
+
+.container {
+  max-width: 1920px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+header .header-top {
+  height: 90px;
+  background-color: #ffffff;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+  header .header-top .container {
+    display: flex;
+    align-items: center; }
+    header .header-top .container .header-wrap {
+      width: auto;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 90px;
+      position: relative; }
+      header .header-top .container .header-wrap #logo {
+        overflow: hidden;
+        width: 240px;
+        height: 41px; }
+
+header #menu-toggle {
+  margin-right: -15px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  padding: 0;
+  position: relative; }

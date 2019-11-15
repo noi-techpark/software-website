@@ -1,0 +1,6 @@
+.container {
+  max-width: 1200px; }
+  .container .card {
+    display: flex;
+    border: 1px solid black;
+    padding: 20px; }

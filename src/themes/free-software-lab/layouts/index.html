@@ -1,0 +1,35 @@
+ {{ partial "header.html" . }}
+
+
+<div id="home">
+    <div class="banner image" style="background-image: url('banner.jpeg')"></div>
+    <div class="container">
+        {{ range $i, $p := where .Pages.Reverse "Section" "" }}
+        <!-- Check odd or even -->
+        {{if not (modBool $i 2)}}
+        <div class="card center-area odd">
+            <div class="flex center-y">
+                {{ block "images" . }}
+                <div class="images">
+                    <div class="image image-long" style="background-image: url('{{ .Params.Image1 }}')"></div>
+                    <div class="image" style="background-image: url('{{ .Params.Image2 }}')"></div>
+                    <div class="image" style="background-image: url('{{ .Params.Image3 }}'); margin: 0;"></div>
+                </div>
+                {{ end }} {{ block "content" . }}
+                <div class="content">
+                    <h2>{{ .Title }}</h2>
+                    <div class="description">{{ .Content }}</div>
+                    <button><a href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a></button>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+        {{ else }}
+        <div class="card center-area even">
+            <div class="flex center-y">
+                {{ template "content" .}}{{ template "images" . }} {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+    {{ partial "footer.html" . }}
