@@ -1,0 +1,51 @@
+{{ partial "header.html" . }}
+<div id="services">
+    <div class="container">
+        <div class="cards">
+            {{ range .Pages }}
+            <div class="card desktop-half">
+                <div class="card-content">
+                    <div class="image" style="background-image: url('{{ .Params.Image }}')" onclick="window.location='{{ .Permalink }}'"></div>
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    <div class="content">
+                        {{ .Content }}
+                    </div>
+                    <div class="footer">
+                        <button class="book" data-title="{{ .Title }}">Book</button>
+                        <div class="price">€ {{ .Params.Price }} + VAT</div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div id="booking" class="">
+            <div class="booking-card contact">
+                <div id="service-booking-close" class="hamburger hamburger--squeeze is-active">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <h1>BOOK SERVICE</h1>
+                <p id="service-title">Selected Course</p>
+                {{ partialCached "services_book.html" . }}
+            </div>
+        </div>
+        <div class="section-footer ">
+            <!-- <div>Is one of this services your expertise?</div>
+            <button id"apply">Become a partner</button> -->
+        </div>
+        <div id="application" class="">
+            <!-- <div class="booking-card">
+                <div id="application-booking-close" class="hamburger hamburger--squeeze is-active">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <h1>BECOME A PARTNER</h1>
+                {{ partialCached "services_book.html" . }}
+            </div> -->
+        </div>
+    </div>
+</div>
+
+{{ partialCached "footer.html" . }}

@@ -1,0 +1,232 @@
+header {
+    // TEMPORARY
+    .languages {
+        display: none !important;
+    }
+    ///////////////////////
+    z-index: 100;
+    padding-top: 90px;
+    .title {
+        text-transform: uppercase;
+    }
+    #logo {}
+    #logo-description {
+        height: 41px;
+        width: 125px;
+        background-image: url('../logo_description.svg');
+        background-repeat: no-repeat;
+        margin-bottom: -29px;
+    }
+    .sponsor {
+        background-image: url('../sponsor.png');
+        background-size: contain;
+    }
+    #header-top {
+        height: 90px;
+        background-color: white;
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        &.is-active {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+            .container .header-wrap {
+                #logo {
+                    padding-right: 50px;
+                    border-right: 1px solid rgba(0, 0, 0, 0.16);
+                }
+                #logo-description {
+                    display: none;
+                }
+                .title {
+                    display: block;
+                    font-weight: 300;
+                    line-height: 1.2;
+                    font-size: 1.2rem;
+                }
+                .sponsor {
+                    display: none;
+                }
+            }
+        }
+        .container {
+            .header-wrap {
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                height: 90px;
+                position: relative;
+                #logo {
+                    padding-right: 15px;
+                    height: 100%;
+                    display: flex;
+                    overflow: hidden;
+                    a {
+                        margin: auto;
+                        svg {
+                            height: 41px;
+                        }
+                    }
+                }
+                .title {
+                    display: none;
+                    margin-left: 30px;
+                }
+                .menu {
+                    padding: 0 25px;
+                    @media (max-width: 979px) {
+                        display: none;
+                    }
+                    ul {
+                        list-style: none;
+                        li {
+                            padding: 12.5px;
+                            &.current {
+                                text-decoration: underline;
+                            }
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .languages {
+                    display: none;
+                    @media (min-width: 980px) {
+                        display: block;
+                    }
+                }
+                #menu-toggle {
+                    display: none;
+                    @media (max-width: 979px) {
+                        display: block;
+                    }
+                    margin-right: -15px;
+                    width: 50px;
+                    height: 25px;
+                    cursor: pointer;
+                    padding: 0;
+                    position: relative;
+                    &:hover {
+                        .hamburger-inner,
+                        .hamburger-inner::before,
+                        .hamburger-inner::after {
+                            height: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #menu-wrap-mobile {
+        display: none;
+        overflow-x: hidden;
+        &.is-active {
+            display: block;
+        }
+        @media (min-width: 1200px) {
+            display: none;
+        }
+        position: fixed;
+        top: 90px;
+        box-shadow: 0px 0 50px 0px rgba(0,
+        0,
+        0,
+        0.2);
+        right: 0;
+        bottom: 0;
+        width: 570px;
+        z-index: 90;
+        background-color: white;
+        -webkit-transition: opacity 0.5s,
+        transform 0.5s;
+        -moz-transition: opacity 0.5s,
+        transform 0.5s;
+        -o-transition: opacity 0.5s,
+        transform 0.5s;
+        -ms-transition: opacity 0.5s,
+        transform 0.5s;
+        transition: opacity 0.5s,
+        transform 0.5s;
+        will-change: opacity;
+        overflow: auto;
+        width: auto;
+        left: 0;
+        .menu {
+            width: 100%;
+            min-height: 0;
+            margin-top: 75px;
+            padding-bottom: 0;
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                width: auto;
+                margin-left: -30px;
+                li {
+                    width: 100%;
+                    padding: 10px 0;
+                    a {
+                        letter-spacing: 0.02em;
+                        font-size: 45px;
+                        line-height: 133%;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .bottom-decoration {
+            content: "";
+            background-image: url("../menu-pattern.svg");
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            background-size: 575px;
+            pointer-events: none;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100vh;
+            position: absolute;
+            display: block;
+            width: 100%;
+        }
+    }
+    .header-bottom {
+        font-weight: 300;
+        font-size: 1.2rem;
+        p {
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+        .flex {
+            width: 100%;
+        }
+        .sponsor {
+            width: 333px;
+            height: 56px;
+        }
+    }
+    // Responsive
+    @media (max-width: 1023px) {
+        .sponsor {
+            margin-bottom: 25px;
+        }
+    }
+    @media (max-width: 767px) {
+        h1 {
+            line-height: 1;
+        }
+    }
+    @media (max-width: 500px) {
+        #header-top {
+            #logo {
+                border: none;
+            }
+            .title {
+                display: none !important;
+            }
+        }
+    }
+}
