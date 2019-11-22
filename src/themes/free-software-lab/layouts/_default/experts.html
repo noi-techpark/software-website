@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+<div id="experts">
+    <div class="container">
+        <div class="cards">
+            {{ range .Pages }}
+            <div class="card">
+                <div class="content">
+                    <div class="logo image" style="background-image: url('{{ .Params.Image }}')"></div>
+                    <div class="description">
+                        <h2>{{ .Title }}</h2>
+                        {{ .Content }}
+                        <button><a href="{{ .Params.Website }}">See Website</a></button>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        <div class="section-footer">
+            <button><a href="/services">Become a partner</a></button>
+        </div>
+    </div>
+</div>
+
+{{ partialCached "footer.html" . }}

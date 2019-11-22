@@ -1,4 +1,4 @@
-baseURL = "https://freesoftwarelab.noi.bz.it/"
+baseURL = "http://freesoftwarelab.noi.bz.it/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Free Software Lab"
