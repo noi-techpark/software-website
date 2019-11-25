@@ -1298,6 +1298,43 @@ footer {
       max-width: 100%;
       margin: 50px 0 0 0; } }
 
+#experts .cards {
+  border-bottom: 1px solid #cccccc; }
+  #experts .cards .card {
+    margin-bottom: 75px;
+    padding: 25px 0;
+    border-top: 1px solid #cccccc; }
+    #experts .cards .card .content {
+      display: flex; }
+      #experts .cards .card .content div {
+        margin: auto 0; }
+        #experts .cards .card .content div p {
+          margin-bottom: 0; }
+      #experts .cards .card .content .logo {
+        height: 200px;
+        width: 200px;
+        background-size: contain;
+        margin-right: 25px; }
+      #experts .cards .card .content .description {
+        width: 60%;
+        max-width: 800px;
+        margin-bottom: -55px; }
+        #experts .cards .card .content .description .tag {
+          display: inline-block;
+          margin: 0; }
+          #experts .cards .card .content .description .tag span {
+            background-color: #B9D200; }
+        #experts .cards .card .content .description button {
+          margin-top: 25px; }
+
+@media (max-width: 500px) {
+  #experts .cards .card .content {
+    flex-wrap: wrap; }
+    #experts .cards .card .content .logo {
+      margin-bottom: 25px; }
+    #experts .cards .card .content .description {
+      width: 100%; } }
+
 .contact {
   width: 800px;
   margin-bottom: 75px; }

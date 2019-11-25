@@ -26,6 +26,37 @@ ElementSelector.prototype.activate = function(element_id) {
     return $.get(element_id).classList.toggle('is-active');
 }
 
+function sendForm(e) {
+    e.preventDefault();
+
+    $.get('response').innerHTML = "";
+
+    var type = '';
+    if ($.get('contact')) {
+        type = 'contact';
+    } else if ($.get('book-service')) {
+        type = 'book-service';
+    } else {
+        type = 'become-expert';
+    }
+    data = new FormData($.get(type));
+    console.log(data);
+    req.open('POST', url + type);
+
+    req.send(data);
+
+    $.activate('loading');
+    req.onload = function() {
+        json = JSON.parse(this.responseText);
+        $.activate('loading');
+        if (json.status === 1) {
+            $.get('response').innerHTML = '&#10004; Your request has been processed.';
+        } else {
+            $.get('response').innerHTML = 'Sorry, your request could not be processed. Retry.';
+        }
+    };
+}
+
 if (document.readyState === 'complete' || (document.readyState !== 'loading' && !document.documentElement.doScroll)) {
     on_ready();
 } else {
@@ -55,4 +86,10 @@ function on_ready() {
         $.activate('menu-toggle');
         $.activate('menu-wrap-mobile');
     });
+
+    var forms = document.getElementsByTagName('form');
+    for ($i = 0; $i < forms.length; $i++) {
+        console.log("$i");
+        forms[$i].addEventListener("submit", sendForm);
+    }
 }

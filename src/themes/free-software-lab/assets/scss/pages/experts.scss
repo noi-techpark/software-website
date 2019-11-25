@@ -1,0 +1,54 @@
+#experts {
+    .cards {
+        border-bottom: 1px solid $light-border;
+        .card {
+            margin-bottom: 75px;
+            padding: 25px 0;
+            border-top: 1px solid $light-border;
+            .content {
+                display: flex;
+                div {
+                    margin: auto 0;
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+                .logo {
+                    height: 200px;
+                    width: 200px;
+                    background-size: contain;
+                    margin-right: 25px;
+                }
+                .description {
+                    width: 60%;
+                    max-width: 800px;
+                    margin-bottom: -55px;
+                    .tag {
+                        display: inline-block;
+                        margin: 0;
+                        span {
+                            background-color: #B9D200;
+                        }
+                    }
+                    button {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 500px) {
+        .cards .card {
+            .content {
+                flex-wrap: wrap;
+                .logo {
+                    margin-bottom: 25px;
+                }
+                .description {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
