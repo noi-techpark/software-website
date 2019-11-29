@@ -1,0 +1,18 @@
+{
+    "serverConfig" : {
+        "host" : "smtp.eu.mailgun.org",
+        "port" : 465,
+        "secure" : true,
+        "domains":["software.bz.it"],
+        "auth":{
+            "user":"",
+            "pass":""
+        }
+    },
+    "mailOptions" : {
+        "from": "freesoftwarelab@software.bz.it",
+        "to": "p.bertolla@noi.bz.it",
+        "subject": "Default subject",
+        "text": "DefaultText"
+    }
+}
