@@ -9,6 +9,8 @@ pipeline {
     environment {
         SMTP_USER=credentialis('software.bz.it.smtp.auth.user')
         SMTP_PASSWORD=credentialis('software.bz.it.smtp.auth.password')
+        MAIL_FROM=credentials('software.bz.it.mail.from')
+        MAIL_TO=credentials('software.bz.it.mail.to')
     }
 
     stages {
@@ -26,7 +28,10 @@ pipeline {
         stage('Configure') {
             steps {
                 sh 'jq \'.serverconfig.auth.user=${SMTP_USER}\' config.json > tmpFile && mv tmpFile config.json'
-                sh 'jq \'.serverconfig.auth.pass=${SMTP_PASSWORD}\' config.json > tmpFile && mv tmpFile config.json'
+                sh 'jq \'.serverconfig.auth.user=${SMTP_PASSWORD}\' config.json > tmpFile && mv tmpFile config.json'
+                sh 'jq \'.serverconfig.auth.user=${SMTP_USER}\' config.json > tmpFile && mv tmpFile config.json'
+                sh 'jq \'.mailOptions.from=${MAIL_FROM}\' config.json > tmpFile && mv tmpFile config.json'
+                sh 'jq \'.mailOptions.to=${MAIL_TO}\' config.json > tmpFile && mv tmpFile config.json'
             }
         }
         stage('Archive') {
