@@ -10,8 +10,8 @@
         }
     },
     "mailOptions" : {
-        "from": "freesoftwarelab@software.bz.it",
-        "to": "p.bertolla@noi.bz.it",
+        "from": "from@domain.com",
+        "to": "to@domain.com",
         "subject": "Default subject",
         "text": "DefaultText"
     }
