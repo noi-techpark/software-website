@@ -9,4 +9,4 @@ services:
     restart: unless-stopped
     ports:
       - "1009:3000"
-    command: node index.js
+    command: cd mail-client && node index.js
