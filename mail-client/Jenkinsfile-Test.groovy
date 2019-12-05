@@ -13,8 +13,8 @@ pipeline {
         DOCKER_SERVICES = "app"
         DOCKER_SERVER_IP = "63.33.73.203"
         DOCKER_SERVER_DIRECTORY = "/var/docker/software.bz.it.mail-client"
-        SMTP_USER=credentialis('software.bz.it.smtp.auth.user')
-        SMTP_PASSWORD=credentialis('software.bz.it.smtp.auth.password')
+        SMTP_USER=credentials('software.bz.it.smtp.auth.user')
+        SMTP_PASSWORD=credentials('software.bz.it.smtp.auth.password')
         MAIL_FROM=credentials('software.bz.it.mail.from')
         MAIL_TO=credentials('software.bz.it.mail.to')
     }
