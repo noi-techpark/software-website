@@ -2,7 +2,8 @@ FROM node:12.13.1-slim as base
 
 FROM base as dev
 RUN apt-get update && apt-get install -y jq
-WORKDIR /code
+WORKDIR /
 FROM base as build
 RUN npm install
-COPY ./ /code
+COPY . .
+CMD ["npm","start"]
