@@ -35,8 +35,8 @@ pipeline {
         stage('Build & Push') {
             steps {
                 sh "aws ecr get-login --region eu-west-1 --no-include-email | bash"
-                sh "docker-compose -f docker-compose.yml -f docker-compose.build.yml build ${DOCKER_SERVICES}"
-                sh "docker-compose -f docker-compose.yml -f docker-compose.build.yml push ${DOCKER_SERVICES}"
+                sh "cd mail-client && docker-compose -f docker-compose.yml -f docker-compose.build.yml build ${DOCKER_SERVICES}"
+                sh "cd mail-client && docker-compose -f docker-compose.yml -f docker-compose.build.yml push ${DOCKER_SERVICES}"
             }
         }
         stage('Deploy') {
