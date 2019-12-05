@@ -9,7 +9,7 @@ var app = express();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 
-let config = JSON.parse(fs.readFileSync('config.json')); 
+let config = JSON.parse(fs.readFileSync('code/config.json')); 
 
 app.listen(3000, () => {
     console.log("Server running on port 3000");

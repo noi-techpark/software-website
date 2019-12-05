@@ -7,6 +7,8 @@ services:
       dockerfile: ../docker/dockerfile-node
       target: dev
     restart: unless-stopped
+    command: node /code/index.js
+    volumes:
+      - ./:/code
     ports:
       - "1009:3000"
-    command: cd mail-client && node index.js
