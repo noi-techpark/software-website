@@ -1,0 +1,34 @@
+- id: available_date
+  translation: Data disponibile
+- id: authorize
+  translation: Autorizzo alla trasmissione dei miei dettagli personali.
+- id: become_partner
+  translation: Diventa partner
+- id: book
+  translation: Prenota
+- id: book_service
+  translation: Prenota servizio
+- id: company
+  translation: Azienda
+- id: email
+  translation: Email
+- id: message
+  translation: Messaggi
+- id: name
+  translation: Nome
+- id: phone
+  translation: Telefono
+- id: required
+  translation: Campi obbligatori
+- id: see_privacy
+  translation: Selezionando questo campo, il titolare dei dati acconsente all'invio di comunicazioni informative, commerciali e personali. Nessun dato verrà inoltrato a terze parti. L'utente ha il diritto di revocare il consenso in ogni momento. Per maggiori informazioni visitare
+- id: see_website
+  translation: Vedi sito
+- id: select_three_dates
+  translation: Selezionare tre date di disponibilità per il corso. Sceglieremo la data che va bene ad entrambe le parti.
+- id: send_message
+  translation: Invia messaggio
+- id: surname
+  translation: Cognome
+- id: vat
+  translation: IVA

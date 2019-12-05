@@ -2,14 +2,14 @@
 <div id="services-single">
     <div class="container">
         <div class="service">
-            <div class="image" style="background-image: url('../{{ .Params.Image }}')"></div>
+            <div class="image" style="background-image: url('/services/{{ .Params.Image }}')"></div>
             <div class="content">
                 {{ .Content }}
-                <h2>€{{ .Params.Price }} + VAT</h2>
+                <h2>€{{ .Params.Price }} + {{ T "vat" }}</h2>
             </div>
         </div>
         <div id="booking" class="contact">
-            <h2>BOOK SERVICE</h2>
+            <h2>{{ T "book_service" }}</h2>
             <div id="service-title" style="display: none">{{ .Title }}</div>
             {{ partialCached "services_book.html" . }}
         </div>
