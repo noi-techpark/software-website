@@ -1,9 +1,8 @@
-FROM node:12.13.1-slim
+FROM node:12.13.1-slim as base
 
-ARG JENKINS_GROUP_ID=1000
-ARG JENKINS_USER_ID=1000
-
-RUN groupadd --gid $JENKINS_GROUP_ID jenkins && \
-    useradd --uid $JENKINS_USER_ID --gid $JENKINS_GROUP_ID --create-home jenkins
+FROM base as dev
 RUN apt-get update && apt-get install -y jq
-
+FROM base as build
+COPY ./ /code
+WORKDIR /code
+RUN npm install
