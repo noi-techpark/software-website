@@ -25,11 +25,11 @@ pipeline {
                 sh "echo '' > .env"
                 sh "echo 'DOCKER_IMAGE_APP=${DOCKER_IMAGE_APP}' >> .env"
                 sh "echo 'DOCKER_TAG_APP=${DOCKER_TAG_APP}' >> .env"
-                sh 'jq \'.serverconfig.auth.user=${SMTP_USER}\' config.json > tmpFile && mv tmpFile config.json'
-                sh 'jq \'.serverconfig.auth.user=${SMTP_PASSWORD}\' config.json > tmpFile && mv tmpFile config.json'
-                sh 'jq \'.serverconfig.auth.user=${SMTP_USER}\' config.json > tmpFile && mv tmpFile config.json'
-                sh 'jq \'.mailOptions.from=${MAIL_FROM}\' config.json > tmpFile && mv tmpFile config.json'
-                sh 'jq \'.mailOptions.to=${MAIL_TO}\' config.json > tmpFile && mv tmpFile config.json'
+                sh '''jq '.serverconfig.auth.user="'${SMTP_USER}'"' config.json > tmpFile && mv tmpFile config.json'''
+                sh '''jq '.serverconfig.auth.user="'${SMTP_PASSWORD}'"' config.json > tmpFile && mv tmpFile config.json'''
+                sh '''jq '.serverconfig.auth.user="'${SMTP_USER}'"' config.json > tmpFile && mv tmpFile config.json'''
+                sh '''jq '.mailOptions.from="'${MAIL_FROM}'"' config.json > tmpFile && mv tmpFile config.json'''
+                sh '''jq '.mailOptions.to="'${MAIL_TO}'"' config.json > tmpFile && mv tmpFile config.json'''
             }
         }
         stage('Build & Push') {
