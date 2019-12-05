@@ -25,9 +25,8 @@ pipeline {
                 sh "echo '' > .env"
                 sh "echo 'DOCKER_IMAGE_APP=${DOCKER_IMAGE_APP}' >> .env"
                 sh "echo 'DOCKER_TAG_APP=${DOCKER_TAG_APP}' >> .env"
-                sh '''jq '.serverconfig.auth.user="'${SMTP_USER}'"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
-                sh '''jq '.serverconfig.auth.user="'${SMTP_PASSWORD}'"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
-                sh '''jq '.serverconfig.auth.user="'${SMTP_USER}'"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
+                sh '''jq '.serverConfig.auth.user="'${SMTP_USER}'"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
+                sh '''jq '.serverConfig.auth.pass="'${SMTP_PASSWORD}'"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
                 sh '''jq '.mailOptions.from="'${MAIL_FROM}'"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
                 sh '''jq '.mailOptions.to="'${MAIL_TO}'"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
             }
