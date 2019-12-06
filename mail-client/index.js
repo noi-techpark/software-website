@@ -50,7 +50,7 @@ app.post('/contact',function(request,response){
 var transporter = nodemailer.createTransport(config.serverConfig);
 var isValidRequest = function(req){
    //return req.headers['Referer'] === "freesoftwarelab.noi.bz.it";
-    return req.body.email;
+    return req.body.email && req.body.name && req.body.surname;
 }
 var createServiceMail = function(b){
     var text = '';
