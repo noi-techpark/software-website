@@ -14,7 +14,7 @@ pipeline {
 
     stages {
         stage('Configuration'){
-            stpes {
+            steps {
                 sh '''sed -i -e "s%\\(const url =\\).*\\$%\\1'${NODEMAILER_TEST_ENDPOINT}'" src/themes/free-software-lab/static/js/main.js'''
             }
         }
