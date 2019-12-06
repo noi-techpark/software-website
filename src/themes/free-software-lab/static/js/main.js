@@ -1,4 +1,4 @@
-const url = 'https://webmaster.matteobiasi.it/fsl/?type=';
+const url = '';
 
 $ = null;
 docked = false;
