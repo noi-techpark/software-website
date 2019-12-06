@@ -15,7 +15,7 @@ app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
 
-app.post('/service',function(request,response){
+app.post('/book-service',function(request,response){
     if (!isValidRequest(request)){
         response.status(400).send("You shall not pass");
     }
