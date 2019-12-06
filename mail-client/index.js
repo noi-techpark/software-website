@@ -2,12 +2,14 @@
 
 var express = require("express");
 var nodemailer = require('nodemailer');
+var cors = require('cors')
 const fs = require('fs');
 const bodyParser = require('body-parser');
 var app = express();
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors);
 
 let config = JSON.parse(fs.readFileSync('config.json')); 
 
