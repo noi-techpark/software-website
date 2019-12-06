@@ -5,6 +5,7 @@ title = "Free Software Lab"
 theme = "free-software-lab"
 googleAnalytics = "UA-153698977-1"
 
+
 [imaging]
 resampleFilter = "box"
 quality = 10

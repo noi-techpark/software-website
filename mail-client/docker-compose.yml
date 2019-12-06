@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ../docker/dockerfile-node
+      target: dev
+    restart: unless-stopped
+    ports:
+      - "1009:3000"
+    command: node index.js
