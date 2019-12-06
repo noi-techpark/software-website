@@ -9,7 +9,7 @@ var app = express();
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(cors);
+app.use(cors());
 
 let config = JSON.parse(fs.readFileSync('config.json')); 
 
@@ -40,11 +40,11 @@ app.post('/contact',function(request,response){
         response.status(400).send("You shall not pass");
     }
     else{
-        transporter.sendMail(config.mailOptions, function(error, info){
+        /*transporter.sendMail(config.mailOptions, function(error, info){
             if(error){
                 return console.log(error);
             }
-        });
+        });*/
         response.send("Contact request completed");
     }
 });
