@@ -37,14 +37,15 @@ app.post('/book-service',function(request,response){
 
 app.post('/contact',function(request,response){
     if (!isValidRequest(request)){
+        console.log("this body failed"+request.body);
         response.status(400).send("You shall not pass");
     }
     else{
-        /*transporter.sendMail(config.mailOptions, function(error, info){
+        transporter.sendMail(config.mailOptions, function(error, info){
             if(error){
                 return console.log(error);
             }
-        });*/
+        });
         response.send("Contact request completed");
     }
 });
