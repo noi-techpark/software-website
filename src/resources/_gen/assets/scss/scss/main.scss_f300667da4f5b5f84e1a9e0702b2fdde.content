@@ -1034,7 +1034,7 @@ header {
       line-height: 1; } }
   @media (max-width: 500px) {
     header #header-top #logo {
-      border: none; }
+      border: none !important; }
     header #header-top .title {
       display: none !important; } }
 
@@ -1260,6 +1260,9 @@ footer {
       height: 250px; } }
 
 @media (max-width: 500px) {
+  #services .cards .card .card-content {
+    height: auto;
+    padding-bottom: 60px; }
   #services #booking .booking-card #service-title {
     margin-bottom: 50px; }
   #services .booking-card {
@@ -1267,7 +1270,8 @@ footer {
     padding-right: 75px !important; } }
 
 #services-single h2 {
-  margin-top: 50px; }
+  margin: 50px 0;
+  text-transform: uppercase; }
 
 #services-single .service {
   display: flex;

@@ -126,6 +126,10 @@
         }
     }
     @media (max-width: 500px) {
+        .cards .card .card-content {
+            height: auto;
+            padding-bottom: 60px;
+        }
         #booking .booking-card #service-title {
             margin-bottom: 50px;
         }
