@@ -42,6 +42,8 @@ app.post('/contact', upload.none(), function(request,response){
         response.status(400).send({status:400,text:"You shall not pass"});
     }
     else{
+        config.mailOptions.subject = "Contact request from "+request.body.email;
+        config.mailOptions.text = createContactMail(request.body);
         transporter.sendMail(config.mailOptions, function(error, info){
             if(error){
                 return console.log(error);
