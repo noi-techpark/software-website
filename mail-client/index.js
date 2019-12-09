@@ -19,7 +19,7 @@ app.listen(3000, () => {
 
 app.post('/book-service',function(request,response){
     if (!isValidRequest(request)){
-        response.status(400).send("You shall not pass");
+        response.status(400).send({status:400,text:"You shall not pass"});
     }
     else{
         console.log("Service request starts now");
@@ -31,14 +31,13 @@ app.post('/book-service',function(request,response){
             }
             console.log('Message sent: ' + info.response);
         });
-        response.send("Service request completed");
+        response.send({status:1,text:"Nice!"});
     }
 });
 
 app.post('/contact',function(request,response){
     if (!isValidRequest(request)){
-        console.log("this body failed"+request.body);
-        response.status(400).send("You shall not pass");
+        response.status(400).send({status:400,text:"You shall not pass"});
     }
     else{
         transporter.sendMail(config.mailOptions, function(error, info){
@@ -46,7 +45,7 @@ app.post('/contact',function(request,response){
                 return console.log(error);
             }
         });
-        response.send("Contact request completed");
+        response.send({status:1,text:"Nice!"});
     }
 });
 
