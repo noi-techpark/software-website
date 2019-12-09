@@ -8,8 +8,8 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 var app = express();
 var upload = multer();
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: true }));
+//app.use(bodyParser.json())
+//app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 let config = JSON.parse(fs.readFileSync('config.json')); 
@@ -37,7 +37,7 @@ app.post('/book-service', upload.none(), function(request,response){
 });
 
 app.post('/contact', upload.none(), function(request,response){
-    console.log(request.body)
+    console.log(request.body);
     if (!isValidRequest(request)){
         response.status(400).send({status:400,text:"You shall not pass"});
     }
