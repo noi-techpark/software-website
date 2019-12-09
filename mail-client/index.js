@@ -2,11 +2,12 @@
 
 var express = require("express");
 var nodemailer = require('nodemailer');
+const multer = require('multer');
 var cors = require('cors')
 const fs = require('fs');
 const bodyParser = require('body-parser');
 var app = express();
-
+var upload = multer();
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
@@ -17,7 +18,7 @@ app.listen(3000, () => {
     console.log("Server running on port 3000");
 });
 
-app.post('/book-service',function(request,response){
+app.post('/book-service', upload.none(), function(request,response){
     if (!isValidRequest(request)){
         response.status(400).send({status:400,text:"You shall not pass"});
     }
@@ -35,7 +36,8 @@ app.post('/book-service',function(request,response){
     }
 });
 
-app.post('/contact',function(request,response){
+app.post('/contact', upload.none(), function(request,response){
+    console.log(request.body)
     if (!isValidRequest(request)){
         response.status(400).send({status:400,text:"You shall not pass"});
     }
