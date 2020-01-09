@@ -6,4 +6,5 @@ WORKDIR /
 FROM base as build
 COPY . .
 RUN npm install
+CMD ["chown","109:113","/.npm"]
 CMD ["npm","start"]
