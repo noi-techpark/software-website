@@ -27,7 +27,7 @@
                 </div>
                 <h1>{{ T "book_service" }}</h1>
                 <p id="service-title">Selected Course</p>
-                {{ partialCached "services_book.html" (dict "title" "hey") }}
+                {{ partial "services_book.html" . }}
             </div>
         </div>
         <div class="section-footer ">
