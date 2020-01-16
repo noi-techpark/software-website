@@ -11,7 +11,7 @@
         <div id="booking" class="contact">
             <h2>{{ T "book_service" }}</h2>
             <div id="service-title" style="display: none">{{ .Title }}</div>
-            {{ partial "services_book.html" . }}
+            {{ partialCached "services_book.html" (dict "title" "hey") }}
         </div>
     </div>
 </div>

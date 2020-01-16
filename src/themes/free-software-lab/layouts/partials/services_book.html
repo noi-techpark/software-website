@@ -1,5 +1,4 @@
 <form id="book-service">
-    <input type="hidden" id="service" name="service" value="{{ .Title }}">
     {{ partialCached "contact_base_details.html" . }}
     <div class="description">{{ T "select_three_dates" }}</div>
     <div class="flex no-margin">
@@ -7,7 +6,8 @@
         <input required type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date2" placeholder="{{ T `available_date` }} 2*">
         <input required type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date3" placeholder="{{ T `available_date` }} 3*" style="margin-top: 25px;">
     </div>
-    {{ partialCached "contact_agreement.html" . }}
+    {{ partialCached "contact_agreement.html" . }} {{ .title }}
+    <input id="service-name-input" name="service" value="{{ .Title }}" style="display: none">
     <button id="confirm">{{ T "book_service" }}</button>
     <div id="loading" class="loader"></div>
     <div id="response"></div>

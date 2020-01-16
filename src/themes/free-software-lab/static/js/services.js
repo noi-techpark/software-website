@@ -5,14 +5,15 @@ if (document.readyState === 'complete' || (document.readyState !== 'loading' && 
 }
 
 data = null;
+var event;
 
 function on_ready() {
     var bookbutton = $.getClass('book');
     for (var i = 0; i < bookbutton.length; i++) {
         bookbutton[i].addEventListener("click", function(e) {
-            var selection = e.explicitOriginalTarget.dataset.title;
+            var selection = e.srcElement.dataset.title;
             $.get('service-title').innerHTML = selection;
-            $.get('service').value = selection;
+            $.get('service-name-input').value = selection;
             $.activate('booking');
         });
     }
