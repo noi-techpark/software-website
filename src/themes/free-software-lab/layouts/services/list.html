@@ -5,14 +5,14 @@
             {{ range .Pages }}
             <div class="card desktop-half">
                 <div class="card-content">
-                    <div class="image" style="background-image: url('{{ .Params.Image }}')" onclick="window.location='{{ .Permalink }}'"></div>
+                    <div class="image" style="background-image: url('/services/{{ .Params.Image }}')" onclick="window.location='{{ .Permalink }}'"></div>
                     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
                     <div class="content">
-                        {{ .Content }}
+                        {{ .Summary }}
                     </div>
                     <div class="footer">
-                        <button class="book" data-title="{{ .Title }}">Book</button>
-                        <div class="price">€{{ .Params.Price }} + VAT</div>
+                        <button class="book" data-title="{{ .Title }}">{{ T "book" }}</button>
+                        <div class="price">€{{ .Params.Price }} + {{ T "vat" }}</div>
                     </div>
                 </div>
             </div>
@@ -25,9 +25,9 @@
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>
-                <h1>BOOK SERVICE</h1>
+                <h1>{{ T "book_service" }}</h1>
                 <p id="service-title">Selected Course</p>
-                {{ partialCached "services_book.html" . }}
+                {{ partialCached "services_book.html" (dict "title" "hey") }}
             </div>
         </div>
         <div class="section-footer ">

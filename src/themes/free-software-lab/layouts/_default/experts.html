@@ -5,18 +5,18 @@
             {{ range .Pages }}
             <div class="card">
                 <div class="content">
-                    <div class="logo image" style="background-image: url('{{ .Params.Image }}')"></div>
+                    <div class="logo image" style="background-image: url('/experts/{{ .Params.Image }}')"></div>
                     <div class="description">
                         <h2>{{ .Title }}</h2>
                         {{ .Content }}
-                        <button><a href="{{ .Params.Website }}">See Website</a></button>
+                        <button><a href="{{ .Params.Website }}">{{ T `see_website` }}</a></button>
                     </div>
                 </div>
             </div>
             {{ end }}
         </div>
         <div class="section-footer">
-            <button><a href="/services">Become a partner</a></button>
+            <button><a href="/services">{{ T `become_partner` }}</a></button>
         </div>
     </div>
 </div>

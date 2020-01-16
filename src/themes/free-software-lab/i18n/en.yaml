@@ -1,0 +1,34 @@
+- id: available_date
+  translation: Available date
+- id: authorize
+  translation: Yes, I authorize the transmission of my personal details.
+- id: become_partner
+  translation: Become a partner
+- id: book
+  translation: Book
+- id: book_service
+  translation: Book Service
+- id: company
+  translation: Company
+- id: email
+  translation: Email
+- id: message
+  translation: Message
+- id: name
+  translation: Name
+- id: phone
+  translation: Phone
+- id: required
+  translation: Required fields
+- id: see_privacy
+  translation: You hereby declare that the data released by you for the purposes of sending product information, submitting special offers, as well as personal communications, may be used. There will be no passing on the data to third parties. You may revoke your consent at any time. For more information see
+- id: see_website
+  translation: See Website
+- id: select_three_dates
+  translation: Enter three dates you're available for the course, we will pick the one which also suits for us.
+- id: send_message
+  translation: Send Message
+- id: surname
+  translation: Surname
+- id: vat
+  translation: VAT

@@ -1,0 +1,34 @@
+- id: available_date
+  translation: Verfügbares Datum
+- id: authorize
+  translation: Ja, ich erlaube die Übertragung meiner persönlichen Details.
+- id: become_partner
+  translation: Partner werden
+- id: book
+  translation: Buchen
+- id: book_service
+  translation: Service buchen
+- id: company
+  translation: Firma
+- id: email
+  translation: E-Mail
+- id: message
+  translation: Nachricht
+- id: name
+  translation: Name
+- id: phone
+  translation: Telefon
+- id: required
+  translation: Benötigte Felder
+- id: see_privacy
+  translation: Sie erklären hiermit, dass die freigegebenen Daten, zum Zwecke der Übersendung von Produktinformationen, der Abgabe von Sonderangeboten, sowie der persönlichen Kommunikation, verwendet werden dürfen. Es wird keine Übertragung der Daten an Dritten erfolgen. Sie können Ihren Konsens jederzeit widerrufen. Weitere Informationen finden Sie unter
+- id: see_website
+  translation: Siehe Website
+- id: select_three_dates
+  translation: Wählen Sie drei Tage aus, an denen Sie frei sind. Wir werden Ihnen mitteilen, welches für uns am besten geht.
+- id: send_message
+  translation: Nachricht senden
+- id: surname
+  translation: Nachname
+- id: vat
+  translation: USt

@@ -5,10 +5,10 @@
         <form id="contact">
             {{ partialCached "contact_base_details.html" . }}
             <div class="flex">
-                <input required id="message" type="text" name="message" placeholder="Message*">
+                <input required id="message" type="text" name="message" placeholder="{{ T `message` }}*">
             </div>
             {{ partialCached "contact_agreement.html" .}}
-            <button id="confirm">Send message</button>
+            <button id="confirm">{{ T `send_message` }}</button>
             <div id="loading" class="loader"></div>
             <div id="response"></div>
         </form>
