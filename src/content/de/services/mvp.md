@@ -10,3 +10,5 @@ To streamline innovation and to discover what features are truly valued by your 
 {{<tag "Required">}}A product idea to be developed.{{</>}}
 
 {{<tag "Duration">}}1 day of active workshop for you and your team at the Free Software Lab.{{</>}}
+
+<!--more--> 
