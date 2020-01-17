@@ -13,6 +13,7 @@ function on_ready() {
         bookbutton[i].addEventListener("click", function(e) {
             var selection = e.srcElement.dataset.title;
             $.get('service-title').innerHTML = selection;
+            $.get('service').value = selection;
             $.activate('booking');
         });
     }
