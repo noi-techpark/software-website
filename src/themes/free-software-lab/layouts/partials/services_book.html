@@ -1,13 +1,14 @@
 <form id="book-service">
+    <input type="hidden" id="service" name="service" value="{{ .Title }}">
     {{ partialCached "contact_base_details.html" . }}
-    <div class="description">Enter three dates you're available for the course, we will pick the one which also suits for us.</div>
+    <div class="description">{{ T "select_three_dates" }}</div>
     <div class="flex no-margin">
-        <input required type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date1" placeholder="Available date 1*">
-        <input required type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date2" placeholder="Available date 2*">
-        <input required type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date3" placeholder="Available date 3*" style="margin-top: 25px;">
+        <input required type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date1" placeholder="{{ T `available_date` }} 1*">
+        <input required type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date2" placeholder="{{ T `available_date` }} 2*">
+        <input required type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="date3" placeholder="{{ T `available_date` }} 3*" style="margin-top: 25px;">
     </div>
-    {{ partialCached "contact_agreement.html" .}}
-    <button id="confirm">Book service</button>
+    {{ partialCached "contact_agreement.html" . }}
+    <button id="confirm">{{ T "book_service" }}</button>
     <div id="loading" class="loader"></div>
     <div id="response"></div>
 </form>

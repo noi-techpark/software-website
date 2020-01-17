@@ -222,7 +222,7 @@ header {
     @media (max-width: 500px) {
         #header-top {
             #logo {
-                border: none;
+                border: none !important;
             }
             .title {
                 display: none !important;

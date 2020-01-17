@@ -9,11 +9,11 @@ googleAnalytics = "UA-153698977-1"
 resampleFilter = "box"
 quality = 60
 
-disableLanguages = ["de", "it"]
 
 [languages.en]
 weight = 0
 languageName = "English"
+contentDir = "content/en"
 
 [[languages.en.menu.main]]
 url    = "/"
@@ -32,6 +32,7 @@ weight = 20
 
 [languages.de]
 weight = 10
+contentDir = "content/de/"
 languageName = "Deutsch"
 
 [[languages.de.menu.main]]
@@ -51,6 +52,7 @@ weight = 20
 
 [languages.it]
 weight = 20
+contentDir = "content/it/"
 languageName = "Italiano"
 
 [[languages.it.menu.main]]

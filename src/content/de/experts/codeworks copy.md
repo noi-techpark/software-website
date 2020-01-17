@@ -1,6 +1,6 @@
 
 ---
-image: codeworks.jpeg
+image: codeworks.png
 title: CodeWorks Srl
 website: flashbeing.com
 ---
