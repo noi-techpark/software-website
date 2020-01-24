@@ -22,6 +22,7 @@ function on_ready() {
     if (x) {
         x.addEventListener("click", function() {
             $.activate('booking');
+            $.get('book-service').reset();
         });
     }
 }
