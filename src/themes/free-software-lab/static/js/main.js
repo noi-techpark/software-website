@@ -51,6 +51,7 @@ function sendForm(e) {
         $.activate('loading');
         if (json.status === 1) {
             $.get('response').innerHTML = '&#10004; Your request has been processed.';
+            $.get(type).reset();
         } else {
             $.get('response').innerHTML = 'Sorry, your request could not be processed. Retry.';
         }
