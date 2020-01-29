@@ -5,7 +5,8 @@
             <div class="image" style="background-image: url('/services/{{ .Params.Image }}')"></div>
             <div class="content">
                 {{ .Content }}
-                <h2>€{{ .Params.Price }} + {{ T "vat" }}</h2>
+                <h2>{{ .Params.Price }}</h2>
+                <!--                 <h2>€{{ .Params.Price }} + {{ T "vat" }}</h2>-->
             </div>
         </div>
         <div id="booking" class="contact">
