@@ -1,6 +1,12 @@
 {{ partial "header.html" . }}
 <div id="services">
     <div class="container">
+        <div class="section-header">
+            <div>{{ T "labbonus" }}</div>
+            <button id="apply"><a target="_blank" href="https://noi.bz.it/sites/default/files/2019-08/Vademecum_LabBonus_IT.pdf">Lab-Bonus manual (italian)</a></button>
+            <button id="apply"><a target="_blank" href="https://noi.bz.it/sites/default/files/2019-08/Vademecum_LabBonus_DE_1.pdf">Lab-Bonus manual (german)</a></button>
+            <button id="apply"><a target="_blank" href="https://noi.bz.it/en/services/labs/lab-bonus">Request Lab-Bonus</a></button>
+        </div>
         <div class="cards">
             {{ range .Pages }}
             <div class="card desktop-half">
@@ -12,7 +18,7 @@
                     </div>
                     <div class="footer">
                         <button class="book" data-title="{{ .Title }}">{{ T "book" }}</button>
-                        <div class="price">€{{ .Params.Price }} + {{ T "vat" }}</div>
+                        <div class="price">{{ .Params.Price }}</div>
                     </div>
                 </div>
             </div>
@@ -46,6 +52,5 @@
             </div> -->
         </div>
     </div>
+    {{ partialCached "footer.html" . }}
 </div>
-
-{{ partialCached "footer.html" . }}
