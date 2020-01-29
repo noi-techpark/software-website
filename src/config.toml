@@ -33,8 +33,8 @@ weight = 20
 
 [languages.de]
 weight = 10
+contentDir = "content/de/"
 languageName = "Deutsch"
-contentDir = "content/de"
 
 [[languages.de.menu.main]]
 url    = "/"
@@ -53,8 +53,8 @@ weight = 20
 
 [languages.it]
 weight = 20
+contentDir = "content/it/"
 languageName = "Italiano"
-contentDir = "content/it"
 
 [[languages.it.menu.main]]
 url    = "/"

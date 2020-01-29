@@ -60,6 +60,7 @@ var isValidRequest = function(req){
 }
 var createServiceMail = function(b){
     var text = '';
+    text += b.service + '\n';
     text += b.name + ' ' + b.surname + '\n';
     text += (b.company===undefined) ? '' : (b.company + '\n');
     text += b.email + ' ' + b.phone + '\n';
