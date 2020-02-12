@@ -3,62 +3,250 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://freesoftwarelab.noi.bz.it/it/categories/</loc>
-    <priority>0</priority>
+    <loc>https://freesoftwarelab.noi.bz.it/it/services/app_usability/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://freesoftwarelab.noi.bz.it/de/categories/"
+                href="https://freesoftwarelab.noi.bz.it/de/services/app_usability/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://freesoftwarelab.noi.bz.it/categories/"
+                href="https://freesoftwarelab.noi.bz.it/services/app_usability/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://freesoftwarelab.noi.bz.it/it/categories/"
+                href="https://freesoftwarelab.noi.bz.it/it/services/app_usability/"
                 />
   </url>
   
   <url>
-    <loc>http://freesoftwarelab.noi.bz.it/it/</loc>
+    <loc>https://freesoftwarelab.noi.bz.it/it/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://freesoftwarelab.noi.bz.it/de/"
+                href="https://freesoftwarelab.noi.bz.it/de/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://freesoftwarelab.noi.bz.it/"
+                href="https://freesoftwarelab.noi.bz.it/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://freesoftwarelab.noi.bz.it/it/"
+                href="https://freesoftwarelab.noi.bz.it/it/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://freesoftwarelab.noi.bz.it/it/tags/</loc>
-    <priority>0</priority>
+    <loc>https://freesoftwarelab.noi.bz.it/it/experts/codeworks-copy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="http://freesoftwarelab.noi.bz.it/de/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://freesoftwarelab.noi.bz.it/tags/"
+                href="https://freesoftwarelab.noi.bz.it/de/experts/codeworks-copy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://freesoftwarelab.noi.bz.it/it/tags/"
+                href="https://freesoftwarelab.noi.bz.it/it/experts/codeworks-copy/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/experts/codeworks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/experts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/experts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/experts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/experts/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/home02/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/home02/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/home02/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/home02/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/services/mvp/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/services/mvp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/services/mvp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/services/mvp/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/services/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/services/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/services/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/services/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/services/automation/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/services/automation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/services/automation/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/services/automation/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/services/kanban/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/services/kanban/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/services/kanban/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/services/kanban/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/it/home01/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://freesoftwarelab.noi.bz.it/de/home01/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://freesoftwarelab.noi.bz.it/home01/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://freesoftwarelab.noi.bz.it/it/home01/"
                 />
   </url>
   
