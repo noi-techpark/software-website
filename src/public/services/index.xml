@@ -2,64 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Services on Free Software Lab</title>
-    <link>http://freesoftwarelab.noi.bz.it/services/</link>
+    <link>https://freesoftwarelab.noi.bz.it/services/</link>
     <description>Recent content in Services on Free Software Lab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://freesoftwarelab.noi.bz.it/services/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://freesoftwarelab.noi.bz.it/services/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>App usability test</title>
-      <link>http://freesoftwarelab.noi.bz.it/services/app_usability/</link>
+      <link>https://freesoftwarelab.noi.bz.it/services/app_usability/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://freesoftwarelab.noi.bz.it/services/app_usability/</guid>
+      <guid>https://freesoftwarelab.noi.bz.it/services/app_usability/</guid>
       <description>&lt;p&gt;The usability test is an evaluation service of web interfaces or applications, performed through specific analysis techniques aimed at understanding if users will perceive the interaction as effective and satisfying in a given context of use. The tests will be performed by internal experts.&lt;/p&gt;
 
-&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;Web interface to be tested.&lt;/div&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;Web interface to be tested.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Develop your innovative prototype</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/prototype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/prototype/</guid>
+      <description>&lt;p&gt;Create a prototype in a short time and at low cost to understand the potential of your idea: through a network of experts, the Free Software Lab helps you to develop a prototype with innovative technologies that makes your idea more concrete and valuable.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;A product idea to be validated.&lt;/div&gt;</description>
     </item>
     
     <item>
       <title>MVP Setup</title>
-      <link>http://freesoftwarelab.noi.bz.it/services/mvp/</link>
+      <link>https://freesoftwarelab.noi.bz.it/services/mvp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://freesoftwarelab.noi.bz.it/services/mvp/</guid>
+      <guid>https://freesoftwarelab.noi.bz.it/services/mvp/</guid>
       <description>&lt;p&gt;To streamline innovation and to discover what features are truly valued by your customers, in this workshop we follow a structured approach to understand what it takes to build a successful product.&lt;/p&gt;
 
 &lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;A product idea to be developed.&lt;/div&gt;
 
-&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Duration&lt;/span&gt;1 day of active workshop for you and your team at the Free Software Lab.&lt;/div&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Duration&lt;/span&gt;1 day of active workshop for you and your team at the Free Software Lab.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open Data Hub</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/odh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/odh/</guid>
+      <description>&lt;p&gt;Do you want to make your data more visible, making it available to many software developers? The answer you are looking for is Open Data Hub. Together with our network of experts, we support you in identifying the suitable formats, processing algorithms, licenses and technologies. In addition, Open Data Hub provides examples to inspire you on possible uses of the data.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Software development automation</title>
-      <link>http://freesoftwarelab.noi.bz.it/services/automation/</link>
+      <link>https://freesoftwarelab.noi.bz.it/services/automation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://freesoftwarelab.noi.bz.it/services/automation/</guid>
-      <description>&lt;p&gt;Continuous Integration and Continuous Delivery can help to build and deliver quality software in a reliable way. We will cover a set of principles and techniques that allow you to have control over the release process and its automation while keeping an eye on efficiency, costs and risks.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>https://freesoftwarelab.noi.bz.it/services/automation/</guid>
+      <description>&lt;p&gt;Continuous Integration and Continuous Delivery can help to build and deliver quality software in a reliable way. We will cover a set of principles and techniques that allow you to have control over the release process and its automation while keeping an eye on efficiency, costs and risks.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Understand Kanban</title>
-      <link>http://freesoftwarelab.noi.bz.it/services/kanban/</link>
+      <link>https://freesoftwarelab.noi.bz.it/services/kanban/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://freesoftwarelab.noi.bz.it/services/kanban/</guid>
+      <guid>https://freesoftwarelab.noi.bz.it/services/kanban/</guid>
       <description>&lt;p&gt;Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. At the end of the day we will compare Kanban and Scrum to see some key differences between these two major frameworks.&lt;/p&gt;
 
-&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Duration&lt;/span&gt;1 day of active workshop for you and your team at the Free Software Lab.&lt;/div&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Duration&lt;/span&gt;1 day of active workshop for you and your team at the Free Software Lab.&lt;/div&gt;</description>
     </item>
     
   </channel>

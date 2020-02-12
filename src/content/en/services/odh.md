@@ -1,7 +1,7 @@
 ---
 image: odh.jpg
 title: Open Data Hub
-price: 
+price:
 
 ---
 

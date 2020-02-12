@@ -1,0 +1,29 @@
+#testenv .container {
+    padding: 0; }
+    #testenv .container .card {
+      height: 450px;
+      width: 100%;
+      margin: 0 -10vw;
+      padding: 0 10vw; }
+      #testenv .container .card.even {
+        background: white; }
+      #testenv .container .card.odd {
+        background: #f9f9f9; }
+      #testenv .container .card .flex {
+        position: relative;
+        width: 100%; }
+        #testenv .container .card .flex .images {
+          font-size: 0;
+          height: 350px;
+          width: 350px; }
+          #testenv .container .card .flex .images .image {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            margin-right: 8%; }
+        #testenv .container .card .flex .content {
+          width: 50vw;
+          max-width: 900px; }
+          #testenv .container .card .flex .content button {
+            margin-top: 25px; }

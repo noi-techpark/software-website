@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test Environment on Free Software Lab</title>
+    <link>https://freesoftwarelab.noi.bz.it/testenv/</link>
+    <description>Recent content in Test Environment on Free Software Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://freesoftwarelab.noi.bz.it/testenv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Home assistant devices</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/homeassistant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/homeassistant/</guid>
+      <description>Lab software prototypes can be developed, digital R&amp;amp;D projects can be prepared and new methods of software development can be tested, with special consideration of open technologies (Open Standard, Open Data and Free Open Source Software).</description>
+    </item>
+    
+    <item>
+      <title>LittleBits sets</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/littlebits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/littlebits/</guid>
+      <description>Lab software prototypes can be developed, digital R&amp;amp;D projects can be prepared and new methods of software development can be tested, with special consideration of open technologies (Open Standard, Open Data and Free Open Source Software).</description>
+    </item>
+    
+    <item>
+      <title>LoRaWAN Network</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/lorawan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/lorawan/</guid>
+      <description>This experimental laboratory is the appropriate test environment for software developers, CIOs, and CTOs to evaluate investments in new trends and technologies. It offers premises that are equipped with the latest technologies such as LoRaWAN, Beacon or 5G and instruments such as virtual assistants, as well as, if required, the support of digital experts.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Software</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/oscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/oscode/</guid>
+      <description>This experimental laboratory is the appropriate test environment for software developers, CIOs, and CTOs to evaluate investments in new trends and technologies. It offers premises that are equipped with the latest technologies such as LoRaWAN, Beacon or 5G and instruments such as virtual assistants, as well as, if required, the support of digital experts.</description>
+    </item>
+    
+  </channel>
+</rss>
