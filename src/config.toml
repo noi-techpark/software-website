@@ -27,9 +27,14 @@ name   = "Services"
 weight = 10
 
 [[languages.en.menu.main]]
+url    = "/testenv"
+name   = "Test Environment"
+weight = 20
+
+[[languages.en.menu.main]]
 url    = "/contact"
 name   = "Contact"
-weight = 20
+weight = 30
 
 [languages.de]
 weight = 10
