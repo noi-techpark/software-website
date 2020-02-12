@@ -1,9 +1,10 @@
 
 ---
-title: Home assistant devices
+title: Digital assistant devices
 image1: home_ass.jpg
 buttonLabel: Ask availability
 link: ../request
 ---
 
-Lab software prototypes can be developed, digital R&D projects can be prepared and new methods of software development can be tested, with special consideration of open technologies (Open Standard, Open Data and Free Open Source Software).
+Digital home and voice assistants have become an integral part of everyday life for many. 
+It is time to align and prepare your own solutions to this new way of interaction. In the Free Software Lab you'll find  various digital voice assistants to test and explore. 
