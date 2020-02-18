@@ -69,6 +69,10 @@
   </url>
   
   <url>
+    <loc>https://freesoftwarelab.noi.bz.it/testenv/homeassistant/</loc>
+  </url>
+  
+  <url>
     <loc>https://freesoftwarelab.noi.bz.it/experts/</loc>
     <xhtml:link
                 rel="alternate"
@@ -111,10 +115,6 @@
   </url>
   
   <url>
-    <loc>https://freesoftwarelab.noi.bz.it/testenv/homeassistant/</loc>
-  </url>
-  
-  <url>
     <loc>https://freesoftwarelab.noi.bz.it/observatory/iot_tech/</loc>
   </url>
   
@@ -139,10 +139,6 @@
                 hreflang="en"
                 href="https://freesoftwarelab.noi.bz.it/home02/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://freesoftwarelab.noi.bz.it/testenv/littlebits/</loc>
   </url>
   
   <url>
@@ -174,6 +170,10 @@
   
   <url>
     <loc>https://freesoftwarelab.noi.bz.it/testenv/oscode/</loc>
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/request/</loc>
   </url>
   
   <url>
@@ -275,6 +275,10 @@
                 hreflang="en"
                 href="https://freesoftwarelab.noi.bz.it/home01/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://freesoftwarelab.noi.bz.it/testenv/littlebits/</loc>
   </url>
   
 </urlset>
