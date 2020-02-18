@@ -3,7 +3,6 @@
 title: littleBits Kits
 image1: little_bits.jpg
 buttonLabel: Ask availability
-link: ../request
 ---
 
 “littleBits is one of the most effective tools in helping students learn basic circuitry concepts.” (Kylie Peppler).
