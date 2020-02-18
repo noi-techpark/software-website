@@ -3,7 +3,6 @@
 title: Digital assistant devices
 image1: home_ass.jpg
 buttonLabel: Ask availability
-link: ../request
 ---
 
 Digital home and voice assistants have become an integral part of everyday life for many. 
