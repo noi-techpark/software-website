@@ -2,7 +2,9 @@
 ---
 image: mvp.jpeg
 title: MVP Setup
-price: € 3'000.00  + VAT
+price: € 3'000.00  + VAT 
+labbonus: true
+
 --- 
 
 To streamline innovation and to discover what features are truly valued by your customers, in this workshop we follow a structured approach to understand what it takes to build a successful product. 

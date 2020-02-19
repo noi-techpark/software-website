@@ -3,6 +3,7 @@
 image: prototype.jpg
 title: Develop your innovative prototype
 price: (price on request)
+labbonus: true
 
 ---
 

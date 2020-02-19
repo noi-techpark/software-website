@@ -2,7 +2,9 @@
 ---
 image: kanban.jpeg
 title: Understand Kanban
-price: € 1'500.00 + VAT
+price: € 1'500.00 + VAT 
+labbonus: true
+
 ---
 
 Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. At the end of the day we will compare Kanban and Scrum to see some key differences between these two major frameworks. 
