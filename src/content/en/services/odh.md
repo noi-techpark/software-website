@@ -1,7 +1,8 @@
 ---
 image: odh.jpg
 title: Open Data Hub
-price:
+price:  (price on request)
+labbonus: true
 
 ---
 
