@@ -1,0 +1,33 @@
+{{ partial "header.html" . }}
+<div id="testenv">
+    <div class="container">
+        {{ range .Pages }}
+        <!-- Check odd or even -->
+        <div class="card center-area even">
+            <div class="flex center-y">
+                <div class="images">
+                    {{ if (isset .Params "link") }}
+                    <a target="_blank" href="{{ .Params.Link }}">
+                        <div class="image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
+                    </a>
+                    {{ else }}
+                    <a target="_blank" href="../request">
+                        <div class="image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
+                    </a>
+                    {{ end }}
+                </div>
+                <div class="content">
+                    <h2>{{ .Title }}</h2>
+                    <div class="description">{{ .Content }}</div>
+                    {{ if (isset .Params "link") }}
+                    <button>
+                        <a target="_blank" href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a>
+                    </button> {{ else }}
+                    <button onclick="window.location.href='../request'">{{ .Params.ButtonLabel }}</button> {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ partialCached "footer.html" . }}

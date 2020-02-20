@@ -1,6 +1,7 @@
 {{ partial "header.html" . }}
 <div id="services">
     <div class="container">
+
         <div class="cards">
             {{ range .Pages }}
             <div class="card desktop-half">
@@ -12,7 +13,8 @@
                     </div>
                     <div class="footer">
                         <button class="book" data-title="{{ .Title }}">{{ T "book" }}</button>
-                        <div class="price">€{{ .Params.Price }} + {{ T "vat" }}</div>
+                        <div class="price">{{ .Params.Price }} {{ if .Params.labbonus }} (<a href="https://noi.bz.it/en/services/labs/lab-bonus" target="_blank"><u>Lab-bonus</u></a> available) {{ end }}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -46,6 +48,5 @@
             </div> -->
         </div>
     </div>
+    {{ partialCached "footer.html" . }}
 </div>
-
-{{ partialCached "footer.html" . }}

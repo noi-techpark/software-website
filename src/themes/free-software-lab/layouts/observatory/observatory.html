@@ -1,0 +1,25 @@
+{{ partial "header.html" . }}
+<div id="observatory">
+    <div class="container">
+        {{ range .Pages }}
+        <!-- Check odd or even -->
+        <div class="card center-area even">
+            <div class="flex center-y">
+                <div class="images">
+                    <a target="_blank" href="{{ .Params.Link }}">
+                        <div class="image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
+                    </a>
+                </div>
+                <div class="content">
+                    <h2>{{ .Title }}</h2>
+                    <div class="description">{{ .Content }}</div>
+                    <button>
+                        <a target="_blank" href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ partialCached "footer.html" . }}
