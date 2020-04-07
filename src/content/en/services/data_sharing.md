@@ -1,9 +1,8 @@
-
 ---
 image: datashare.jpeg
 title: Data sharing
 price: (price on request)
-labbonus: true
+labbonus: false
 ---
 
 Companies need to give visibility to their data, identify suitable formats, processing algorithms and licenses and use technologies known by application developers.

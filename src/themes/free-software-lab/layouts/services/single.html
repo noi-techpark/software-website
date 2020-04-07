@@ -7,9 +7,9 @@
                 {{ .Content }}
                 <h2>{{ .Params.Price }}</h2>
                 {{ if .Params.labbonus }} (<a href="https://noi.bz.it/en/services/labs/lab-bonus" target="_blank"><u>Lab-bonus</u></a> available) {{ end }}
-
-                <!--                 <h2>€{{ .Params.Price }} + {{ T "vat" }}</h2>-->
+                <button onclick="window.location.href='../request'">{{ .Params.ButtonLabel }}</button>
             </div>
+
         </div>
         <div id="booking" class="contact">
             <h2>{{ T "book_service" }}</h2>
