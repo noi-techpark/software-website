@@ -26,10 +26,10 @@ url    = "/services"
 name   = "Services"
 weight = 10
 
-[[languages.en.menu.main]]
-url    = "/testenv"
-name   = "Test Environment"
-weight = 20
+# [[languages.en.menu.main]]
+#url    = "/testenv"
+#name   = "Test Environment"
+#weight = 20
 
 [[languages.en.menu.main]]
 url    = "/observatory"
