@@ -1,7 +1,14 @@
 {{ partial "header.html" . }}
 <div id="services">
+    <!--  <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('rent')">Testing ICT</button>
+        <button class="btn" onclick="filterSelection('')">Agile Development</button>
+        <button class="btn" onclick="filterSelection('fruits')">Open Strategy</button>
+        <button class="btn" onclick="filterSelection('colors')">Devs Community</button>
+    </div>
+-->
     <div class="container">
-
         <div class="cards">
             {{ range .Pages }}
             <div class="card desktop-half">
@@ -12,7 +19,12 @@
                         {{ .Summary }}
                     </div>
                     <div class="footer">
-                        <button class="book" data-title="{{ .Title }}">{{ T "book" }}</button>
+                        {{ if (isset .Params "buttonlabel") }} {{ if (isset .Params "buttonlink") }}
+                        <button> 
+                            <a target="_blank" href="{{ .Params.ButtonLink }}">{{ .Params.ButtonLabel }}</a>
+                        </button> {{ else }}
+                        <button class="book" data-title="{{ .Title }}">{{  .Params.ButtonLabel }}</button> {{ end }} {{ else }}
+                        <button class="book" data-title="{{ .Title }}">{{ T "book" }}</button> {{ end }}
                         <div class="price">{{ .Params.Price }} {{ if .Params.labbonus }} (<a href="https://noi.bz.it/en/services/labs/lab-bonus" target="_blank"><u>Lab-bonus</u></a> available) {{ end }}
                         </div>
                     </div>
