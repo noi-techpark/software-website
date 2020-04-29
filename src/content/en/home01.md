@@ -12,7 +12,7 @@ The Free Software Lab is the appropriate environment for software developers, CI
 
 It offers premises that are equipped with the latest technologies such as LoRaWAN, Beacon and instruments such as virtual assistants, as well as the support of digital experts if needed.
 
-Through our managable servies we support you in current software development topics like:
+Through our managable services we support you in current software development topics like:
 
 - Testing of devices, technologies and applications
 - Prototype development
