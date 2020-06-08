@@ -1,8 +1,9 @@
 <form id="book-service">
     <script>
+        var service_name = document.getElementById('service-title').innerText;
         ga('send', 'event', {
         eventCategory: 'Service',
-        eventAction: 'Book - {{ .Title }}',
+        eventAction: service_name,
         });
     </script>
     <input type="hidden" id="service" name="service" value="{{ .Title }}">
