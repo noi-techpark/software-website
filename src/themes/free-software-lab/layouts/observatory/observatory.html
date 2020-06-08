@@ -15,10 +15,10 @@
                 <div class="content">
                     <h2>{{ .Title }}</h2>
                     <div class="description">{{ .Content }}</div>
-                    <button onclick="gtag('event', Download, {
-                        'event_category': 'Observatory',
-                        'event_label': 'Document Download'
-                        });">
+                    <button onclick="ga('send', 'event', {
+                        eventCategory: 'Observatory',
+                        eventAction: 'Download',
+                      });">
                         <a target="_blank" href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a>
                     </button>
                 </div>
