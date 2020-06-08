@@ -1,8 +1,8 @@
 <form id="book-service">
     <script>
-        gtag('event', Book, {
-        'event_category': 'Services',
-        'event_label': 'Opne Form'
+        ga('send', 'event', {
+        eventCategory: 'Service',
+        eventAction: 'Book - {{ .Title }}',
         });
     </script>
     <input type="hidden" id="service" name="service" value="{{ .Title }}">
