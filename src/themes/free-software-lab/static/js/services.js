@@ -15,6 +15,11 @@ function on_ready() {
             $.get('service-title').innerHTML = selection;
             $.get('service').value = selection;
             $.activate('booking');
+            ga('send', 'event', {
+                eventCategory: 'Service',
+                eventAction: 'Book',
+                eventLabel: selection,
+            });
         });
     }
 

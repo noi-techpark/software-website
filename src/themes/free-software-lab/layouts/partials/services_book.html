@@ -1,11 +1,4 @@
 <form id="book-service">
-    <script>
-        var service_name = document.getElementById('service-title').innerText;
-        ga('send', 'event', {
-        eventCategory: 'Service',
-        eventAction: service_name,
-        });
-    </script>
     <input type="hidden" id="service" name="service" value="{{ .Title }}">
     {{ partialCached "contact_base_details.html" . }}
     <div class="description">{{ T "select_three_dates" }}</div>
