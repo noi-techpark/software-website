@@ -15,6 +15,9 @@
             .flex {
                 position: relative;
                 width: 100%;
+                .title {
+                    margin-bottom: 25px;
+                }
                 .images {
                     font-size: 0;
                     height: 350px;
@@ -29,7 +32,7 @@
                     }
                 }
                 .content {
-                    width: 50vw;
+                    width: 65vw;
                     max-width: 950px;
                     button {
                         margin-top: 25px;
@@ -41,21 +44,21 @@
     // Responsive
     @media (max-width: 979px) {
         .container {
+            margin-bottom: 25px;
             .card {
                 height: auto;
                 .flex {
                     .images {
                         height: 100vw;
                         width: 100vw;
-                        margin: 75px auto;
+                        margin: 0px auto;
                     }
                     .content {
                         width: 100%;
-                        margin: 75px 0;
                     }
                 }
                 &.even .content {
-                    margin-bottom: 0;
+                    margin-bottom: 75px;
                 }
                 &.odd .images {
                     margin-bottom: 0;

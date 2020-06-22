@@ -1340,6 +1340,8 @@ footer {
     #observatory .container .card .flex {
       position: relative;
       width: 100%; }
+      #observatory .container .card .flex .title {
+        margin-bottom: 25px; }
       #observatory .container .card .flex .images {
         font-size: 0;
         height: 350px;
@@ -1352,25 +1354,26 @@ footer {
           background-size: cover;
           margin-right: 8%; }
       #observatory .container .card .flex .content {
-        width: 50vw;
+        width: 65vw;
         max-width: 950px; }
         #observatory .container .card .flex .content button {
           margin-top: 25px; }
 
 @media (max-width: 979px) {
-  #observatory .container .card {
-    height: auto; }
-    #observatory .container .card .flex .images {
-      height: 100vw;
-      width: 100vw;
-      margin: 75px auto; }
-    #observatory .container .card .flex .content {
-      width: 100%;
-      margin: 75px 0; }
-    #observatory .container .card.even .content {
-      margin-bottom: 0; }
-    #observatory .container .card.odd .images {
-      margin-bottom: 0; } }
+  #observatory .container {
+    margin-bottom: 25px; }
+    #observatory .container .card {
+      height: auto; }
+      #observatory .container .card .flex .images {
+        height: 100vw;
+        width: 100vw;
+        margin: 0px auto; }
+      #observatory .container .card .flex .content {
+        width: 100%; }
+      #observatory .container .card.even .content {
+        margin-bottom: 75px; }
+      #observatory .container .card.odd .images {
+        margin-bottom: 0; } }
 
 #services-single h2 {
   margin: 50px 0;
