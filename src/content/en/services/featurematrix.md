@@ -1,6 +1,6 @@
 ---
 title: Feature Matrix Analysis
-image: compare-643305_1920.png
+image: featurematrix.png
 price: 1'500.00 + VAT 
 labbonus: true
 ---
