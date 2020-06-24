@@ -5,19 +5,17 @@
         <!-- Check odd or even -->
         <div class="card center-area even">
             <div class="flex center-y">
+                <div class="flex title">
+                    <h2>{{ .Title }}</h2>
+                </div>
                 <div class="images">
-                    <!-- <a target="_blank" href="{{ .Params.Link }}">
-                        <div class="image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
-                   
-                    </a> -->
                     <div class="image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
                 </div>
                 <div class="content">
-                    <h2>{{ .Title }}</h2>
                     <div class="description">{{ .Content }}</div>
                     <button onclick="ga('send', 'event', {
                         eventCategory: 'Observatory',
-                        eventAction: 'Download',
+                        eventAction: 'Download - {{ .Params.Link }}',
                       });">
                         <a target="_blank" href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a>
                     </button>

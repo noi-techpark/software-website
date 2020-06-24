@@ -1,10 +1,4 @@
 <form id="book-service">
-    <script>
-        gtag('event', Book, {
-        'event_category': 'Services',
-        'event_label': 'Opne Form'
-        });
-    </script>
     <input type="hidden" id="service" name="service" value="{{ .Title }}">
     {{ partialCached "contact_base_details.html" . }}
     <div class="description">{{ T "select_three_dates" }}</div>

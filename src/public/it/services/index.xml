@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Servizi on Free Software Lab</title>
+    <link>https://freesoftwarelab.noi.bz.it/it/services/</link>
+    <description>Recent content in Servizi on Free Software Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://freesoftwarelab.noi.bz.it/it/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>App usability test</title>
+      <link>https://freesoftwarelab.noi.bz.it/it/services/app_usability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/it/services/app_usability/</guid>
+      <description>&lt;p&gt;The usability test is an evaluation service of web interfaces or applications, performed through specific analysis techniques aimed at understanding if users will perceive the interaction as effective and satisfying in a given context of use. The tests will be performed by internal experts.&lt;/p&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;Web interface to be tested.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>MVP Setup</title>
+      <link>https://freesoftwarelab.noi.bz.it/it/services/mvp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/it/services/mvp/</guid>
+      <description>&lt;p&gt;To streamline innovation and to discover what features are truly valued by your customers, in this workshop we follow a structured approach to understand what it takes to build a successful product.&lt;/p&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;A product idea to be developed.&lt;/div&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Duration&lt;/span&gt;1 day of active workshop for you and your team at the Free Software Lab.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Software development automation</title>
+      <link>https://freesoftwarelab.noi.bz.it/it/services/automation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/it/services/automation/</guid>
+      <description>&lt;p&gt;Continuous Integration and Continuous Delivery can help to build and deliver quality software in a reliable way. We will cover a set of principles and techniques that allow you to have control over the release process and its automation while keeping an eye on efficiency, costs and risks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Understand Kanban</title>
+      <link>https://freesoftwarelab.noi.bz.it/it/services/kanban/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/it/services/kanban/</guid>
+      <description>&lt;p&gt;Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. At the end of the day we will compare Kanban and Scrum to see some key differences between these two major frameworks.&lt;/p&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Duration&lt;/span&gt;1 day of active workshop for you and your team at the Free Software Lab.&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
