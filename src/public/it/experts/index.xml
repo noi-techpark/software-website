@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Experts on Free Software Lab</title>
+    <link>https://freesoftwarelab.noi.bz.it/it/experts/</link>
+    <description>Recent content in Experts on Free Software Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://freesoftwarelab.noi.bz.it/it/experts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CodeWorks Srl</title>
+      <link>https://freesoftwarelab.noi.bz.it/it/experts/codeworks-copy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/it/experts/codeworks-copy/</guid>
+      <description>App Testing  MVP Setup
+Developers of FlashBeing, Knock and WAY. CodeWorks provides a multi-year experience in the development of UI/UX and client side interfaces.</description>
+    </item>
+    
+    <item>
+      <title>CodeWorks Srl</title>
+      <link>https://freesoftwarelab.noi.bz.it/it/experts/codeworks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/it/experts/codeworks/</guid>
+      <description>App Testing  MVP Setup
+Developers of FlashBeing, Knock and WAY. CodeWorks provides a multi-year experience in the development of UI/UX and client side interfaces.</description>
+    </item>
+    
+  </channel>
+</rss>

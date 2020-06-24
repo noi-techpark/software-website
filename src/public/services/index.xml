@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Services on Free Software Lab</title>
+    <link>https://freesoftwarelab.noi.bz.it/services/</link>
+    <description>Recent content in Services on Free Software Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://freesoftwarelab.noi.bz.it/services/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>App usability test</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/app_usability/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/app_usability/</guid>
+      <description>&lt;p&gt;The usability test is an evaluation service of web interfaces or applications, performed through specific analysis techniques aimed at understanding if users will perceive the interaction as effective and satisfying in a given context of use. The tests will be performed by internal experts.
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;Web interface to be tested.&lt;/div&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data access</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/data_access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/data_access/</guid>
+      <description>&lt;p&gt;A company that develops software applications needs to access, through a single machine-readable, documented and stable channel, updated and real-time data, released with an Open Data license.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data sharing</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/data_sharing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/data_sharing/</guid>
+      <description>&lt;p&gt;Companies need to give visibility to their data, identify suitable formats, processing algorithms and licenses and use technologies known by application developers.
+The NOI Techpark accompanies the customer in identifying which upgrades are necessary for their IT systems and more or less complex processing that can be applied with artificial intelligence algorithms to transform this data into information processed and useful for the end user.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Demo app development</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/demo_app_development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/demo_app_development/</guid>
+      <description>&lt;p&gt;IT companies need to understand how to best use the data that is made available by different sources.
+The NOI Techpark, through the Open Data Hub project, creates and releases, also in collaboration with companies that bring concrete needs, under Open Source license a set of Demo / Beta apps that can be used by individual companies as a guideline and inspiration for new digital products.&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Develop your innovative prototype</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/prototype/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/prototype/</guid>
+      <description>&lt;p&gt;Create a prototype in a short time and at low cost to understand the potential of your idea: through a network of experts, the Free Software Lab helps you to develop a prototype with innovative technologies that makes your idea more concrete and valuable.&lt;/p&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;A product idea to be validated.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Explore Beacons</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/beacon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/beacon/</guid>
+      <description>&lt;p&gt;A beacon is a Bluetooth device which broadcasts a unique identifier on a regular basis allowing the apps installed on mobile devices to activate specific actions (e.g. push notifications, guide the user, etc.). The beacon, in order to maximize battery life, uses the Bluetooth Low Energy protocol and has no logic inside. If you&#39;ve got interest, come to us and get in touch with Beacons
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Exploring devices&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Explore digital assistant devices</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/homeassistant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/homeassistant/</guid>
+      <description>&lt;p&gt;Digital home and voice assistants have become an integral part of everyday life for many.
+It is time to align and prepare your own solutions to this new way of interaction. In the Free Software Lab you&#39;ll find various digital voice assistants to test and explore. Currently we have following devices available:
+Google Home, Amazon Echo, Amazon Echo Spot, Amazon Echo Show
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Exploring devices&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>littleBits Kits</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/littlebits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/littlebits/</guid>
+      <description>&lt;p&gt;“littleBits is one of the most effective tools in helping students learn basic circuitry concepts.” (Kylie Peppler).
+It is a hands-on learning system of electronic building blocks that allows students of all ages to create with technology.
+They are easy to use and simple to understand, no prior experience required. Young talents can visit the NOI Techpark and learn about circuits,
+we do keep different KITS to explore and to be creative with.
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Exploring devices&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LoRaWAN Network</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/lorawan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/lorawan/</guid>
+      <description>In collaboration with the FESR Beacon Südtirol - Alto Adige project, a network for Internet of Things (IoT) devices has been installed at the NOI Techpark. Companies can test new sensors and products and develop new innovative solutions in the IoT field. The network is based on the LoRaWAN technology, that allows long-range transmissions and low energy consumption, and to start use it you can freely register at the link below.</description>
+    </item>
+    
+    <item>
+      <title>LoRaWAN Starter Kit</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/lorawankit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/lorawankit/</guid>
+      <description>&lt;p&gt;Starter Kit is aimed at experiment Internet of Things application by providing the components needed to build and connect a LoRa based IoT proof of concept. The pre-configured devices and connectors helps speed up the development of use cases including smart city, building, agriculture, industrial, utility and many others.
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Exploring devices&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MVP Setup</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/mvp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/mvp/</guid>
+      <description>&lt;p&gt;To streamline innovation and to discover what features are truly valued by your customers, in this workshop we follow a structured approach to understand what it takes to build a successful product.&lt;/p&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Required&lt;/span&gt;A product idea to be developed.&lt;/div&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Duration&lt;/span&gt;1 day of active workshop for you and your team at the Free Software Lab.&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Oculus Go</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/oculus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/oculus/</guid>
+      <description>&lt;p&gt;Oculus Go marks a new era for VR, one in which anyone can simply slip on a headset and dive into virtual realms. It offers a comfortable fit, solid build, excellent visuals and the promise of more great content to come. This headset will probably take VR mainstream.
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Exploring devices&lt;/span&gt;&lt;/div&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open Source Software</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/oscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/oscode/</guid>
+      <description>&lt;p&gt;This experimental laboratory is the appropriate test environment for software developers, CIOs, and CTOs to evaluate investments in new trends and technologies. It offers premises that are equipped with the latest technologies such as LoRaWAN, Beacon or 5G and instruments such as virtual assistants, as well as, if required, the support of digital experts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Software development automation</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/automation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/automation/</guid>
+      <description>&lt;p&gt;Continuous Integration and Continuous Delivery can help to build and deliver quality software in a reliable way. We will cover a set of principles and techniques that allow you to have control over the release process and its automation while keeping an eye on efficiency, costs and risks.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Understand Kanban</title>
+      <link>https://freesoftwarelab.noi.bz.it/services/kanban/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/services/kanban/</guid>
+      <description>&lt;p&gt;Starting with an overview of flow-based methods, we will tackle the six core practices of Kanban, from visualizing your workflow to collaboratively improving through experimentation. At the end of the day we will compare Kanban and Scrum to see some key differences between these two major frameworks.&lt;/p&gt;
+&lt;div class=&#34;tag font-small&#34;&gt;&lt;span&gt; Duration&lt;/span&gt;1 day of active workshop for you and your team at the Free Software Lab.&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
