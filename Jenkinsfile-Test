@@ -16,7 +16,7 @@ pipeline {
         stage('Configuration'){
             steps {
                 sh '''sed -i -e "s%\\(const url =\\).*\\$%\\1'${NODEMAILER_TEST_ENDPOINT}'%g" src/themes/free-software-lab/static/js/main.js'''
-                sh '''sed -i -e "s%\\(baseURL = \\).*\\$%\\1\\"https://freesoftwarelab.testingmachine.eu/\\"%g" src/config.toml'''
+                sh '''sed -i -e "s%\\(baseURL = \\).*\\$%\\1\\"https://freesoftwarelab.noi.testingmachine.eu/\\"%g" src/config.toml'''
             }
         }
         stage('Build') {
