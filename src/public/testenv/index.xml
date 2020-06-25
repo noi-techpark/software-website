@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test Environment on Free Software Lab</title>
+    <link>https://freesoftwarelab.noi.bz.it/testenv/</link>
+    <description>Recent content in Test Environment on Free Software Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://freesoftwarelab.noi.bz.it/testenv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beacons</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/beacon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/beacon/</guid>
+      <description>A beacon is a Bluetooth device which broadcasts a unique identifier on a regular basis allowing the apps installed on mobile devices to activate specific actions (e.g. push notifications, guide the user, etc.). The beacon, in order to maximize battery life, uses the Bluetooth Low Energy protocol and has no logic inside. If you&#39;ve got interest, come to us and get in touch with Beacons.</description>
+    </item>
+    
+    <item>
+      <title>Digital assistant devices</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/homeassistant/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/homeassistant/</guid>
+      <description>Digital home and voice assistants have become an integral part of everyday life for many. It is time to align and prepare your own solutions to this new way of interaction. In the Free Software Lab you&#39;ll find various digital voice assistants to test and explore. Currently we have following devices available: Google Home, Amazon Echo, Amazon Echo Spot</description>
+    </item>
+    
+    <item>
+      <title>littleBits Kits</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/littlebits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/littlebits/</guid>
+      <description>“littleBits is one of the most effective tools in helping students learn basic circuitry concepts.” (Kylie Peppler). It is a hands-on learning system of electronic building blocks that allows students of all ages to create with technology. They are easy to use and simple to understand, no prior experience required. Young talents can visit the NOI Techpark and learn about circuits, we do keep different KITS to explore and to be creative with.</description>
+    </item>
+    
+    <item>
+      <title>LoRaWAN Network</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/lorawan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/lorawan/</guid>
+      <description>In collaboration with the FESR Beacon Südtirol - Alto Adige project, a network for Internet of Things (IoT) devices has been installed at the NOI Techpark. Companies can test new sensors and products and develop new innovative solutions in the IoT field. The network is based on the LoRaWAN technology, that allows long-range transmissions and low energy consumption, and to start use it you can freely register at the link below.</description>
+    </item>
+    
+    <item>
+      <title>LoRaWAN Starter Kit</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/lorawankit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/lorawankit/</guid>
+      <description>Starter Kit is aimed at experiment Internet of Things application by providing the components needed to build and connect a LoRa based IoT proof of concept. The pre-configured devices and connectors helps speed up the development of use cases including smart city, building, agriculture, industrial, utility and many others.</description>
+    </item>
+    
+    <item>
+      <title>Oculus Go</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/oculus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/oculus/</guid>
+      <description>Oculus Go marks a new era for VR, one in which anyone can simply slip on a headset and dive into virtual realms. It offers a comfortable fit, solid build, excellent visuals and the promise of more great content to come. This headset will probably take VR mainstream.</description>
+    </item>
+    
+    <item>
+      <title>Open Source Software</title>
+      <link>https://freesoftwarelab.noi.bz.it/testenv/oscode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://freesoftwarelab.noi.bz.it/testenv/oscode/</guid>
+      <description>This experimental laboratory is the appropriate test environment for software developers, CIOs, and CTOs to evaluate investments in new trends and technologies. It offers premises that are equipped with the latest technologies such as LoRaWAN, Beacon or 5G and instruments such as virtual assistants, as well as, if required, the support of digital experts.</description>
+    </item>
+    
+  </channel>
+</rss>

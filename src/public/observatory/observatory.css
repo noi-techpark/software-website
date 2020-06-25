@@ -1,0 +1,31 @@
+#observatory .container {
+    padding: 0; }
+    #observatory .container .card {
+      height: 450px;
+      width: 100%;
+      margin: 0 -10vw;
+      padding: 0 10vw; }
+      #observatory .container .card.even {
+        background: white; }
+      #observatory .container .card.odd {
+        background: #f9f9f9; }
+      #observatory .container .card .flex {
+        position: relative;
+        width: 100%; }
+        #observatory .container .card .flex .images {
+          font-size: 0;
+          height: 350px;
+          width: 247px; }
+          #observatory .container .card .flex .images .image {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border: 2px solid;
+            border-color: black;
+            background-size: cover;
+            margin-right: 8%; }
+        #observatory .container .card .flex .content {
+          width: 50vw;
+          max-width: 950px; }
+          #observatory .container .card .flex .content button {
+            margin-top: 25px; }
