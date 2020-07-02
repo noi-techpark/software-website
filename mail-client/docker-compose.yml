@@ -4,7 +4,7 @@ services:
   app:
     build:
       context: .
-      dockerfile: ../docker/dockerfile-node
+      dockerfile: infrastructure/Dockerfile
       target: dev
     restart: unless-stopped
     command: npm start
