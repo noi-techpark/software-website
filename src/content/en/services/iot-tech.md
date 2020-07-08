@@ -1,7 +1,7 @@
 ---
 title: IoT Strategy Paper
 image: iot.jpg
-price: 1'500.00 + VAT 
+price: € 1'500.00 + VAT 
 labbonus: true
 ---
 After an introduction to IoT at the Free Software Lab we'll discuss your needs and identify the best suited technologies for you and your needs. The typical agenda of the workshop will be:
