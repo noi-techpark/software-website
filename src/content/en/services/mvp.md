@@ -1,7 +1,7 @@
 ---
 image: mvp.jpeg
-title: MVP Setup
-price: € 3'000.00  + VAT 
+title: MVP Design
+price: € 1'500.00  + VAT 
 labbonus: true
 --- 
 
