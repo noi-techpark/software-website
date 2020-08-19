@@ -1,6 +1,6 @@
 ---
 title: LoRaWAN Starter Kit
-image: lorawan.jpg
+image: lorawan_board.jpg 
 price: book your rent for free (if available)
 ---
 
