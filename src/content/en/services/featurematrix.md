@@ -1,6 +1,6 @@
 ---
 title: Feature Matrix Analysis
-image: community.png
+image: community.jpg
 price: € 1'500.00 + VAT 
 labbonus: true
 ---
