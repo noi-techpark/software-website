@@ -10,6 +10,8 @@ pipeline {
         AWS_ACCESS_KEY_ID = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
         NODEMAILER_ENDPOINT= credentials('nodemailer_endpoint')
+        HUGO_BASEURL='https://freesoftwarelab.noi.bz.it/'
+        HUGO_GOOGLEANALYTICS= "UA-153698977-1"
     }
 
     stages {
