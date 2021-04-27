@@ -3,7 +3,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Free Software Lab"
 theme = "free-software-lab"
-googleAnalytics = "UA-153698977-1"
+googleAnalytics = ""
 
 
 [imaging]
