@@ -20,8 +20,7 @@ pipeline {
                 sh """
                     cd mail-client
                     rm -f .env
-                    echo '' > .env
-                    echo 'COMPOSE_PROJECT_NAME=${DOCKER_PROJECT_NAME}' >> .env
+                    echo 'COMPOSE_PROJECT_NAME=${DOCKER_PROJECT_NAME}' > .env
                     echo 'DOCKER_IMAGE=${DOCKER_IMAGE}' >> .env
                     echo 'DOCKER_TAG=${DOCKER_TAG}' >> .env
 
@@ -49,7 +48,7 @@ pipeline {
                     sh """
                         cd mail-client
                         (cd infrastructure/ansible && ansible-galaxy install -f -r requirements.yml)
-                        (cd infrastructure/ansible && ansible-playbook --limit=prod deploy.yml --extra-vars "release_name=${BUILD_NUMBER} project_name=${COMPOSE_PROJECT_NAME}")
+                        (cd infrastructure/ansible && ansible-playbook --limit=prod deploy.yml --extra-vars "release_name=${BUILD_NUMBER} project_name=${DOCKER_PROJECT_NAME}")
                     """
                 }
             }
