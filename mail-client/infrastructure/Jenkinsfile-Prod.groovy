@@ -49,7 +49,7 @@ pipeline {
                     sh """
                         cd mail-client
                         (cd infrastructure/ansible && ansible-galaxy install -f -r requirements.yml)
-                        (cd infrastructure/ansible && ansible-playbook --limit=prod deploy.yml --extra-vars "release_name=${BUILD_NUMBER}")
+                        (cd infrastructure/ansible && ansible-playbook --limit=prod deploy.yml --extra-vars "release_name=${BUILD_NUMBER} project_name=${COMPOSE_PROJECT_NAME}")
                     """
                 }
             }
