@@ -71,7 +71,7 @@ var createContactMail =function(b){
     var text = '';
     text += b.name + ' ' + b.surname + '\n';
     text += (b.company===undefined) ? '' : (b.company + '\n');
-    text += b.email + ' ' + b.phone||'' + '\n';
+    text += b.email + ' ' + (b.phone===undefined)?'':b.phone + '\n';
     text += b.message;
     return text;
 }
