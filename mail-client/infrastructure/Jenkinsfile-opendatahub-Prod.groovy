@@ -28,7 +28,7 @@ pipeline {
                 sh '''jq '.serverConfig.auth.pass="'${SMTP_PASSWORD}'"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
                 sh '''jq '.serverConfig.domains[0]="opendatahub.bz.it"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
                 sh '''jq '.mailOptions.from="no-reply@opendatahub.bz.it"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
-                sh '''jq '.mailOptions.to="l.miotto@noi.bz.it"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
+                sh '''jq '.mailOptions.to="help@opendatahub.bz.it"' mail-client/config.json > tmpFile && mv tmpFile mail-client/config.json'''
             }
         }
         stage('Build') {
