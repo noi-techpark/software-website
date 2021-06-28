@@ -76,7 +76,7 @@ var createContactMail =function(b){
         text += b.data;
     }
     if (b['dataset-of-interest'] && b['dataset-of-interest'].length>0){
-        text += b.dataset-of-interest;
+        text += b['dataset-of-interest'];
     }
     text += b.message;
     return text;
