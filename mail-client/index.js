@@ -72,6 +72,12 @@ var createContactMail =function(b){
     text += b.name + ' ' + b.surname + '\n';
     text += (b.company===undefined) ? '' : (b.company + '\n');
     text += b.email + ' ' + (b.phone===undefined)?'':b.phone + '\n';
+    if (b.data && b.data.length>0){
+        text += b.data;
+    }
+    if (b.dataset-of-interest && b.dataset-of-interest.length>0){
+        text += b.dataset-of-interest;
+    }
     text += b.message;
     return text;
 }
