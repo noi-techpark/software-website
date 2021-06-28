@@ -72,11 +72,11 @@ var createContactMail =function(b){
     text += b.name + ' ' + b.surname + '\n';
     text += (b.company===undefined) ? '' : (b.company + '\n');
     text += b.email + ' ' + (b.phone===undefined)?'':b.phone + '\n';
-    if (b.data && b.data.length>0){
-        text += b.data;
+    if (b.data != undefined && b.data.length>0){
+        text += 'Request for data sharing: Dataset of interest: ' + b.data + '\n';
     }
-    if (b['dataset-of-interest'] && b['dataset-of-interest'].length>0){
-        text += b['dataset-of-interest'];
+    if (b['dataset-of-interest'] != undefined && b['dataset-of-interest'].length>0){
+        text += 'Request for data access:\nDataset of interest: ' + b['dataset-of-interest'] + '\n';
     }
     text += b.message;
     return text;
