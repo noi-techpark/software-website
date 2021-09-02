@@ -38,7 +38,6 @@ h2 {
       margin-right: 5%;
       margin-left: 5%;
       width: 90%; } }
-
 .desktop-half {
   margin: 0;
   padding: 0;
@@ -50,7 +49,6 @@ h2 {
   @media (max-width: 979px) {
     .desktop-half {
       width: 100%; } }
-
 .flex {
   display: flex;
   align-items: center;
@@ -1040,7 +1038,6 @@ header {
       border: none !important; }
     header #header-top .title {
       display: none !important; } }
-
 footer {
   height: 60vh;
   margin: 0;
@@ -1103,7 +1100,6 @@ footer {
         height: 520px; }
       footer .map {
         height: 240px; } }
-
 .alert {
   color: #2e3131;
   background-color: white;
@@ -1127,7 +1123,6 @@ footer {
     .alert-cookie {
       width: auto;
       left: 0; } }
-
 .alert-cookie p {
   margin-bottom: 10px; }
 
@@ -1375,7 +1370,6 @@ footer {
           margin-bottom: 75px; }
         #observatory .container .card.odd .images {
           margin-bottom: 0; } }
-
 #services-single h2 {
   margin: 50px 0;
   text-transform: uppercase; }
