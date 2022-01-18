@@ -32,9 +32,9 @@ jobs:
       
       - uses: actions/setup-node@v2
         with:
-          path: mail-client
           node-version: '12'
           cache: 'npm'
           cache-dependency-path: mail-client/package-lock.json
       - name: mail client
-        run : cd mail-client && npm install
+        run : npm install
+        working-directory: mail-client
