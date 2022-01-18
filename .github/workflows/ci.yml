@@ -15,10 +15,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-defaults:
-  run:
-    working-directory: mail-client
-
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -28,16 +24,23 @@ jobs:
       - name: clone into repo
         uses: actions/checkout@v2
 
-      # - name: install hugo
-      #   run: sudo apt-get install hugo
+      - name: install hugo
+        run: sudo apt-get install hugo
 
-      # - name: setup hugo
-      #   run: hugo -s src -d ../target
+      - name: setup hugo
+        run: hugo -s src -d ../target
       
       - uses: actions/setup-node@v2
         with:
           node-version: '12'
-          cache: 'npm'
-          cache-dependency-path: mail-client/package.json
+          # disable caching since it causes problems on post Run:
+          # Post job cleanup.
+          # /opt/hostedtoolcache/node/12.22.9/x64/bin/npm config get cache
+          # /home/runner/work/software-website/software-website/.npm
+          # Error: Cache folder path is retrieved for npm but doesn't exist on disk: /home/runner/work/software-website/software-website/.npm
+
+          # cache: 'npm'
+          # cache-dependency-path: mail-client/package.json
       - name: mail client
         run : npm install
+        working-directory: mail-client
