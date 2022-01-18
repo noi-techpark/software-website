@@ -34,5 +34,6 @@ jobs:
         with:
           node-version: '12'
           cache: 'npm'
+          cache-dependency-path: mail-client/package.json
       - name: mail client
         run : cd mail-client && npm install
