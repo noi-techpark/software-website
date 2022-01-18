@@ -38,6 +38,6 @@ jobs:
         with:
           node-version: '12'
           cache: 'npm'
-          cache-dependency-path: mail-client/package-lock.json
+          cache-dependency-path: mail-client/package.json
       - name: mail client
         run : npm install
