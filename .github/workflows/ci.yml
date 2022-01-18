@@ -18,7 +18,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-20.04
-
+    env:
+      HOME: '.'
     steps:
       - name: clone into repo
         uses: actions/checkout@v2
@@ -28,3 +29,10 @@ jobs:
 
       - name: setup hugo
         run: hugo -s src -d ../target
+      
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+          cache: 'npm'
+      - name: mail client
+        run : cd mail-client && npm install
