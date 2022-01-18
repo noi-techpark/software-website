@@ -15,20 +15,24 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: mail-client
+
 jobs:
   build:
     runs-on: ubuntu-20.04
     env:
       HOME: '.'
     steps:
-      - name: clone into repo
-        uses: actions/checkout@v2
+      # - name: clone into repo
+      #   uses: actions/checkout@v2
 
-      - name: install hugo
-        run: sudo apt-get install hugo
+      # - name: install hugo
+      #   run: sudo apt-get install hugo
 
-      - name: setup hugo
-        run: hugo -s src -d ../target
+      # - name: setup hugo
+      #   run: hugo -s src -d ../target
       
       - uses: actions/setup-node@v2
         with:
@@ -37,4 +41,3 @@ jobs:
           cache-dependency-path: mail-client/package-lock.json
       - name: mail client
         run : npm install
-        working-directory: mail-client
