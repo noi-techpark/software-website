@@ -2,6 +2,8 @@
 
 Repository for the [Free Software Lab](https://software.bz.it) website created with [Hugo](https://gohugo.io/).
 
+[![CI](https://github.com/noi-techpark/software-website/actions/workflows/ci.yml/badge.svg)](https://github.com/noi-techpark/software-website/actions/workflows/ci.yml)
+
 ## Table of contents
 
 - [Gettings started](#getting-started)
