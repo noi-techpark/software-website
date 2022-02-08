@@ -6,7 +6,6 @@ on:
 
 env:
   AWS_REGION : "eu-west-1"
-  NODE_VERSION: 16.x
   WORKING_DIRECTORY: mail-client
 
 jobs:
@@ -25,11 +24,9 @@ jobs:
         run: hugo -s src -d ../target
 
       - name: Test code
-        uses: noi-techpark/github-actions/npm-test@v2
+        uses: noi-techpark/github-actions/npm-build@v2
         with:
-          node-version: ${{ env.NODE_VERSION }}
           working-directory: ${{ env.WORKING_DIRECTORY }}
-          lint-enabled: false
 
   deploy-test:
     runs-on: ubuntu-20.04
