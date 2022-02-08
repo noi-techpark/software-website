@@ -29,6 +29,7 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           working-directory: ${{ env.WORKING_DIRECTORY }}
+          lint-enabled: false
 
   deploy-test:
     runs-on: ubuntu-20.04
