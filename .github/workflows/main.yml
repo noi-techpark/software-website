@@ -47,13 +47,9 @@ jobs:
     env:
       AWS_S3_BUCKET_NAME : 'it.bz.freesoftwarelab.test'
       HUGO_BASEURL: 'https://freesoftwarelab.noi.testingmachine.eu/'
-      MATOMO_SITE_ID: '2'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
-
-      - name: Configuration Matomo
-        run: sed -i -e "s%SITE_ID%${{env.MATOMO_SITE_ID}}%g" src/themes/free-software-lab/layouts/partials/head.html
 
       - name: Install hugo
         run: sudo apt-get install hugo
@@ -83,13 +79,9 @@ jobs:
     env:
       AWS_S3_BUCKET_NAME : "it.bz.freesoftwarelab"
       HUGO_BASEURL: 'https://freesoftwarelab.noi.bz.it/'
-      MATOMO_SITE_ID: '3'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
-
-      - name: Configuration Matomo
-        run: sed -i -e "s%SITE_ID%${{env.MATOMO_SITE_ID}}%g" src/themes/free-software-lab/layouts/partials/head.html
 
       - name: Install hugo
         run: sudo apt-get install hugo
