@@ -1,4 +1,5 @@
 FROM debian:buster-slim
-
-RUN echo 'deb http://http.us.debian.org/debian/ testing non-free contrib main' >> /etc/apt/sources.list
-RUN apt-get update && apt-get install -y hugo
+RUN apt-get update && apt-get install -y curl
+RUN curl -L https://github.com/gohugoio/hugo/releases/download/v0.83.1/hugo_0.83.1_Linux-64bit.deb -o hugo.deb
+# install
+RUN dpkg -i hugo.deb
