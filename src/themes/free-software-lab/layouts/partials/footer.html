@@ -21,23 +21,16 @@
                 {{ range .Site.Menus.footer.Reverse }}
                 <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a> {{end}}
             </div>
-            <div class="alert alert-cookie" style="display: none;">
-                <p>
-                    <b>Cookies</b>
-                </p>
-                <p>
-                    This site or third-party tools used by this make use of cookies necessary for the operation and useful for the purposes described in the cookie policy. If you want to learn more or opt out of all or some cookies, consult the cookie policy. By closing
-                    this banner, scrolling this page, clicking on a link or continuing navigation in any other way, you consent to the use of cookies.
-                </p>
-                <a class="button">Accept</a>
-            </div>
         </div>
         <div class="desktop-half map">
             <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=11.326292753219604%2C46.47684824566896%2C11.336452960968018%2C46.480424107704124&amp;layer=mapnik&amp;marker=46.47863620606133%2C11.331372857093811"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=46.47864&amp;mlon=11.33137#map=18/46.47864/11.33137">Open Map</a></small>
         </div>
     </div>
 </footer>
-<script src="/js/cookie.js" type="text/javascript"></script>
+
+<script defer src="/js/cookieconsent.js"></script>
+<script defer src="/js/cookieconsent-init.js"></script>
+
 </body>
 
 </html>
