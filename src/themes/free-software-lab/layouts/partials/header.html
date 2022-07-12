@@ -107,7 +107,7 @@
                     {{ else }}
                     <div>
                         <h1>{{ .Title }}</h1>
-                        {{ if not .IsPage }}{{ .Content }}{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}
+                        <!--{{ if not .IsPage }}-->{{ .Content }}<!--{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}-->
                     </div>
                     {{ end }}
                 </div>
