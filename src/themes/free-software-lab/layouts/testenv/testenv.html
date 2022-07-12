@@ -1,33 +1,56 @@
 {{ partial "header.html" . }}
 <div id="testenv">
     <div class="container">
-        {{ range .Pages }}
-        <!-- Check odd or even -->
-        <div class="card center-area even">
-            <div class="flex center-y">
-                <div class="images">
-                    {{ if (isset .Params "link") }}
-                    <a target="_blank" href="{{ .Params.Link }}">
-                        <div class="image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
-                    </a>
-                    {{ else }}
-                    <a target="_blank" href="../request">
-                        <div class="image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
-                    </a>
-                    {{ end }}
-                </div>
-                <div class="content">
-                    <h2>{{ .Title }}</h2>
-                    <div class="description">{{ .Content }}</div>
-                    {{ if (isset .Params "link") }}
-                    <button>
-                        <a target="_blank" href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a>
-                    </button> {{ else }}
-                    <button onclick="window.location.href='../request'">{{ .Params.ButtonLabel }}</button> {{ end }}
+        <div class="cards">
+            {{ range .Pages }}
+            <div class="card desktop-half">
+                <div class="card-content">
+                    <div class="image" style="background-image: url('/testenv/{{ .Params.Image }}')" onclick="window.location='{{ .Permalink }}'"></div>
+                    <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                    <div class="content">
+                        {{ .Summary }}
+                    </div>
+                    <div class="footer">
+                        {{ if (isset .Params "buttonlabel") }} {{ if (isset .Params "buttonlink") }}
+                        <button> 
+                            <a target="_blank" href="{{ .Params.ButtonLink }}">{{ .Params.ButtonLabel }}</a>
+                        </button> {{ else }}
+                        <button class="book" data-title="{{ .Title }}">{{  .Params.ButtonLabel }}</button> {{ end }} {{ else }}
+                        <button class="book" data-title="{{ .Title }}">{{ T "book" }}</button> {{ end }}
+                        <div class="price">{{ .Params.Price }} {{ if .Params.labbonus }} (<a href="https://noi.bz.it/en/services/labs/lab-bonus" target="_blank"><u>Lab-Bonus</u></a> available) {{ end }}
+                        </div>
+                    </div>
                 </div>
             </div>
+            {{ end }}
         </div>
-        {{ end }}
+        <div id="booking" class="">
+            <div class="booking-card contact">
+                <div id="service-booking-close" class="hamburger hamburger--squeeze is-active">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <h1>{{ T "book_service" }}</h1>
+                <p id="service-title">Selected Course</p>
+                {{ partial "services_book.html" . }}
+            </div>
+        </div>
+        <div class="section-footer ">
+            <!-- <div>Is one of this services your expertise?</div>
+            <button id"apply">Become a partner</button> -->
+        </div>
+        <div id="application" class="">
+            <!-- <div class="booking-card">
+                <div id="application-booking-close" class="hamburger hamburger--squeeze is-active">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <h1>BECOME A PARTNER</h1>
+                {{ partialCached "services_book.html" . }}
+            </div> -->
+        </div>
     </div>
+    {{ partialCached "footer.html" . }}
 </div>
-{{ partialCached "footer.html" . }}
