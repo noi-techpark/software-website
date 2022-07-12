@@ -1,8 +1,8 @@
-
 ---
-title: Oculus Go
-image1: oculus.jpg
-buttonLabel: Request availability
+title: Explore AR/VR Devices
+image: ar_vr.jpg
+price: book your rent for free (if available)
 ---
+Augmented Reality and Virtual Reality devices are increasily gaining importance thanks to breakthrough technologies like metaverse and cryptocurrencies. At the Free Software Lab you'll find a range of different AR/VR devices to test your next killer application with.
+<!--more--> 
 
-Oculus Go marks a new era for VR, one in which anyone can simply slip on a headset and dive into virtual realms. It offers a comfortable fit, solid build, excellent visuals and the promise of more great content to come. This headset will probably take VR mainstream.

@@ -3,5 +3,4 @@
 title: Free Software Lab
 ---
 
-We help developers to test their technologies <br>
-and learn new development methodologies.
+Our Free Software Lab is the right place for Software Developers, Software Architects, CIOs, CTOs and R&D managers in the digital field, who can experiment, test and get inspired.
