@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+<div id="services-single">
+    <div class="container">
+        <div class="service">
+            <div class="image" style="background-image: url('/testenv/{{ .Params.Image }}')"></div>
+            <div class="content">
+                {{ .Content }}
+                <h2>{{ .Params.Price }}</h2>
+            </div>
+        </div>
+        <div id="booking" class="contact">
+            <h2>{{ T "book_service" }}</h2>
+            <div id="service-title" style="display: none">{{ .Title }}</div>
+            {{ partial "services_book.html" . }}
+        </div>
+    </div>
+</div>
+{{ partialCached "footer.html" . }}
