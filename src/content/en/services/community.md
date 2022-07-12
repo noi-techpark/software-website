@@ -1,5 +1,5 @@
 ---
-image: community.jpg
+image: community_building.jpg
 title: Community Building
 price: (price on request)
 labbonus: true

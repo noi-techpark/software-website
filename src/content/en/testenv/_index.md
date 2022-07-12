@@ -1,6 +1,5 @@
 
 ---
-title: Test Environment
+title: Devices
 ---
-
-We offer an environment to developers to test their ideas and create new ones.
+Before buying equipment, come to us. In fact, at the Free Software Lab, you can try the most modern tools or rent them.

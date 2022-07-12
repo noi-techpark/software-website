@@ -1470,3 +1470,120 @@ footer {
       margin-top: 25px; }
     .contact form #agreement {
       margin-top: 75px; } }
+#testenv h2 {
+  margin-top: 25px; }
+
+#testenv .cards {
+  font-size: 0;
+  margin: 0 auto;
+  width: auto;
+  border-bottom: 1px solid #cccccc; }
+  #testenv .cards .card {
+    box-sizing: border-box;
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    border-top: 1px solid #cccccc; }
+    @media (min-width: 980px) {
+      #testenv .cards .card:nth-child(even) {
+        border-left: 1px solid #cccccc; } }
+    #testenv .cards .card .card-content {
+      text-align: left;
+      position: relative;
+      height: 675px;
+      margin: 25px; }
+      #testenv .cards .card .card-content .image {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer; }
+      #testenv .cards .card .card-content .footer {
+        position: absolute;
+        bottom: 0; }
+        #testenv .cards .card .card-content .footer .price {
+          display: inline-block;
+          margin-left: 10px; }
+
+#testenv #booking {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background: rgba(255, 255, 255, 0.9); }
+  #testenv #booking.is-active {
+    display: block; }
+  #testenv #booking .booking-card {
+    position: fixed;
+    width: 70vw;
+    height: 90vh;
+    left: 50vw;
+    top: 50vh;
+    margin-left: -35vw;
+    margin-top: -45vh;
+    box-sizing: border-box;
+    padding: 25px 75px;
+    overflow: scroll;
+    border: #cccccc solid 1px;
+    background: white; }
+    #testenv #booking .booking-card #service-title {
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin: 10px 0 75px 3px; }
+    #testenv #booking .booking-card #service-booking-close {
+      position: fixed;
+      margin-top: 7px;
+      right: 16vw; }
+    #testenv #booking .booking-card .hamburger.is-active .hamburger-inner,
+    #testenv #booking .booking-card .hamburger.is-active .hamburger-inner::before,
+    #testenv #booking .booking-card .hamburger.is-active .hamburger-inner::after {
+      background-color: #7e7e7e; }
+    #testenv #booking .booking-card form .loader {
+      margin: 0;
+      margin-left: 10px;
+      margin-bottom: -5px; }
+
+#testenv .section-footer {
+  font-weight: 300;
+  font-size: 1.2rem; }
+  #testenv .section-footer button {
+    margin-top: 1.5rem; }
+
+#testenv .section-header {
+  font-weight: 300;
+  font-size: 1.2rem; }
+  #testenv .section-header button {
+    margin-top: 1.5rem; }
+
+@media (max-width: 1023px) {
+  #testenv #booking .booking-card {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    top: 0;
+    left: 0; }
+    #testenv #booking .booking-card #service-booking-close {
+      right: 25px; } }
+
+@media (max-width: 979px) {
+  #testenv .cards .card .card-content {
+    margin-left: 0;
+    margin-right: 0; } }
+
+@media (max-width: 767px) {
+  #testenv .cards .card .card-content {
+    height: 850px; }
+    #testenv .cards .card .card-content .image {
+      height: 250px; } }
+
+@media (max-width: 500px) {
+  #testenv .cards .card .card-content {
+    height: auto;
+    padding-bottom: 60px; }
+  #testenv #booking .booking-card #service-title {
+    margin-bottom: 50px; }
+  #testenv .booking-card {
+    padding-left: 50px !important;
+    padding-right: 75px !important; } }

@@ -98,12 +98,17 @@
         <div class="header-bottom container">
             <div class="card center-area odd">
                 <div class="flex center-y">
+                    {{ if .IsHome }}
+                    <div style="width: 70%;">
+                        <h1>{{ .Title }}</h1>
+                        {{ if not .IsPage }}{{ .Content }}{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}
+                    </div>
+                    <div class="sponsor"></div>
+                    {{ else }}
                     <div>
                         <h1>{{ .Title }}</h1>
                         {{ if not .IsPage }}{{ .Content }}{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}
                     </div>
-                    {{ if .IsHome }}
-                    <div class="sponsor"></div>
                     {{ end }}
                 </div>
             </div>
