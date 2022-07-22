@@ -47,6 +47,7 @@ jobs:
     env:
       AWS_S3_BUCKET_NAME : 'it.bz.freesoftwarelab.test'
       HUGO_BASEURL: 'https://freesoftwarelab.noi.testingmachine.eu/'
+      MAIL_CLIENT: 'http://63.33.73.203:1009/'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
@@ -55,8 +56,8 @@ jobs:
         run: sudo apt-get install hugo
 
       - name: Configuration hugo
-        run: |
-          sed -i -re "s%^(const url = ).*$%\1'\${{secrets.NODEMAILER_TEST_ENDPOINT}}'%g" src/themes/free-software-lab/static/js/main.js
+        run: | 
+          sed -i -e "s%https://example.com%${{env.MAIL_CLIENT}}%g" src/themes/odh-fbe/static/js/main.js
           sed -i -e "s%https://example.com%${{env.HUGO_BASEURL}}%g" src/config.toml
 
       - name: Build hugo
@@ -79,6 +80,7 @@ jobs:
     env:
       AWS_S3_BUCKET_NAME : "it.bz.freesoftwarelab"
       HUGO_BASEURL: 'https://freesoftwarelab.noi.bz.it/'
+      MAIL_CLIENT: 'https://mail.software.bz.it/'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
@@ -88,7 +90,7 @@ jobs:
 
       - name: Configuration hugo
         run: | 
-          sed -i -e "s%\\(const url =\\).*\\$%\\1'${{secrets.NODEMAILER_ENDPOINT}}'%g" src/themes/free-software-lab/static/js/main.js
+          sed -i -e "s%https://example.com%${{env.MAIL_CLIENT}}%g" src/themes/odh-fbe/static/js/main.js
           sed -i -e "s%https://example.com%${{env.HUGO_BASEURL}}%g" src/config.toml
 
       - name: Build hugo
