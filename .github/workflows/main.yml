@@ -47,7 +47,7 @@ jobs:
     env:
       AWS_S3_BUCKET_NAME : 'it.bz.freesoftwarelab.test'
       HUGO_BASEURL: 'https://freesoftwarelab.noi.testingmachine.eu/'
-      MAIL_CLIENT: 'http://63.33.73.203:1009/'
+      MAIL_CLIENT: 'https://mail.software.bz.it/'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
