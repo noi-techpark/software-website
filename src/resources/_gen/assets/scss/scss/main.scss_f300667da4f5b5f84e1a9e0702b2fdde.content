@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap");
+@import url("https://fonts.testingmachine.eu/source-sans-pro/style.css");
 html,
 body {
   background: white;
