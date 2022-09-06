@@ -81,6 +81,7 @@ jobs:
       AWS_S3_BUCKET_NAME : "it.bz.freesoftwarelab"
       HUGO_BASEURL: 'https://freesoftwarelab.noi.bz.it/'
       MAIL_CLIENT: 'https://mail.software.bz.it/'
+      SCRIPTS_HOST: 'https://scripts.opendatahub.com'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
@@ -92,6 +93,12 @@ jobs:
         run: | 
           sed -i -e "s%https://example.com%${{env.MAIL_CLIENT}}%g" src/themes/free-software-lab/static/js/main.js
           sed -i -e "s%https://example.com%${{env.HUGO_BASEURL}}%g" src/config.toml
+
+      - name: Change scripts host to prod
+        run: |
+          sed -i -e "s%https://scripts.opendatahub.testingmachine.eu%${{env.SCRIPTS_HOST}}%g" src/themes/free-software-lab/layouts/partials/footer.html
+          sed -i -e "s%https://scripts.opendatahub.testingmachine.eu%${{env.SCRIPTS_HOST}}%g" src/themes/free-software-lab/layouts/partials/head.html
+
 
       - name: Build hugo
         run: hugo -s src -d ../target
