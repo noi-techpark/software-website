@@ -1,29 +1,24 @@
 {{ partial "header.html" . }}
 <div id="trends">
     <div class="container">
+
         {{ range .Pages }}
         <!-- Check odd or even -->
-        <div class="card center-area even">
-            <div class="flex center-y">
-                <div class="flex title">
-                    <h2>{{ .Title }}</h2>
-                </div>
-                <div class="images">
-                    <div class="image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
-                </div>
-                <div class="content">
-                    <div class="description">{{ .Content }}</div>
-                    <input id="prompt" placeholder="Two penguins in the dolomites">
-                    <button onclick="ga('send', 'event', {
+        <div class="title">
+            <h2>{{ .Title }}</h2>
+        </div>
+        <div class="description">{{ .Content }}</div>
+        <input id="prompt" placeholder="Two penguins in the dolomites">
+        <button onclick="ga('send', 'event', {
                         eventCategory: 'Observatory',
                         eventAction: 'Download - {{ .Params.Link }}',
                       });">
-                        <a target="_blank" href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a>
-                    </button>
-                </div>
-            </div>
-        </div>
+            <a target="_blank" href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a>
+        </button>
+        <div id="generated_image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
+
         {{ end }}
     </div>
+</div>
 </div>
 {{ partialCached "footer.html" . }}
