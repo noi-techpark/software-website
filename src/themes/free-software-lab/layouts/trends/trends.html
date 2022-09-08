@@ -8,14 +8,28 @@
             <h2>{{ .Title }}</h2>
         </div>
         <div class="description">{{ .Content }}</div>
-        <input id="prompt" placeholder="Two penguins in the dolomites">
-        <button onclick="ga('send', 'event', {
-                        eventCategory: 'Observatory',
-                        eventAction: 'Download - {{ .Params.Link }}',
-                      });">
-            <a target="_blank" href="{{ .Params.Link }}">{{ .Params.ButtonLabel }}</a>
+        <input id="prompt" placeholder="Enter your text">
+        <button onclick="generateImage()">
+            {{ .Params.ButtonLabel }}
         </button>
+
         <div id="generated_image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
+
+        <div id="examples">
+            <div class="description">Examples</div>
+            <button class="example-button" onclick="generateImage('Two penguins in the dolomites')">
+                Two penguins in the dolomites
+            </button>
+            <button class="example-button" onclick="generateImage('Portrait of Mona Lisa in Bolzano')">
+                Portrait of Mona Lisa in Bolzano
+            </button>
+            <button class="example-button" onclick="generateImage('Soccer match on the Himalaya')">
+                Soccer match on the Himalaya
+            </button>
+            <button class="example-button" onclick="generateImage('Drink wine with Robin Hood')">
+                Drink wine with Robin Hood
+            </button>
+        </div>
 
         {{ end }}
     </div>
