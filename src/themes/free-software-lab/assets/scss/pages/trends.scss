@@ -1,0 +1,71 @@
+#trends {
+    margin-bottom: 30px;
+    height: 66vh;
+    .container {
+        padding: 0;
+        .card {
+            height: 450px;
+            width: 100%;
+            margin: 0 -10vw;
+            padding: 0 10vw;
+            &.even {
+                background: white;
+            }
+            &.odd {
+                background: $light-bg;
+            }
+            .flex {
+                position: relative;
+                width: 100%;
+                .title {
+                    margin-bottom: 25px;
+                }
+                .images {
+                    font-size: 0;
+                    height: 512px;
+                    width: 512px;
+                    .image {
+                        height: 100%;
+                        width: 100%;
+                        border: 2px solid;
+                        border-color: black;
+                        background-size: cover;
+                        margin-right: 8%;
+                    }
+                }
+                .content {
+                    width: 65vw;
+                    max-width: 900px;
+                    button {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+    // Responsive
+    @media (max-width: 979px) {
+        .container {
+            margin-bottom: 25px;
+            .card {
+                height: auto;
+                .flex {
+                    .images {
+                        height: 100vw;
+                        width: 100vw;
+                        margin: 0px auto;
+                    }
+                    .content {
+                        width: 100%;
+                    }
+                }
+                &.even .content {
+                    margin-bottom: 75px;
+                }
+                &.odd .images {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
