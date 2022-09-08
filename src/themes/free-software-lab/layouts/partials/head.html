@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="/testenv/testenv.css" type="text/css" media="screen" />-->
     <script src="/js/main.js" type="text/javascript"></script>
 
+    <!-- Load hCapctha for trends site, if needed other sites add OR clause to if, if needed globally remove if -->
+    {{ if eq .Section "trends"}}
+    <script src="https://js.hcaptcha.com/1/api.js?hl=en" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha"></script>
+    {{ end }}
+
     <script src="/js/{{ .Section }}.js" type="text/javascript"></script>
     {{ template "_internal/google_analytics_async.html" . }}
 

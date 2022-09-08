@@ -8,17 +8,24 @@
             <h2>{{ .Title }}</h2>
         </div>
         <div class="description">{{ .Content }}</div>
-        <input id="prompt" placeholder="Enter your text">
-        <button onclick="generateImage()">
-            {{ .Params.ButtonLabel }}
-        </button>
+        
+        <div id="main_buttons">
+            <input id="prompt" placeholder="Enter your text">
+            <div id="captcha" data-callback="captchaVerify" data-expired-callback="captchaExpiered" class="h-captcha"
+                data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
+
+            <button id="generate_button" disabled onclick="generateImage()">
+                {{ .Params.ButtonLabel }}
+            </button>
+        </div>
+
 
         <div id="generated_image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
 
         <div id="examples">
             <div class="description">Examples</div>
-            <button class="example-button" onclick="generateImage('Two penguins in the dolomites')">
-                Two penguins in the dolomites
+            <button class="example-button" onclick="generateImage('Two penguins in the Dolomites')">
+                Two penguins in the Dolomites
             </button>
             <button class="example-button" onclick="generateImage('Portrait of Mona Lisa in Bolzano')">
                 Portrait of Mona Lisa in Bolzano
@@ -33,6 +40,5 @@
 
         {{ end }}
     </div>
-</div>
 </div>
 {{ partialCached "footer.html" . }}
