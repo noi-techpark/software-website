@@ -1370,6 +1370,56 @@ footer {
           margin-bottom: 75px; }
         #observatory .container .card.odd .images {
           margin-bottom: 0; } }
+#trends {
+  margin-bottom: 30px;
+  height: 66vh; }
+  #trends .container {
+    padding: 0; }
+    #trends .container .card {
+      height: 450px;
+      width: 100%;
+      margin: 0 -10vw;
+      padding: 0 10vw; }
+      #trends .container .card.even {
+        background: white; }
+      #trends .container .card.odd {
+        background: #f9f9f9; }
+      #trends .container .card .flex {
+        position: relative;
+        width: 100%; }
+        #trends .container .card .flex .title {
+          margin-bottom: 25px; }
+        #trends .container .card .flex .images {
+          font-size: 0;
+          height: 512px;
+          width: 512px; }
+          #trends .container .card .flex .images .image {
+            height: 100%;
+            width: 100%;
+            border: 2px solid;
+            border-color: black;
+            background-size: cover;
+            margin-right: 8%; }
+        #trends .container .card .flex .content {
+          width: 65vw;
+          max-width: 900px; }
+          #trends .container .card .flex .content button {
+            margin-top: 25px; }
+  @media (max-width: 979px) {
+    #trends .container {
+      margin-bottom: 25px; }
+      #trends .container .card {
+        height: auto; }
+        #trends .container .card .flex .images {
+          height: 100vw;
+          width: 100vw;
+          margin: 0px auto; }
+        #trends .container .card .flex .content {
+          width: 100%; }
+        #trends .container .card.even .content {
+          margin-bottom: 75px; }
+        #trends .container .card.odd .images {
+          margin-bottom: 0; } }
 #services-single h2 {
   margin: 50px 0;
   text-transform: uppercase; }

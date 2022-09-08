@@ -37,6 +37,11 @@ name   = "Observatory"
 weight = 30
 
 [[languages.en.menu.main]]
+url    = "/trends"
+name   = "Trends"
+weight = 30
+
+[[languages.en.menu.main]]
 url    = "/contact"
 name   = "Contact"
 weight = 40
