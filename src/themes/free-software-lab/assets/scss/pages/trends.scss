@@ -1,40 +1,32 @@
 #trends {
   margin-bottom: 30px;
-  height: 90vh;
+  height: 900px;
   width: 100%;
-  #generated_image {
-    height: 512px;
-    width: 1024px;
-    background-color: white;
-    border: 1px solid black;
-  }
   #prompt {
     width: 40%;
     margin-bottom: 20px;
   }
+  #generated_image {
+    height: 448px;
+    width: 986px;
+    background-color: white;
+    border: 1px solid black;
+  }
+  #examples {
+    margin-top: 15px;
+  }
+  .example-button {
+    margin: 10px 10px 0px 0px;
+  }
 }
 // Responsive
 @media (max-width: 979px) {
-  .container {
-    margin-bottom: 25px;
-    .card {
-      height: auto;
-      .flex {
-        .images {
-          height: 100vw;
-          width: 100vw;
-          margin: 0px auto;
-        }
-        .content {
-          width: 100%;
-        }
-      }
-      &.even .content {
-        margin-bottom: 75px;
-      }
-      &.odd .images {
-        margin-bottom: 0;
-      }
+  #trends {
+    #generated_image {
+      height: 38vh;
+      width: 87vw;
+      background-color: white;
+      border: 1px solid black;
     }
   }
 }
