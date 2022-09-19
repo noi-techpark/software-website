@@ -1,17 +1,15 @@
 let hcaptchaToken = null;
 
-let generateImage = function (examplePrompt) {
+let generateImage = function (type, examplePrompt = undefined) {
     console.log('generate image');
     console.log(hcaptchaToken)
 
 
     let promptInput = document.getElementById('prompt');
-    let amountInput = document.getElementById('amount');
-    let resolutionInput = document.getElementById('resolution');
-
-    let amount = amountInput.value
     let prompt = promptInput.value
-    let resolution = resolutionInput.value
+
+    let resolution = type == 'portrait' ? "576x768" : "768x576";
+    let amount = type == 'portrait' ? 9 : 5;
 
     if (examplePrompt != undefined) {
         console.log('example');
@@ -38,11 +36,12 @@ let generateImage = function (examplePrompt) {
     }
 }
 
-function captchaVerify (token){
+function captchaVerify(token) {
     hcaptchaToken = token
 
     //enable buttons
-    document.getElementById('generate_button').disabled = false
+    document.getElementById('generate_portrait').disabled = false
+    document.getElementById('generate_landscape').disabled = false
     document.getElementById('example_button_1').disabled = false
     document.getElementById('example_button_2').disabled = false
     document.getElementById('example_button_3').disabled = false
@@ -50,11 +49,12 @@ function captchaVerify (token){
 
 }
 
-function captchaExpiered (){
+function captchaExpiered() {
     hcaptchaToken = null
 
     // disable buttons
-    document.getElementById('generate_button').disabled = true
+    document.getElementById('generate_portrait').disabled = true
+    document.getElementById('generate_landscape').disabled = true
     document.getElementById('example_button_1').disabled = true
     document.getElementById('example_button_2').disabled = true
     document.getElementById('example_button_3').disabled = true
