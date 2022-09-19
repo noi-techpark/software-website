@@ -3,14 +3,17 @@
   height: 900px;
   width: 100%;
   #prompt {
-    width: 80%;
-    margin: 10px 10px 0px 0px;
+    width: 40%;
+    margin: 10px 10px 10px 0px;
   }
   #generated_image {
     height: 448px;
     width: 986px;
     background-color: white;
     border: 1px solid black;
+  }
+  #parameters{
+    width: 100%;
   }
   #main_buttons{
     display: inline-flex;

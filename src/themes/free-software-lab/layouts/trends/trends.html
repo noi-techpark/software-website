@@ -8,13 +8,25 @@
             <h2>{{ .Title }}</h2>
         </div>
         <div class="description">{{ .Content }}</div>
-        
-        <div id="main_buttons">
+
+        <div id="parameters">
             <input id="prompt" placeholder="Enter your text">
+            <label for="amount">Amount</label>
+            <input id="amount" type="number" min="1" max="16" value="1">
+            <label for="resolution">Resolution</label>
+            <select name="resolution" id="resolution">
+                <option value="1024x576">1024x576</option>
+                <option value="768x576">768x576</option>
+                <option value="576x768">576x768</option>
+                <option value="576x576">576x576</option>
+            </select>
+        </div>
+
+        <div id="main_buttons">
             <div id="captcha" data-callback="captchaVerify" data-expired-callback="captchaExpiered" class="h-captcha"
                 data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
 
-            <button id="generate_button" disabled onclick="generateImage()">
+            <button id="generate_button" disabled="true" onclick="generateImage()">
                 {{ .Params.ButtonLabel }}
             </button>
         </div>
@@ -24,16 +36,20 @@
 
         <div id="examples">
             <div class="description">Examples</div>
-            <button class="example-button" onclick="generateImage('Two penguins in the Dolomites')">
+            <button id="example_button_1" class="example-button" disabled="true"
+                onclick="generateImage('Two penguins in the Dolomites')">
                 Two penguins in the Dolomites
             </button>
-            <button class="example-button" onclick="generateImage('Portrait of Mona Lisa in Bolzano')">
+            <button id="example_button_2" class="example-button" disabled="true"
+                onclick="generateImage('Portrait of Mona Lisa in Bolzano')">
                 Portrait of Mona Lisa in Bolzano
             </button>
-            <button class="example-button" onclick="generateImage('Soccer match on the Himalaya')">
+            <button id="example_button_3" class="example-button" disabled="true"
+                onclick="generateImage('Soccer match on the Himalaya')">
                 Soccer match on the Himalaya
             </button>
-            <button class="example-button" onclick="generateImage('Drink wine with Robin Hood')">
+            <button id="example_button_4" class="example-button" disabled="true"
+                onclick="generateImage('Drink wine with Robin Hood')">
                 Drink wine with Robin Hood
             </button>
         </div>
