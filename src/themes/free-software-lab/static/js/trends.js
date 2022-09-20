@@ -1,39 +1,70 @@
+const API_URL = "https://api.1006.org/524e45354e44326a67750a/0.95/";
+const GET_STATUS_POLL_TIMEOUT = 2000
+
 let hcaptchaToken = null;
 
-let generateImage = function (type, examplePrompt = undefined) {
+
+const generateImage = function (type, examplePrompt = undefined) {
     console.log('generate image');
     console.log(hcaptchaToken)
 
 
-    let promptInput = document.getElementById('prompt');
-    let prompt = promptInput.value
+    const promptInput = document.getElementById('prompt');
+    const prompt = promptInput.value
 
-    let resolution = type == 'portrait' ? "576x768" : "768x576";
-    let amount = type == 'portrait' ? 9 : 5;
+    const resolution = type == 'portrait' ? "576x768" : "768x576";
+    const amount = type == 'portrait' ? 9 : 5;
 
-    if (examplePrompt != undefined) {
-        console.log('example');
+    const encodedPrompt = examplePrompt != undefined ? encodeURI(examplePrompt) : encodeURI(prompt)
 
+    // set prompt input to example value
+    if (examplePrompt != undefined)
         promptInput.value = examplePrompt;
 
-        let url = `https://1006.org/sd-ws/addJob?prompt=${examplePrompt}&number=${amount}&resolution=${resolution}&hcaptcha=${hcaptchaToken}`;
-        console.log(url);
+    const url = API_URL + `addJob?prompt=${encodedPrompt}&number=${amount}&resolution=${resolution}&captcha=${hcaptchaToken}`;
+    console.log(url);
 
-        //   fetch(url).then(function(response) {
-        //     return response.json();
-        //   }).then(function(data) {
-        //     console.log(data);
-        //   }).catch(function() {
-        //     console.log('Booo');
-        //   });
-    }
-    else {
-        console.log('user');
+    // start job and poll/show status until complete
+    fetch(url).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        console.log(data);
+        const imageToken = data
 
-        let url = `https://1006.org/sd-ws/addJob?prompt=${prompt}&number=${amount}&resolution=${resolution}&hcaptcha=${hcaptchaToken}`;
-        console.log(url);
+        // start polling
+        const imageUrl = pollStatus(imageToken);
+        showImages(imageUrl);
+    }).catch(function (error) {
+        console.log(error);
+    });
+}
 
-    }
+function pollStatus(token) {
+    const url = API_URL + `getJobStatus?token=${token}`;
+
+    fetch(url).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        console.log(data);
+
+        if (data["State"] == "complete") {
+            return data["ImageUrl"];
+        } else {
+            updateState(data["Age"], data["QueueLength"]);
+            setTimeout(getStatus, GET_STATUS_POLL_TIMEOUT);
+        }
+    }).catch(function (error) {
+        console.log(error);
+    });
+    return null;
+}
+
+function updateState(age, queueLength) {
+    console.log(`age: ${age} queueLength: ${queueLength}`)
+}
+
+function showImages(url) {
+    console.log(`show images from ${url} coming soon...`)
 }
 
 function captchaVerify(token) {
