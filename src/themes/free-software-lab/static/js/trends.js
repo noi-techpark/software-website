@@ -1,10 +1,10 @@
 const API_URL = "https://api.1006.org/524e45354e44326a67750a/0.95/";
-const GET_STATUS_POLL_TIMEOUT = 2000
+const GET_STATUS_POLL_TIMEOUT = 5000
 
 let hcaptchaToken = null;
 
 
-const generateImage = function (type, examplePrompt = undefined) {
+const generateImage = async function (type, examplePrompt = undefined) {
     console.log('generate image');
     console.log(hcaptchaToken)
 
@@ -24,47 +24,42 @@ const generateImage = function (type, examplePrompt = undefined) {
     const url = API_URL + `addJob?prompt=${encodedPrompt}&number=${amount}&resolution=${resolution}&captcha=${hcaptchaToken}`;
     console.log(url);
 
-    // start job and poll/show status until complete
-    fetch(url).then(function (response) {
-        return response.json();
-    }).then(function (data) {
-        console.log(data);
-        const imageToken = data
-
-        // start polling
-        const imageUrl = pollStatus(imageToken);
-        showImages(imageUrl);
-    }).catch(function (error) {
-        console.log(error);
-    });
+    try {
+        const res = await fetch(url);
+        const imageToken = await res.json();
+        await pollStatus(imageToken);
+    } catch (e) {
+        console.error("addJob error", e);
+    }
 }
 
-function pollStatus(token) {
+async function pollStatus(token) {
     const url = API_URL + `getJobStatus?token=${token}`;
 
-    fetch(url).then(function (response) {
-        return response.json();
-    }).then(function (data) {
-        console.log(data);
+    let response;
+    try {
+        const res = await fetch(url);
+        response = await res.json();
+        console.log(response);
+    } catch (e) {
+        console.error("getStatus error", e);
+    }
 
-        if (data["State"] == "complete") {
-            return data["ImageUrl"];
-        } else {
-            updateState(data["Age"], data["QueueLength"]);
-            setTimeout(getStatus, GET_STATUS_POLL_TIMEOUT);
-        }
-    }).catch(function (error) {
-        console.log(error);
-    });
-    return null;
+    if (response && response["State"] == "complete") {
+        // generating finished and showing image
+        showImages(response["ImageUrl"]);
+    } else {
+        updateState(response["Age"], response["QueueLength"]);
+        setTimeout(pollStatus, GET_STATUS_POLL_TIMEOUT, token);
+    }
 }
 
 function updateState(age, queueLength) {
-    console.log(`age: ${age} queueLength: ${queueLength}`)
+    console.log(`age: ${age} queueLength: ${queueLength}`);
 }
 
 function showImages(url) {
-    console.log(`show images from ${url} coming soon...`)
+    console.log(`show images from ${url} coming soon...`);
 }
 
 function captchaVerify(token) {
