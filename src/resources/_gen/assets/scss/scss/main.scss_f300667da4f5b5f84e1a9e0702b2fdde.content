@@ -161,6 +161,10 @@ input {
     white-space: nowrap;
     margin: 0 10px 0 0; }
 
+#page-not-found {
+  margin-top: 2vh;
+  height: 52vh; }
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
