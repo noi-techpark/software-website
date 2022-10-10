@@ -1,52 +1,86 @@
 {{ partial "header.html" . }}
 <div id="trends">
-    <div class="container">
-
-        {{ range .Pages }}
-        <!-- Check odd or even -->
-        <div class="title">
-            <h2>{{ .Title }}</h2>
-        </div>
-        <div class="description">{{ .Content }}</div>
-
-        <div id="main_buttons">
-            <input id="prompt" placeholder="Enter your text">
-
-            <div id="captcha" data-callback="captchaVerify" data-expired-callback="captchaExpiered" class="h-captcha"
-                data-sitekey="10000000-ffff-ffff-ffff-000000000001"></div>
-
-            <button id="generate_portrait" class="generate_button" disabled="true" onclick="generateImage('portrait')">
-                Portrait
-            </button>
-            <button id="generate_landscape" class="generate_button" disabled="true" onclick="generateImage('landscape')">
-                Landscape
-            </button>
-        </div>
-
-
-        <div id="generated_image" style="background-image: url('./{{ .Params.Image1 }}')"></div>
-
-        <div id="examples">
-            <div class="description">Examples</div>
-            <button id="example_button_1" class="example-button" disabled="true"
-                onclick="generateImage('landscape','Two penguins in the Dolomites')">
-                Two penguins in the Dolomites
-            </button>
-            <button id="example_button_2" class="example-button" disabled="true"
-                onclick="generateImage('portrait','Portrait of Mona Lisa in Bolzano')">
-                Portrait of Mona Lisa in Bolzano
-            </button>
-            <button id="example_button_3" class="example-button" disabled="true"
-                onclick="generateImage('landscape','Soccer match on the Himalaya')">
-                Soccer match on the Himalaya
-            </button>
-            <button id="example_button_4" class="example-button" disabled="true"
-                onclick="generateImage('landscape','Drink wine with Robin Hood')">
-                Drink wine with Robin Hood
-            </button>
-        </div>
-
-        {{ end }}
+  <div class="container">
+    {{ range .Pages }}
+    <!-- Check odd or even -->
+    <div class="title">
+      <h2>{{ .Title }}</h2>
     </div>
+    <div class="description">{{ .Content }}</div>
+
+    <div id="main_buttons">
+      <input id="prompt" placeholder="Enter your text" />
+
+      <div
+        id="captcha"
+        data-callback="captchaVerify"
+        data-expired-callback="captchaExpiered"
+        class="h-captcha"
+        data-sitekey="10000000-ffff-ffff-ffff-000000000001"
+      ></div>
+
+      <button
+        id="generate_portrait"
+        class="generate_button"
+        disabled="true"
+        onclick="generateImage('portrait')"
+      >
+        Portrait
+      </button>
+      <button
+        id="generate_landscape"
+        class="generate_button"
+        disabled="true"
+        onclick="generateImage('landscape')"
+      >
+        Landscape
+      </button>
+    </div>
+
+    <div
+      id="generated_image"
+      style="background-image: url('./{{ .Params.Image1 }}')"
+    >
+      <div id="progress_bar"></div>
+    </div>
+
+    <div id="examples">
+      <div class="description">Examples</div>
+      <button
+        id="example_button_1"
+        class="example-button"
+        disabled="true"
+        onclick="generateImage('landscape','Two penguins in the Dolomites')"
+      >
+        Two penguins in the Dolomites
+      </button>
+      <button
+        id="example_button_2"
+        class="example-button"
+        disabled="true"
+        onclick="generateImage('portrait','Portrait of Mona Lisa in Bolzano')"
+      >
+        Portrait of Mona Lisa in Bolzano
+      </button>
+      <button
+        id="example_button_3"
+        class="example-button"
+        disabled="true"
+        onclick="generateImage('landscape','Soccer match on the Himalaya')"
+      >
+        Soccer match on the Himalaya
+      </button>
+      <button
+        id="example_button_4"
+        class="example-button"
+        disabled="true"
+        onclick="generateImage('landscape','Drink wine with Robin Hood')"
+      >
+        Drink wine with Robin Hood
+      </button>
+    </div>
+
+    {{ end }}
+  </div>
 </div>
 {{ partialCached "footer.html" . }}
