@@ -26,7 +26,7 @@ const generateImage = async function (type, examplePrompt = undefined) {
     console.log(url);
 
     try {
-        const res = await fetch(url);
+        const res = await fetch(url, { mode: 'no-cors'});
         const imageToken = await res.json();
         await pollStatus(imageToken);
     } catch (e) {
@@ -39,7 +39,7 @@ async function pollStatus(token) {
 
     let response;
     try {
-        const res = await fetch(url);
+        const res = await fetch(url, { mode: 'no-cors'});
         response = await res.json();
         console.log(response);
     } catch (e) {
