@@ -3,6 +3,8 @@ const GET_STATUS_POLL_TIMEOUT = 5000
 
 let hcaptchaToken = null;
 let progressBar = document.getElementById("progress_bar");
+let progressStatus = document.getElementById("progress_status");
+
 
 
 const generateImage = async function (type, examplePrompt = undefined) {
@@ -26,11 +28,19 @@ const generateImage = async function (type, examplePrompt = undefined) {
     console.log(url);
 
     try {
-        const res = await fetch(url, { mode: 'no-cors'});
+        // const options = {
+        //     method: 'GET',
+        //     headers: new Headers({'Access-Control-Allow-Origin': '*'}),
+        //     mode: 'no-cors'
+        // };
+        // const res = await fetch(url, options);
+        const res = await fetch(url);
+        console.log(res);
         const imageToken = await res.json();
         await pollStatus(imageToken);
     } catch (e) {
         console.error("addJob error", e);
+        resetProgress();
     }
 }
 
@@ -39,11 +49,19 @@ async function pollStatus(token) {
 
     let response;
     try {
-        const res = await fetch(url, { mode: 'no-cors'});
+        // const options = {
+        //     method: 'GET',
+        //     headers: new Headers({'Access-Control-Allow-Origin': '*'}),
+        //     mode: 'no-cors'
+        // };
+        // const res = await fetch(url, options);
+        const res = await fetch(url, {headers: new Headers({'Access-Control-Allow-Origin': '*'})});
+        console.log(res);
         response = await res.json();
         console.log(response);
     } catch (e) {
         console.error("getStatus error", e);
+        resetProgress();
     }
 
     if (response && response["State"] == "complete") {
@@ -62,10 +80,14 @@ function updateState(age, queueLength) {
     let width = (age * 100) / ((6 * 7 * queueLength) + (6 * 7));
     console.log("progress bar witdh: " + width + "%");
     progressBar.style.width = width + "%";
+
+    progressStatus.innerHTML = `age: ${age} queue length: ${queueLength}`;
 }
 
 function showImages(url) {
     console.log(`show images from ${url} coming soon...`);
+    // reset progress bar again
+    resetProgress();
 }
 
 function captchaVerify(token) {
@@ -91,4 +113,9 @@ function captchaExpiered() {
     document.getElementById('example_button_2').disabled = true
     document.getElementById('example_button_3').disabled = true
     document.getElementById('example_button_4').disabled = true
+}
+
+function resetProgress(){
+    progressBar.style.width = "0%";
+    progressStatus.innerHTML = "";
 }

@@ -1387,9 +1387,12 @@ footer {
     background-color: white;
     border: 1px solid black; }
   #trends #progress_bar {
-    width: 0%;
+    width: 50%;
     height: 448px;
-    background-color: lightgrey; }
+    background-color: rgba(211, 211, 211, 0.5); }
+  #trends #progress_status {
+    padding-left: 20px;
+    padding-top: 10px; }
   #trends #main_buttons {
     display: inline-flex;
     width: 986px; }
