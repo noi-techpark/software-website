@@ -1386,6 +1386,10 @@ footer {
     width: 986px;
     background-color: white;
     border: 1px solid black; }
+  #trends #progress_bar {
+    width: 0%;
+    height: 448px;
+    background-color: lightgrey; }
   #trends #main_buttons {
     display: inline-flex;
     width: 986px; }

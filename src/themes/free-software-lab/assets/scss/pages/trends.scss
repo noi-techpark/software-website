@@ -12,6 +12,14 @@
     background-color: white;
     border: 1px solid black;
   }
+
+  
+  #progress_bar {
+    width: 0%;
+    height: 448px;
+    background-color: lightgrey;
+  }
+
   #main_buttons{
     display: inline-flex;
     width: 986px;
