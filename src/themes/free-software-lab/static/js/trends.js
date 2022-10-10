@@ -34,7 +34,7 @@ const generateImage = async function (type, examplePrompt = undefined) {
         //     mode: 'no-cors'
         // };
         // const res = await fetch(url, options);
-        const res = await fetch(url);
+        const res = await fetch(url, { mode: 'cors'});
         console.log(res);
         const imageToken = await res.json();
         await pollStatus(imageToken);

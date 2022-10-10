@@ -7,6 +7,7 @@
     margin: 10px 10px 10px 0px;
   }
   #generated_image {
+    position: relative;
     height: 448px;
     width: 986px;
     background-color: white;
@@ -14,12 +15,13 @@
   }
   
   #progress_bar {
-    width: 0%;
+    width: 60%;
     height: 448px;
     background-color: rgba(211, 211, 211, 0.5);
   }
 
   #progress_status {
+    position: absolute;
     padding-left: 20px;
     padding-top: 10px;
   }

@@ -1382,15 +1382,17 @@ footer {
     width: 40%;
     margin: 10px 10px 10px 0px; }
   #trends #generated_image {
+    position: relative;
     height: 448px;
     width: 986px;
     background-color: white;
     border: 1px solid black; }
   #trends #progress_bar {
-    width: 50%;
+    width: 60%;
     height: 448px;
     background-color: rgba(211, 211, 211, 0.5); }
   #trends #progress_status {
+    position: absolute;
     padding-left: 20px;
     padding-top: 10px; }
   #trends #main_buttons {
