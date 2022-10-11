@@ -28,12 +28,6 @@ const generateImage = async function (type, examplePrompt = undefined) {
     console.log(url);
 
     try {
-        // const options = {
-        //     method: 'GET',
-        //     headers: new Headers({'Access-Control-Allow-Origin': '*'}),
-        //     mode: 'no-cors'
-        // };
-        // const res = await fetch(url, options);
         const res = await fetch(url);
         console.log(res);
         const imageToken = await res.json();
@@ -49,12 +43,6 @@ async function pollStatus(token) {
 
     let response;
     try {
-        // const options = {
-        //     method: 'GET',
-        //     headers: new Headers({'Access-Control-Allow-Origin': '*'}),
-        //     mode: 'no-cors'
-        // };
-        // const res = await fetch(url, options);
         const res = await fetch(url);
         console.log(res);
         response = await res.json();
