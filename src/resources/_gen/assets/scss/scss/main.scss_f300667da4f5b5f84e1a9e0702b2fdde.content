@@ -1381,15 +1381,31 @@ footer {
   #trends #prompt {
     width: 40%;
     margin: 10px 10px 10px 0px; }
-  #trends #generated_image {
+  #trends #generated_image_container {
     position: relative;
     height: 448px;
     width: 986px;
     background-color: white;
     border: 1px solid black; }
-  #trends #progress_bar {
+  #trends #generated_gallery {
+    position: relative;
+    height: 90px;
+    width: 986px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; }
+  #trends .gallery_image {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer; }
+  #trends #generated_image {
+    object-fit: contain; }
+  #trends #progress_bar, #trends #progress_bar_gallery {
     width: 0%;
-    height: 448px;
+    height: 100%;
     background-color: rgba(211, 211, 211, 0.5); }
   #trends #progress_status {
     position: absolute;

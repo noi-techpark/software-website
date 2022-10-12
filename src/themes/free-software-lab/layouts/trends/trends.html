@@ -37,13 +37,30 @@
       </button>
     </div>
 
-    <div
-      id="generated_image"
-      style="background-image: url('./{{ .Params.Image1 }}')"
-    >
+    <div id="generated_image_container">
       <div id="progress_status"></div>
       <div id="progress_bar"></div>
     </div>
+
+    <div id="generated_gallery">
+      <div id="progress_bar_gallery"></div>
+    </div>
+
+    <!-- <button
+      id="generate_portrait"
+      class="generate_button"
+      onclick="showImages('test-portrait', 9)"
+    >
+      Test gallery
+    </button>
+
+    <button
+      id="generate_portrait"
+      class="generate_button"
+      onclick="resetImages()"
+    >
+      Reset gallery
+    </button> -->
 
     <div id="examples">
       <div class="description">Examples</div>
