@@ -7,9 +7,6 @@ let hcaptchaToken = null;
 
 
 const generateImage = async function (type, examplePrompt = undefined) {
-    console.log('generate image');
-    console.log(hcaptchaToken)
-
     showProgress();
 
     const promptInput = document.getElementById('prompt');
@@ -25,11 +22,9 @@ const generateImage = async function (type, examplePrompt = undefined) {
         promptInput.value = examplePrompt;
 
     const url = API_URL + `addJob?prompt=${encodedPrompt}&number=${amount}&resolution=${resolution}&captcha=${hcaptchaToken}`;
-    console.log(url);
 
     try {
         const res = await fetch(url);
-        console.log(res);
         const imageToken = await res.json();
         // const imageToken = "test-" + type;
         await pollStatus(imageToken, amount);
@@ -45,9 +40,7 @@ async function pollStatus(token, amount) {
     let response;
     try {
         const res = await fetch(url);
-        console.log(res);
         response = await res.json();
-        console.log(response);
     } catch (e) {
         console.error("getStatus error", e);
         resetProgress();
@@ -75,7 +68,6 @@ function updateState(age, queueLength) {
     // max 100
     width = width > 100 ? 100 : width
 
-    console.log("progress bar witdh: " + width + "%");
     progressBar.style.width = width + "%";
     progressBarGallery.style.width = width + "%";
 
@@ -96,13 +88,16 @@ function showImages(token, amount) {
     // image
     showImage(token, 0)
 
+    // amount == 9 means portrait; keep width to correct aspect ratio of 1.33 
+    width = amount == 9 ? 67.66 : 119.7;
+
     // gallery
     for (let i = 0; i < amount; i++) {
         let galleryImage = document.createElement("img");
 
         galleryImage.setAttribute("src", `http://noi-sd.s3-website-eu-west-1.amazonaws.com/${token}/${i}.png`);
         galleryImage.setAttribute("height", "90");
-        galleryImage.setAttribute("width", "60");
+        galleryImage.setAttribute("width", width);
         galleryImage.setAttribute("class", "gallery_image");
         galleryImage.setAttribute("alt", `Generated image number ${i}`);
         galleryImage.setAttribute("onclick", `showImage("${token}",${i})`);

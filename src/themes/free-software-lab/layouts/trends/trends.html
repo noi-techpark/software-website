@@ -41,9 +41,9 @@
       <div id="progress_status"></div>
       <div id="progress_bar"></div>
     </div>
-
-    <div id="generated_gallery">
+    <div id="generated_gallery_container">
       <div id="progress_bar_gallery"></div>
+      <div id="generated_gallery"></div>
     </div>
 
     <!-- <button
@@ -51,8 +51,16 @@
       class="generate_button"
       onclick="showImages('test-portrait', 9)"
     >
-      Test gallery
+      Test portrait
     </button>
+
+    <button
+    id="generate_portrait"
+    class="generate_button"
+    onclick="showImages('test-landscape', 5)"
+  >
+    Test landscape
+  </button>
 
     <button
       id="generate_portrait"
