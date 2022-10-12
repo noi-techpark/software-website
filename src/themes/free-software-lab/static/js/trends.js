@@ -63,11 +63,16 @@ async function pollStatus(token) {
 function updateState(age, queueLength) {
     let progressBar = document.getElementById("progress_bar");
     let progressStatus = document.getElementById("progress_status");
+
+    age = Math.ceil(age)
     
-    console.log(`age: ${age} queueLength: ${queueLength}`);
+    console.log(`Waiting since ${age} seconds. The queue is currently ${queueLength} long`);
 
     // update progress bar using average 7 images and 6 seconds for every image generation in the queue and itself
     let width = (age) / ((6 * 7 * queueLength) + (6 * 7)) * 100;
+    // max 100
+    width = width > 100 ? 100 : width
+    
     console.log("progress bar witdh: " + width + "%");
     progressBar.style.width = width + "%";
 
@@ -106,6 +111,8 @@ function captchaExpiered() {
 }
 
 function resetProgress(){
+    let progressBar = document.getElementById("progress_bar");
+    let progressStatus = document.getElementById("progress_status");
     progressBar.style.width = "0%";
     progressStatus.innerHTML = "";
 }
