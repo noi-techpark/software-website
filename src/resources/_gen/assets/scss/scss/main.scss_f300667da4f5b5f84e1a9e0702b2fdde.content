@@ -1388,7 +1388,7 @@ footer {
     background-color: white;
     border: 1px solid black; }
   #trends #progress_bar {
-    width: 75%;
+    width: 0%;
     height: 448px;
     background-color: rgba(211, 211, 211, 0.5); }
   #trends #progress_status {

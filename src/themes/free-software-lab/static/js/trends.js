@@ -2,8 +2,7 @@ const API_URL = "https://api.1006.org/524e45354e44326a67750a/0.95/";
 const GET_STATUS_POLL_TIMEOUT = 5000
 
 let hcaptchaToken = null;
-let progressBar = document.getElementById("progress_bar");
-let progressStatus = document.getElementById("progress_status");
+
 
 
 
@@ -62,10 +61,13 @@ async function pollStatus(token) {
 }
 
 function updateState(age, queueLength) {
+    let progressBar = document.getElementById("progress_bar");
+    let progressStatus = document.getElementById("progress_status");
+    
     console.log(`age: ${age} queueLength: ${queueLength}`);
 
-    // update progress bar
-    let width = (age * 100) / ((6 * 7 * queueLength) + (6 * 7));
+    // update progress bar using average 7 images and 6 seconds for every image generation in the queue and itself
+    let width = (age) / ((6 * 7 * queueLength) + (6 * 7)) * 100;
     console.log("progress bar witdh: " + width + "%");
     progressBar.style.width = width + "%";
 
