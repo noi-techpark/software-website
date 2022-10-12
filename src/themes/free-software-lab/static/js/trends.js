@@ -30,9 +30,8 @@ const generateImage = async function (type, examplePrompt = undefined) {
     try {
         const res = await fetch(url);
         console.log(res);
-        // const imageToken = await res.json();
-
-        const imageToken = "test-" + type;
+        const imageToken = await res.json();
+        // const imageToken = "test-" + type;
         await pollStatus(imageToken, amount);
     } catch (e) {
         console.error("addJob error", e);
