@@ -1,8 +1,7 @@
 const API_URL = "https://api.1006.org/524e45354e44326a67750a/0.95/";
-const GET_STATUS_POLL_TIMEOUT = 5000
+const GET_STATUS_POLL_TIMEOUT = 2000
 
 let hcaptchaToken = null;
-
 
 
 
@@ -66,8 +65,7 @@ function updateState(age, queueLength) {
 
     age = Math.ceil(age)
     
-    console.log(`Waiting since ${age} seconds. The queue is currently ${queueLength} long`);
-
+    let expectedWaitTime = ((6 * 7 * queueLength) + (6 * 7))
     // update progress bar using average 7 images and 6 seconds for every image generation in the queue and itself
     let width = (age) / ((6 * 7 * queueLength) + (6 * 7)) * 100;
     // max 100
@@ -76,7 +74,13 @@ function updateState(age, queueLength) {
     console.log("progress bar witdh: " + width + "%");
     progressBar.style.width = width + "%";
 
-    progressStatus.innerHTML = `age: ${age} queue length: ${queueLength}`;
+    if (queueLength > 1)
+        progressStatus.innerHTML = `${queueLength} people are currently in the queue.<br>Expected wait time is ${expectedWaitTime}.<br>Waiting since ${age} seconds.`;
+    else if (queueLength == 1)
+        progressStatus.innerHTML = `1 person are currently in the queue.<br>Expected wait time is ${expectedWaitTime}.<br>Waiting since ${age} seconds.`;
+    else
+        progressStatus.innerHTML = `Generating your image now...<br>Expected wait time is ${expectedWaitTime}.<br>Waiting since ${age} seconds.`;
+
 }
 
 function showImages(url) {
