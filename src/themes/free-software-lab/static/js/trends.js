@@ -26,7 +26,6 @@ const generateImage = async function (type, examplePrompt = undefined) {
     try {
         const res = await fetch(url);
         const imageToken = await res.json();
-        // const imageToken = "test-" + type;
         await pollStatus(imageToken, amount);
     } catch (e) {
         console.error("addJob error", e);

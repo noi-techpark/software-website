@@ -1405,7 +1405,7 @@ footer {
   #trends #generated_image {
     object-fit: contain; }
   #trends #progress_bar, #trends #progress_bar_gallery {
-    width: 10%;
+    width: 0%;
     height: 100%;
     background-color: rgba(211, 211, 211, 0.5); }
   #trends #progress_status {
