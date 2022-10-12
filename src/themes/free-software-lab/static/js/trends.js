@@ -6,7 +6,7 @@ let hcaptchaToken = null;
 
 
 
-const generateImage = async function (type, examplePrompt = undefined) {
+async function generateImage (type, examplePrompt = undefined) {
     showProgress();
 
     const promptInput = document.getElementById('prompt');
@@ -16,6 +16,11 @@ const generateImage = async function (type, examplePrompt = undefined) {
     const amount = type == 'portrait' ? 9 : 5;
 
     const encodedPrompt = examplePrompt != undefined ? encodeURI(examplePrompt) : encodeURI(prompt)
+
+    if(encodedPrompt.length == 0){
+        alert("Please enter a prompt");
+        return;
+    }
 
     // set prompt input to example value
     if (examplePrompt != undefined)
