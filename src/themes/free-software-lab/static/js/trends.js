@@ -1,4 +1,4 @@
-const API_URL = "https://stable-diffusion.testingmachine.eu";
+const API_URL = "https://stable-diffusion.opendatahub.com";
 const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
 const GET_STATUS_POLL_TIMEOUT = 1000
 
