@@ -1,5 +1,5 @@
-const API_URL = "https://api.1006.org/524e45354e44326a67750a/0.95/";
-const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com/";
+const API_URL = "https://stable-diffusion.testingmachine.eu";
+const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
 const GET_STATUS_POLL_TIMEOUT = 1000
 
 let hcaptchaToken = null;
@@ -26,7 +26,7 @@ async function generateImage (type, examplePrompt = undefined) {
     if (examplePrompt != undefined)
         promptInput.value = examplePrompt;
 
-    const url = API_URL + `addJob?prompt=${encodedPrompt}&number=${amount}&resolution=${resolution}&captcha=${hcaptchaToken}`;
+    const url = `${API_URL}/addJob?prompt=${encodedPrompt}&number=${amount}&resolution=${resolution}&captcha=${hcaptchaToken}`;
 
     try {
         const res = await fetch(url);
@@ -39,7 +39,7 @@ async function generateImage (type, examplePrompt = undefined) {
 }
 
 async function pollStatus(token, amount) {
-    const url = API_URL + `getJobStatus?token=${token}`;
+    const url = `${API_URL}/getJobStatus?token=${token}`;
 
     let response;
     try {
