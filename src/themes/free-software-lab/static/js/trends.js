@@ -1,5 +1,5 @@
 const API_URL = "https://api.1006.org/524e45354e44326a67750a/0.95/";
-const S3_URL = "http://noi-sd.s3-website-eu-west-1.amazonaws.com/";
+const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com/";
 const GET_STATUS_POLL_TIMEOUT = 1000
 
 let hcaptchaToken = null;
@@ -99,7 +99,7 @@ function showImages(token, amount) {
     for (let i = 0; i < amount; i++) {
         let galleryImage = document.createElement("img");
 
-        galleryImage.setAttribute("src", `http://noi-sd.s3-website-eu-west-1.amazonaws.com/${token}/0000${i}.png`);
+        galleryImage.setAttribute("src", `${S3_URL}/${token}/0000${i}.png`);
         galleryImage.setAttribute("height", "90");
         galleryImage.setAttribute("width", width);
         galleryImage.setAttribute("class", "gallery_image");
@@ -116,7 +116,7 @@ function showImage(token, id) {
 
     // show image
     let image = document.createElement("img");
-    image.setAttribute("src", `http://noi-sd.s3-website-eu-west-1.amazonaws.com/${token}/0000${id}.png`);
+    image.setAttribute("src", `${S3_URL}/${token}/0000${id}.png`);
     image.setAttribute("height", "448");
     image.setAttribute("width", "986");
     image.setAttribute("id", "generated_image");
