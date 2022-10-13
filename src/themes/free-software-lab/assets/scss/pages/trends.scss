@@ -1,80 +1,103 @@
 #trends {
-  margin-bottom: 30px;
-  height: 900px;
+  height: 110vh;
   width: 100%;
-  #prompt {
-    width: 40%;
-    margin: 10px 10px 10px 0px;
-  }
-  #generated_image_container {
-    position: relative;
-    height: 448px;
-    width: 986px;
-    background-color: white;
-    border: 1px solid black;
-  }
+}
 
-  #generated_gallery_container {
-    position: relative;
-    height: 90px;
-    width: 986px;
-    background-color: white;
-    border: 1px solid black;
-    margin-top: 10px;
-  }
+#prompt {
+  width: 40vw;
+  margin: 10px 10px 10px 0px;
+}
 
-  #generated_gallery {
-    display: flex;
-    justify-content: center; 
-  }
+#generated_image_container {
+  position: relative;
+  height: 48vh;
+  width: 52vw;
+  background-color: white;
+  border: 1px solid black;
+}
 
-  .gallery_image{
-    position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-  }
+#generated_gallery_container {
+  position: relative;
+  height: 5vw;
+  width: 52vw;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 2vh;
+}
 
-  #generated_image {
-    object-fit: contain;
-  }
-  
-  #progress_bar, #progress_bar_gallery  {
-    width: 0%;
-    height: 100%;
-    background-color: rgba(211, 211, 211, 0.5);
-  }
+#generated_gallery {
+  display: flex;
+  justify-content: center;
+  height: 5vw;
+}
 
-  #progress_status {
-    position: absolute;
-    padding-left: 20px;
-    padding-top: 10px;
-  }
+.gallery_image {
+  position: relative;
+  cursor: pointer;
+}
 
-  #main_buttons{
-    display: inline-flex;
-    width: 986px;
-  }
-  .generate_button{
-    margin: 0px 0px 10px 20px;
-  }
-  #examples {
-    margin-top: 15px;
-  }
-  .example-button {
-    margin: 10px 10px 0px 0px;
-  }
+.contain-aspect {
+  object-fit: contain;
+}
 
+#progress_bar,
+#progress_bar_gallery {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.5);
+}
 
+#progress_status {
+  position: absolute;
+  padding-left: 3vw;
+  padding-top: 2vh;
+}
+
+#main_buttons {
+  display: inline-flex;
+  width: 52vw;
+}
+.generate_button {
+  margin: 0px 0px 10px 20px;
+}
+#examples {
+  margin-top: 15px;
+}
+.example-button {
+  margin: 10px 10px 0px 0px;
 }
 // Responsive
 @media (max-width: 979px) {
   #trends {
-    #generated_image {
-      height: 38vh;
-      width: 87vw;
-      background-color: white;
-      border: 1px solid black;
-    }
+    height: 150vh;
+    width: 100%;
+  }
+
+  #generated_image_container {
+    height: 38vh;
+    width: 90vw;
+  }
+  
+  #generated_gallery_container {
+    height: 12vw;
+    width: 90vw;
+  }
+
+  #generated_gallery {
+    height: 12vw;
+    width: 90vw;
+  }
+
+  #prompt {
+    width: 90vw;
+  }
+
+  #main_buttons {
+    display: block;
+    width: 90vw;
+  }
+
+  .generate_button {
+    width: 35vw;
   }
 }

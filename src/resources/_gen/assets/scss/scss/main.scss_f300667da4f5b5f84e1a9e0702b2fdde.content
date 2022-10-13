@@ -1375,59 +1375,84 @@ footer {
         #observatory .container .card.odd .images {
           margin-bottom: 0; } }
 #trends {
-  margin-bottom: 30px;
-  height: 900px;
+  height: 110vh;
   width: 100%; }
-  #trends #prompt {
-    width: 40%;
-    margin: 10px 10px 10px 0px; }
-  #trends #generated_image_container {
-    position: relative;
-    height: 448px;
-    width: 986px;
-    background-color: white;
-    border: 1px solid black; }
-  #trends #generated_gallery_container {
-    position: relative;
-    height: 90px;
-    width: 986px;
-    background-color: white;
-    border: 1px solid black;
-    margin-top: 10px; }
-  #trends #generated_gallery {
-    display: flex;
-    justify-content: center; }
-  #trends .gallery_image {
-    position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
-    cursor: pointer; }
-  #trends #generated_image {
-    object-fit: contain; }
-  #trends #progress_bar, #trends #progress_bar_gallery {
-    width: 0%;
-    height: 100%;
-    background-color: rgba(211, 211, 211, 0.5); }
-  #trends #progress_status {
-    position: absolute;
-    padding-left: 20px;
-    padding-top: 10px; }
-  #trends #main_buttons {
-    display: inline-flex;
-    width: 986px; }
-  #trends .generate_button {
-    margin: 0px 0px 10px 20px; }
-  #trends #examples {
-    margin-top: 15px; }
-  #trends .example-button {
-    margin: 10px 10px 0px 0px; }
+
+#prompt {
+  width: 40vw;
+  margin: 10px 10px 10px 0px; }
+
+#generated_image_container {
+  position: relative;
+  height: 48vh;
+  width: 52vw;
+  background-color: white;
+  border: 1px solid black; }
+
+#generated_gallery_container {
+  position: relative;
+  height: 5vw;
+  width: 52vw;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 2vh; }
+
+#generated_gallery {
+  display: flex;
+  justify-content: center;
+  height: 5vw; }
+
+.gallery_image {
+  position: relative;
+  cursor: pointer; }
+
+.contain-aspect {
+  object-fit: contain; }
+
+#progress_bar,
+#progress_bar_gallery {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.5); }
+
+#progress_status {
+  position: absolute;
+  padding-left: 3vw;
+  padding-top: 2vh; }
+
+#main_buttons {
+  display: inline-flex;
+  width: 52vw; }
+
+.generate_button {
+  margin: 0px 0px 10px 20px; }
+
+#examples {
+  margin-top: 15px; }
+
+.example-button {
+  margin: 10px 10px 0px 0px; }
 
 @media (max-width: 979px) {
-  #trends #generated_image {
+  #trends {
+    height: 150vh;
+    width: 100%; }
+  #generated_image_container {
     height: 38vh;
-    width: 87vw;
-    background-color: white;
-    border: 1px solid black; } }
+    width: 90vw; }
+  #generated_gallery_container {
+    height: 12vw;
+    width: 90vw; }
+  #generated_gallery {
+    height: 12vw;
+    width: 90vw; }
+  #prompt {
+    width: 90vw; }
+  #main_buttons {
+    display: block;
+    width: 90vw; }
+  .generate_button {
+    width: 35vw; } }
 
 #services-single h2 {
   margin: 50px 0;

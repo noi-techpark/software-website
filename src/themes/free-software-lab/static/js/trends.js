@@ -100,9 +100,9 @@ function showImages(token, amount) {
         let galleryImage = document.createElement("img");
 
         galleryImage.setAttribute("src", `${S3_URL}/${token}/0000${i}.png`);
-        galleryImage.setAttribute("height", "90");
-        galleryImage.setAttribute("width", width);
-        galleryImage.setAttribute("class", "gallery_image");
+        galleryImage.setAttribute("height", "100%");
+        galleryImage.setAttribute("width", "100%");
+        galleryImage.setAttribute("class", "gallery_image contain-aspect");
         galleryImage.setAttribute("alt", `Generated image number ${i}`);
         galleryImage.setAttribute("onclick", `showImage("${token}",${i})`);
         document.getElementById("generated_gallery").appendChild(galleryImage);
@@ -117,9 +117,10 @@ function showImage(token, id) {
     // show image
     let image = document.createElement("img");
     image.setAttribute("src", `${S3_URL}/${token}/0000${id}.png`);
-    image.setAttribute("height", "448");
-    image.setAttribute("width", "986");
+    image.setAttribute("height", "100%");
+    image.setAttribute("width", "100%");
     image.setAttribute("id", "generated_image");
+    image.setAttribute("class", "contain-aspect");
     image.setAttribute("alt", `Generated image number 0`);
     document.getElementById("generated_image_container").appendChild(image);
 }
