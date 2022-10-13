@@ -6,7 +6,7 @@ let hcaptchaToken = null;
 
 
 
-async function generateImage (type, examplePrompt = undefined) {
+async function generateImage(type, examplePrompt = undefined) {
     showProgress();
 
     const promptInput = document.getElementById('prompt');
@@ -17,7 +17,7 @@ async function generateImage (type, examplePrompt = undefined) {
 
     const encodedPrompt = examplePrompt != undefined ? encodeURI(examplePrompt) : encodeURI(prompt)
 
-    if(encodedPrompt.length == 0){
+    if (encodedPrompt.length == 0) {
         alert("Please enter a prompt");
         return;
     }
@@ -67,6 +67,11 @@ function updateState(age, queueLength) {
     age = Math.ceil(age)
 
     let expectedWaitTime = ((6 * 7 * queueLength) + (6 * 7))
+
+    // transform expected time in minutes if greater than 60 seconds
+    if (expectedWaitTime > 60)
+        expectedWaitTime = Math.floor(expectedWaitTime / 60)
+
     // update progress bar using average 7 images and 6 seconds for every image generation in the queue and itself
     let width = (age) / ((6 * 7 * queueLength) + (6 * 7)) * 100;
     // max 100
@@ -76,9 +81,9 @@ function updateState(age, queueLength) {
     progressBarGallery.style.width = width + "%";
 
     if (queueLength > 1)
-        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue. Ready in ${expectedWaitTime} seconds`;
+        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue. Ready in ${expectedWaitTime} ` + expectedWaitTime > 60 ? `minutes` : `seconds`;
     else if (queueLength == 1)
-        progressStatus.innerHTML = `1 other job is currently in the queue ${age}/${expectedWaitTime}. Ready in ${expectedWaitTime} seconds`;
+        progressStatus.innerHTML = `1 other job is currently in the queue ${age}/${expectedWaitTime}. Ready in ${expectedWaitTime} ` + expectedWaitTime > 60 ? `minutes` : `seconds`;
     else
         progressStatus.innerHTML = `Generating your images now...`;
 
