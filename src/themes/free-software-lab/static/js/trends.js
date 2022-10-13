@@ -6,7 +6,7 @@ let hcaptchaToken = null;
 
 
 
-async function generateImage(type, examplePrompt = undefined) {
+async function generateImage(type) {
     showProgress();
 
     const promptInput = document.getElementById('prompt');
@@ -15,16 +15,12 @@ async function generateImage(type, examplePrompt = undefined) {
     const resolution = type == 'portrait' ? "576x768" : "768x576";
     const amount = type == 'portrait' ? 9 : 5;
 
-    const encodedPrompt = examplePrompt != undefined ? encodeURI(examplePrompt) : encodeURI(prompt)
+    const encodedPrompt = encodeURI(prompt);
 
     if (encodedPrompt.length == 0) {
         alert("Please enter a prompt");
         return;
     }
-
-    // set prompt input to example value
-    if (examplePrompt != undefined)
-        promptInput.value = examplePrompt;
 
     const url = `${API_URL}/addJob?prompt=${encodedPrompt}&number=${amount}&resolution=${resolution}&captcha=${hcaptchaToken}`;
 
@@ -70,7 +66,7 @@ function updateState(age, queueLength) {
     let timeUnit = 'seconds';
 
     // transform expected time in minutes if greater than 60 seconds
-    if (expectedWaitTime > 60){
+    if (expectedWaitTime > 60) {
         expectedWaitTime = Math.floor(expectedWaitTime / 60);
         timeUnit = 'minutes';
     }
@@ -86,10 +82,19 @@ function updateState(age, queueLength) {
     if (queueLength > 1)
         progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue. Ready in ${expectedWaitTime} ${timeUnit}`;
     else if (queueLength == 1)
-        progressStatus.innerHTML = `1 other job is currently in the queue ${age}/${expectedWaitTime}. Ready in ${expectedWaitTime} ${timeUnit}`;
+        progressStatus.innerHTML = `1 other job is currently in the queue. Ready in ${expectedWaitTime} ${timeUnit}`;
     else
         progressStatus.innerHTML = `Generating your images now...`;
 
+}
+
+function showExample(examplePrompt, token, amount) {
+    const promptInput = document.getElementById('prompt');
+
+    resetImages();
+
+    promptInput.value = examplePrompt;
+    showImages(token, amount);
 }
 
 function showImages(token, amount) {
@@ -139,10 +144,10 @@ function captchaVerify(token) {
     //enable buttons
     document.getElementById('generate_portrait').disabled = false
     document.getElementById('generate_landscape').disabled = false
-    document.getElementById('example_button_1').disabled = false
-    document.getElementById('example_button_2').disabled = false
-    document.getElementById('example_button_3').disabled = false
-    document.getElementById('example_button_4').disabled = false
+    // document.getElementById('example_button_1').disabled = false
+    // document.getElementById('example_button_2').disabled = false
+    // document.getElementById('example_button_3').disabled = false
+    // document.getElementById('example_button_4').disabled = false
 
 }
 
@@ -152,10 +157,10 @@ function captchaExpiered() {
     // disable buttons
     document.getElementById('generate_portrait').disabled = true
     document.getElementById('generate_landscape').disabled = true
-    document.getElementById('example_button_1').disabled = true
-    document.getElementById('example_button_2').disabled = true
-    document.getElementById('example_button_3').disabled = true
-    document.getElementById('example_button_4').disabled = true
+    // document.getElementById('example_button_1').disabled = true
+    // document.getElementById('example_button_2').disabled = true
+    // document.getElementById('example_button_3').disabled = true
+    // document.getElementById('example_button_4').disabled = true
 }
 
 function resetProgress() {
