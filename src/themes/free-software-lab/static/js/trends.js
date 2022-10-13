@@ -99,7 +99,7 @@ function showImages(token, amount) {
     for (let i = 0; i < amount; i++) {
         let galleryImage = document.createElement("img");
 
-        galleryImage.setAttribute("src", `http://noi-sd.s3-website-eu-west-1.amazonaws.com/${token}/${i}.png`);
+        galleryImage.setAttribute("src", `http://noi-sd.s3-website-eu-west-1.amazonaws.com/${token}/0000${i}.png`);
         galleryImage.setAttribute("height", "90");
         galleryImage.setAttribute("width", width);
         galleryImage.setAttribute("class", "gallery_image");
@@ -116,7 +116,7 @@ function showImage(token, id) {
 
     // show image
     let image = document.createElement("img");
-    image.setAttribute("src", `http://noi-sd.s3-website-eu-west-1.amazonaws.com/${token}/${id}.png`);
+    image.setAttribute("src", `http://noi-sd.s3-website-eu-west-1.amazonaws.com/${token}/0000${id}.png`);
     image.setAttribute("height", "448");
     image.setAttribute("width", "986");
     image.setAttribute("id", "generated_image");
