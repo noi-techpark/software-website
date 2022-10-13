@@ -1375,7 +1375,7 @@ footer {
         #observatory .container .card.odd .images {
           margin-bottom: 0; } }
 #trends {
-  height: 110vh;
+  margin-bottom: 12vh;
   width: 100%; }
 
 #prompt {
@@ -1434,9 +1434,6 @@ footer {
   margin: 10px 10px 0px 0px; }
 
 @media (max-width: 979px) {
-  #trends {
-    height: 150vh;
-    width: 100%; }
   #generated_image_container {
     height: 38vh;
     width: 90vw; }
