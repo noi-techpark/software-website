@@ -1417,7 +1417,7 @@ footer {
 
 #progress_status {
   position: absolute;
-  padding-left: 3vw;
+  padding-left: 1vw;
   padding-top: 2vh; }
 
 #main_buttons {
@@ -1449,7 +1449,10 @@ footer {
     display: block;
     width: 90vw; }
   .generate_button {
-    width: 35vw; } }
+    width: 35vw; }
+  #progress_status {
+    padding-left: 4vw;
+    padding-top: 2vw; } }
 
 #services-single h2 {
   margin: 50px 0;

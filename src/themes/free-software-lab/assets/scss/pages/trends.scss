@@ -49,7 +49,7 @@
 
 #progress_status {
   position: absolute;
-  padding-left: 3vw;
+  padding-left: 1vw;
   padding-top: 2vh;
 }
 
@@ -95,5 +95,10 @@
 
   .generate_button {
     width: 35vw;
+  }
+
+  #progress_status {
+    padding-left: 4vw;
+    padding-top: 2vw;
   }
 }
