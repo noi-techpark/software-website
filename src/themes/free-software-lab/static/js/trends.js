@@ -3,6 +3,7 @@ const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
 const GET_STATUS_POLL_TIMEOUT = 1000
 
 let hcaptchaToken = null;
+let expectedWaitTime = null;
 
 
 
@@ -27,11 +28,26 @@ async function generateImage(type) {
     try {
         const res = await fetch(url);
         const imageToken = await res.json();
+        setExpectedTime(imageToken, amount);
         await pollStatus(imageToken, amount);
     } catch (e) {
         console.error("addJob error", e);
         resetProgress();
     }
+}
+
+async function setExpectedTime(token, amount) {
+    const url = `${API_URL}/getJobStatus?token=${token}`;
+
+    let response;
+    try {
+        const res = await fetch(url);
+        response = await res.json();
+    } catch (e) {
+        console.error("getStatus error", e);
+        resetProgress();
+    }
+    expectedWaitTime = ((6 * 7 * response["QueueLength"]) + (amount * 7));
 }
 
 async function pollStatus(token, amount) {
@@ -62,8 +78,6 @@ function updateState(age, queueLength) {
 
     age = Math.ceil(age)
 
-    let expectedWaitTime = ((6 * 7 * queueLength) + (6 * 7)) - age;
-
     // update progress bar using average 7 images and 6 seconds for every image generation in the queue and itself
     let width = (age) / ((6 * 7 * queueLength) + (6 * 7)) * 100;
     // max 100
@@ -73,13 +87,11 @@ function updateState(age, queueLength) {
     progressBarGallery.style.width = width + "%";
 
     if (queueLength > 1)
-        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue. Ready in ${expectedWaitTime} seconds`;
+        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue ${age}|${expectedWaitTime}`;
     else if (queueLength == 1)
-        progressStatus.innerHTML = `1 other job is currently in the queue. Ready in ${expectedWaitTime} seconds`;
+        progressStatus.innerHTML = `1 other job is currently in the queue ${age}|${expectedWaitTime}`;
     else
-        progressStatus.innerHTML = `Generating your images now. Ready in ${expectedWaitTime} seconds`;
-
-
+        progressStatus.innerHTML = `Generating your images now ${age}|${expectedWaitTime}`;
 }
 
 function showExample(examplePrompt, token, amount) {
@@ -164,6 +176,7 @@ function resetProgress() {
     progressBar.style.width = "0%";
     progressBarGallery.style.width = "0%";
     progressStatus.innerHTML = "";
+    expectedWaitTime = null;
 }
 
 function resetImages() {
