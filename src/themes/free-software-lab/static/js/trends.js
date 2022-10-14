@@ -87,11 +87,11 @@ function updateState(age, queueLength) {
     progressBarGallery.style.width = width + "%";
 
     if (queueLength > 1)
-        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue ${age}|${expectedWaitTime}`;
+        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue - ${age} / ${expectedWaitTime}`;
     else if (queueLength == 1)
-        progressStatus.innerHTML = `1 other job is currently in the queue ${age}|${expectedWaitTime}`;
+        progressStatus.innerHTML = `1 other job is currently in the queue - ${age} / ${expectedWaitTime}`;
     else
-        progressStatus.innerHTML = `Generating your images now ${age}|${expectedWaitTime}`;
+        progressStatus.innerHTML = `Generating your images now - ${age} / ${expectedWaitTime}`;
 }
 
 function showExample(examplePrompt, token, amount) {
