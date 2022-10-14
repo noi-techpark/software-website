@@ -89,13 +89,15 @@ function updateState(age, queueLength) {
 
     if (queueLength > 1)
         progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue  ${age} / ${expectedWaitTime}`;
-    else if (queueLength == 1)
+    else if (queueLength == 2)
         progressStatus.innerHTML = `1 other job is currently in the queue  ${age} / ${expectedWaitTime}`;
     else
         progressStatus.innerHTML = `Generating your images now  ${age} / ${expectedWaitTime}`;
 }
 
 function showExample(examplePrompt, token, amount) {
+    resetImages();
+
     const promptInput = document.getElementById('prompt');
 
     promptInput.value = examplePrompt;
@@ -128,7 +130,6 @@ function showImages(token, amount) {
 }
 
 function showImage(token, id) {
-    resetImages();
 
     // show image
     let image = document.createElement("img");
