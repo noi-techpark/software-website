@@ -1415,6 +1415,9 @@ footer {
   height: 100%;
   background-color: rgba(211, 211, 211, 0.5); }
 
+#progress_bar_gallery {
+  display: none; }
+
 #progress_status {
   position: absolute;
   padding-left: 1vw;
