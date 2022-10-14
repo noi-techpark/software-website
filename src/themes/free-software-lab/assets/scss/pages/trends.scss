@@ -64,6 +64,14 @@
 .generate_button {
   margin: 0px 0px 10px 20px;
 }
+
+button:disabled,
+button[disabled]{
+  // border: 1px solid #999999;
+  // background-color: #cccccc;
+  color: #666666;
+}
+
 #examples {
   margin-top: 15px;
 }

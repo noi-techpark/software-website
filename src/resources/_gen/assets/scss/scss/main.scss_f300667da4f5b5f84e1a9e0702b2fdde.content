@@ -1430,6 +1430,10 @@ footer {
 .generate_button {
   margin: 0px 0px 10px 20px; }
 
+button:disabled,
+button[disabled] {
+  color: #666666; }
+
 #examples {
   margin-top: 15px; }
 
