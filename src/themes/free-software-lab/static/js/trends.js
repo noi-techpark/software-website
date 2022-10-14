@@ -130,7 +130,9 @@ function showImages(token, amount) {
 }
 
 function showImage(token, id) {
-
+    // remove previous image
+    if (document.getElementById("generated_image"))
+        document.getElementById("generated_image").remove();
     // show image
     let image = document.createElement("img");
     image.setAttribute("src", `${S3_URL}/${token}/0000${id}.png`);
