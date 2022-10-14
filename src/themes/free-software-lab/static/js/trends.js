@@ -79,7 +79,7 @@ function updateState(age, queueLength) {
     age = Math.ceil(age)
 
     // update progress bar using average 7 images and 6 seconds for every image generation in the queue and itself
-    let width = (age) / ((6 * 7 * queueLength) + (6 * 7)) * 100;
+    let width = age / expectedWaitTime * 100;
     // max 100
     width = width > 100 ? 100 : width
 
