@@ -62,14 +62,7 @@ function updateState(age, queueLength) {
 
     age = Math.ceil(age)
 
-    let expectedWaitTime = ((6 * 7 * queueLength) + (6 * 7));
-    let timeUnit = 'seconds';
-
-    // transform expected time in minutes if greater than 60 seconds
-    if (expectedWaitTime > 60) {
-        expectedWaitTime = Math.floor(expectedWaitTime / 60);
-        timeUnit = 'minutes';
-    }
+    let expectedWaitTime = ((6 * 7 * queueLength) + (6 * 7)) - age;
 
     // update progress bar using average 7 images and 6 seconds for every image generation in the queue and itself
     let width = (age) / ((6 * 7 * queueLength) + (6 * 7)) * 100;
@@ -80,11 +73,12 @@ function updateState(age, queueLength) {
     progressBarGallery.style.width = width + "%";
 
     if (queueLength > 1)
-        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue. Ready in ${expectedWaitTime} ${timeUnit}`;
+        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue. Ready in ${expectedWaitTime} seconds`;
     else if (queueLength == 1)
-        progressStatus.innerHTML = `1 other job is currently in the queue. Ready in ${expectedWaitTime} ${timeUnit}`;
+        progressStatus.innerHTML = `1 other job is currently in the queue. Ready in ${expectedWaitTime} seconds`;
     else
-        progressStatus.innerHTML = `Generating your images now...`;
+        progressStatus.innerHTML = `Generating your images now. Ready in ${expectedWaitTime} seconds`;
+
 
 }
 
