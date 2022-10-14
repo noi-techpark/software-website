@@ -8,6 +8,7 @@ let expectedWaitTime = null;
 
 
 async function generateImage(type) {
+    resetImages();
     showProgress();
 
     const promptInput = document.getElementById('prompt');
@@ -106,8 +107,6 @@ function showImages(token, amount) {
     resetProgress();
     hideProgress();
 
-    resetImages();
-
     // image
     showImage(token, 0)
 
@@ -129,9 +128,7 @@ function showImages(token, amount) {
 }
 
 function showImage(token, id) {
-    // remove image if exist
-    if (document.getElementById("generated_image"))
-        document.getElementById("generated_image").remove();
+    resetImages();
 
     // show image
     let image = document.createElement("img");
