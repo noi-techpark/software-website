@@ -27,6 +27,12 @@ async function generateImage(type) {
     resetImages();
     showProgress();
 
+    if (type == "portrait")
+        _mtm.push({ "event": "generate-portrait" });
+    else
+        _mtm.push({ "event": "generate-landscape" });
+
+
     const promptInput = document.getElementById('prompt');
     const prompt = promptInput.value
 
