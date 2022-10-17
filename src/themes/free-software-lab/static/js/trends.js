@@ -104,8 +104,8 @@ function updateState(age, queueLength) {
     progressBar.style.width = width + "%";
     progressBarGallery.style.width = width + "%";
 
-    if (queueLength > 1)
-        progressStatus.innerHTML = `${queueLength} other jobs are currently in the queue  ${age} / ${expectedWaitTime}`;
+    if (queueLength > 2)
+        progressStatus.innerHTML = `${queueLength - 1} other jobs are currently in the queue  ${age} / ${expectedWaitTime}`;
     else if (queueLength == 2)
         progressStatus.innerHTML = `1 other job is currently in the queue  ${age} / ${expectedWaitTime}`;
     else
