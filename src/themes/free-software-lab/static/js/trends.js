@@ -22,8 +22,6 @@ let expectedWaitTime = null;
 
 
 async function generateImage(type) {
-    hcaptcha.reset();
-    captchaExpired();
     resetImages();
     showProgress();
 
@@ -52,6 +50,8 @@ async function generateImage(type) {
         const res = await fetch(url);
         const imageToken = await res.json();
         setExpectedTime(imageToken, type);
+        // disable captcha and buttons
+        captchaExpired();
         await pollStatus(imageToken, amount);
     } catch (e) {
         console.error("addJob error", e);
@@ -175,6 +175,7 @@ function captchaVerify(token) {
 }
 
 function captchaExpired() {
+    hcaptcha.reset();
     hcaptchaToken = null
 
     // disable buttons
