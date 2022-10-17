@@ -1,6 +1,8 @@
 const API_URL = "https://stable-diffusion.opendatahub.com";
 const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
-const GET_STATUS_POLL_TIMEOUT = 1000
+const GET_STATUS_POLL_TIMEOUT = 1000;
+
+const AVERAGE_JOB_DURATION = 60;
 
 let hcaptchaToken = null;
 let expectedWaitTime = null;
@@ -48,7 +50,7 @@ async function setExpectedTime(token, amount) {
         console.error("getStatus error", e);
         resetProgress();
     }
-    expectedWaitTime = ((6 * 7 * response["QueueLength"]) + (amount * 7));
+    expectedWaitTime = response["QueueLength"] * AVERAGE_JOB_DURATION;
 }
 
 async function pollStatus(token, amount) {
