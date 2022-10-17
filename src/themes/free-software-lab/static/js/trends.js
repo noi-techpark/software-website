@@ -49,8 +49,10 @@ async function setExpectedTime(token, amount) {
     } catch (e) {
         console.error("getStatus error", e);
         resetProgress();
-    }
-    expectedWaitTime = response["QueueLength"] * AVERAGE_JOB_DURATION;
+    }  
+
+    // add plus 1 for the job itself
+    expectedWaitTime = (response["QueueLength"] + 1) * AVERAGE_JOB_DURATION;
 }
 
 async function pollStatus(token, amount) {
