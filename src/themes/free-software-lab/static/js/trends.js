@@ -8,8 +8,8 @@ let hcaptchaToken = null;
 let expectedWaitTime = null;
 
 
-
 async function generateImage(type) {
+    hcaptcha.reset();
     resetImages();
     showProgress();
 
