@@ -23,6 +23,7 @@ let expectedWaitTime = null;
 
 async function generateImage(type) {
     hcaptcha.reset();
+    captchaExpired();
     resetImages();
     showProgress();
 
@@ -167,7 +168,7 @@ function captchaVerify(token) {
     document.getElementById('generate_landscape').disabled = false
 }
 
-function captchaExpiered() {
+function captchaExpired() {
     hcaptchaToken = null
 
     // disable buttons
