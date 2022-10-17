@@ -2,7 +2,12 @@ const API_URL = "https://stable-diffusion.opendatahub.com";
 const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
 const GET_STATUS_POLL_TIMEOUT = 1000;
 
-const AVERAGE_JOB_DURATION = 60;
+const AVERAGE_JOB_DURATION_LANDSCAPE = 64;
+const AVERAGE_JOB_DURATION_PORTRAIT = 106;
+
+const AVERAGE_JOB_DURATION = (AVERAGE_JOB_DURATION_PORTRAIT + AVERAGE_JOB_DURATION_LANDSCAPE) / 2;
+
+
 
 let hcaptchaToken = null;
 let expectedWaitTime = null;
@@ -31,7 +36,7 @@ async function generateImage(type) {
     try {
         const res = await fetch(url);
         const imageToken = await res.json();
-        setExpectedTime(imageToken, amount);
+        setExpectedTime(imageToken, type);
         await pollStatus(imageToken, amount);
     } catch (e) {
         console.error("addJob error", e);
@@ -39,7 +44,7 @@ async function generateImage(type) {
     }
 }
 
-async function setExpectedTime(token, amount) {
+async function setExpectedTime(token, type) {
     const url = `${API_URL}/getJobStatus?token=${token}`;
 
     let response;
@@ -49,10 +54,10 @@ async function setExpectedTime(token, amount) {
     } catch (e) {
         console.error("getStatus error", e);
         resetProgress();
-    }  
+    }
 
-    // add plus 1 for the job itself
-    expectedWaitTime = (response["QueueLength"] + 1) * AVERAGE_JOB_DURATION;
+    const own_job_timing = type == "portrait" ? AVERAGE_JOB_DURATION_PORTRAIT : AVERAGE_JOB_DURATION_LANDSCAPE;
+    expectedWaitTime = (response["QueueLength"] * AVERAGE_JOB_DURATION) + (own_job_timing);
 }
 
 async function pollStatus(token, amount) {
