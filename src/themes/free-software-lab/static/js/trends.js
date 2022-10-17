@@ -2,8 +2,8 @@ const API_URL = "https://stable-diffusion.opendatahub.com";
 const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
 const GET_STATUS_POLL_TIMEOUT = 1000;
 
-const AMOUNT_PORTRAIT = 8;
-const AMOUNT_LANDSCAPE = 8;
+const AMOUNT_PORTRAIT = 9;
+const AMOUNT_LANDSCAPE = 7;
 
 // depends on which GPU machine is used in the backend
 const AVERAGE_SINGLE_LANDSCAPE_DURATION = 13;
