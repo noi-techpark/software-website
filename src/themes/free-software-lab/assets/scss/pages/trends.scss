@@ -3,10 +3,9 @@
   width: 100%;
 }
 
-
 .description {
-    width: 52vw;
-    margin-bottom: 5vh;
+  width: 52vw;
+  margin-bottom: 5vh;
 }
 
 #prompt {
@@ -72,7 +71,7 @@
 }
 
 button:disabled,
-button[disabled]{
+button[disabled] {
   // border: 1px solid #999999;
   // background-color: #cccccc;
   color: #666666;
@@ -86,12 +85,15 @@ button[disabled]{
 }
 // Responsive
 @media (max-width: 979px) {
+  .description {
+    width: 85vw;
+  }
 
   #generated_image_container {
     height: 38vh;
     width: 90vw;
   }
-  
+
   #generated_gallery_container {
     height: 12vw;
     width: 90vw;

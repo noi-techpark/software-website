@@ -1379,7 +1379,7 @@ footer {
   width: 100%; }
 
 .description {
-  width: 52vw;
+  width: 1072px;
   margin-bottom: 5vh; }
 
 #prompt {
@@ -1388,8 +1388,8 @@ footer {
 
 #generated_image_container {
   position: relative;
-  height: 48vh;
-  width: 52vw;
+  height: 512px;
+  width: 1072px;
   background-color: white;
   border: 1px solid black; }
 
@@ -1445,6 +1445,8 @@ button[disabled] {
   margin: 10px 10px 0px 0px; }
 
 @media (max-width: 979px) {
+  .description {
+    width: 85vw; }
   #generated_image_container {
     height: 38vh;
     width: 90vw; }
