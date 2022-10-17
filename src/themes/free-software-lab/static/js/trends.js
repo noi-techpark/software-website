@@ -2,8 +2,16 @@ const API_URL = "https://stable-diffusion.opendatahub.com";
 const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
 const GET_STATUS_POLL_TIMEOUT = 1000;
 
-const AVERAGE_JOB_DURATION_LANDSCAPE = 64;
-const AVERAGE_JOB_DURATION_PORTRAIT = 106;
+const AMOUNT_PORTRAIT = 8;
+const AMOUNT_LANDSCAPE = 8;
+
+// depends on which GPU machine is used in the backend
+const AVERAGE_SINGLE_LANDSCAPE_DURATION = 13;
+const AVERAGE_SINGLE_PORTRAIT_DURATION = 11;
+
+
+const AVERAGE_JOB_DURATION_LANDSCAPE = AVERAGE_SINGLE_LANDSCAPE_DURATION * AMOUNT_LANDSCAPE;
+const AVERAGE_JOB_DURATION_PORTRAIT = AVERAGE_SINGLE_PORTRAIT_DURATION * AMOUNT_PORTRAIT;
 
 const AVERAGE_JOB_DURATION = (AVERAGE_JOB_DURATION_PORTRAIT + AVERAGE_JOB_DURATION_LANDSCAPE) / 2;
 
@@ -22,7 +30,7 @@ async function generateImage(type) {
     const prompt = promptInput.value
 
     const resolution = type == 'portrait' ? "576x768" : "768x576";
-    const amount = type == 'portrait' ? 9 : 5;
+    const amount = type == 'portrait' ? AMOUNT_PORTRAIT : AMOUNT_LANDSCAPE;
 
     const encodedPrompt = encodeURI(prompt);
 
@@ -120,10 +128,6 @@ function showImages(token, amount) {
 
     // image
     showImage(token, 0)
-
-    // amount == 9 means portrait; keep width to correct aspect ratio of 1.33 
-    width = amount == 9 ? 67.66 : 119.7;
-
     // gallery
     for (let i = 0; i < amount; i++) {
         let galleryImage = document.createElement("img");
@@ -159,11 +163,6 @@ function captchaVerify(token) {
     //enable buttons
     document.getElementById('generate_portrait').disabled = false
     document.getElementById('generate_landscape').disabled = false
-    // document.getElementById('example_button_1').disabled = false
-    // document.getElementById('example_button_2').disabled = false
-    // document.getElementById('example_button_3').disabled = false
-    // document.getElementById('example_button_4').disabled = false
-
 }
 
 function captchaExpiered() {
@@ -172,10 +171,6 @@ function captchaExpiered() {
     // disable buttons
     document.getElementById('generate_portrait').disabled = true
     document.getElementById('generate_landscape').disabled = true
-    // document.getElementById('example_button_1').disabled = true
-    // document.getElementById('example_button_2').disabled = true
-    // document.getElementById('example_button_3').disabled = true
-    // document.getElementById('example_button_4').disabled = true
 }
 
 function resetProgress() {
