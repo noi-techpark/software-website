@@ -20,7 +20,6 @@ const AVERAGE_JOB_DURATION = (AVERAGE_JOB_DURATION_PORTRAIT + AVERAGE_JOB_DURATI
 let hcaptchaToken = null;
 let expectedWaitTime = null;
 
-
 async function generateImage(type) {
     resetImages();
     showProgress();
@@ -208,3 +207,7 @@ function showProgress() {
     document.getElementById("progress_bar_gallery").style.display = 'block';
     document.getElementById("progress_bar").style.display = 'block';
 }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    showExample('Portrait of Reinhold Messner, oil painting','6d7db588525de5a6751f42869c9b85b4', 'portrait');
+});

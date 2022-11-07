@@ -8,10 +8,42 @@
     </div>
     <div class="description">{{ .Content }}</div>
 
-    <div id="main_buttons">
-      <input id="prompt" placeholder="Enter your text" />
+    <div id="examples">
+      <div>Here you can find some example images we generated during an internal test</div>
+      <button
+        id="example_button_1"
+        class="example-button"
+        onclick="showExample('Two penguins in the Dolomites','5baea452d1a89e43c0ea175b87ddebd2', 'landscape')"
+      >
+        Two penguins in the Dolomites
+      </button>
+      <button
+        id="example_button_2"
+        class="example-button"
+        onclick="showExample('Super Mario in the style of Mona Lisa','5aef593e1faf8e303bb57b01d91f54f3', 'portrait')"
+      >
+        Super Mario in the style of Mona Lisa
+      </button>
+      <button
+        id="example_button_3"
+        class="example-button"
+        onclick="showExample('Office in the jungle, watercolor','ac71469f586d7be7572c4a15d630b9d0', 'landscape')"
+      >
+        Office in the jungle, watercolor
+      </button>
+      <button
+        id="example_button_4"
+        class="example-button"
+        onclick="showExample('Portrait of Reinhold Messner, oil painting','6d7db588525de5a6751f42869c9b85b4', 'portrait')"
+      >
+        Portrait of Reinhold Messner, oil painting
+      </button>
+    </div>
 
-      <div
+    <div id="main_buttons">
+      <input readonly="readonly" id="prompt" placeholder="Enter your text" />
+
+      <!-- <div
         id="captcha"
         data-callback="captchaVerify"
         data-expired-callback="captchaExpired"
@@ -34,7 +66,7 @@
         onclick="generateImage('landscape')"
       >
         Generate Landscape
-      </button>
+      </button> -->
     </div>
 
     <div id="generated_image_container">
@@ -76,38 +108,6 @@
     >
       Reset gallery
     </button> -->
-
-    <div id="examples">
-      <div>Examples</div>
-      <button
-        id="example_button_1"
-        class="example-button"
-        onclick="showExample('Two penguins in the Dolomites','5baea452d1a89e43c0ea175b87ddebd2', 'landscape')"
-      >
-        Two penguins in the Dolomites
-      </button>
-      <button
-        id="example_button_2"
-        class="example-button"
-        onclick="showExample('Super Mario in the style of Mona Lisa','5aef593e1faf8e303bb57b01d91f54f3', 'portrait')"
-      >
-      Super Mario in the style of Mona Lisa
-      </button>
-      <button
-        id="example_button_3"
-        class="example-button"
-        onclick="showExample('Office in the jungle, watercolor','ac71469f586d7be7572c4a15d630b9d0', 'landscape')"
-      >
-      Office in the jungle, watercolor
-      </button>
-      <button
-        id="example_button_4"
-        class="example-button"
-        onclick="showExample('Portrait of Reinhold Messner, oil painting','6d7db588525de5a6751f42869c9b85b4', 'portrait')"
-      >
-      Portrait of Reinhold Messner, oil painting
-      </button>
-    </div>
 
     {{ end }}
   </div>
