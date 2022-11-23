@@ -1,5 +1,12 @@
 const API_URL = "https://stable-diffusion.opendatahub.com";
-const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
+
+/**
+ * Since the service is currently on disabled, example images are loaded from the bucket of the site itself are used
+ * If you want to reenable it, put your s3 bucket url as S3_URL and uncomment buttons etc. in trends.html
+ */
+// const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
+const S3_URL = "/trends/";
+
 const GET_STATUS_POLL_TIMEOUT = 1000;
 
 const AMOUNT_PORTRAIT = 8;
@@ -123,6 +130,7 @@ function showExample(examplePrompt, token, type) {
     showImages(token, amount);
 }
 
+
 function showImages(token, amount) {
     // reset progress bar again
     resetProgress();
@@ -208,6 +216,6 @@ function showProgress() {
     document.getElementById("progress_bar").style.display = 'block';
 }
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    showExample('Portrait of Reinhold Messner, oil painting','6d7db588525de5a6751f42869c9b85b4', 'portrait');
+document.addEventListener("DOMContentLoaded", function (event) {
+    showExample('Portrait of Reinhold Messner, oil painting', 'messner', 'portrait');
 });
