@@ -5,7 +5,7 @@ const API_URL = "https://stable-diffusion.opendatahub.com";
  * If you want to reenable it, put your s3 bucket url as S3_URL and uncomment buttons etc. in trends.html
  */
 // const S3_URL = "https://noi-sd.s3-eu-west-1.amazonaws.com";
-const S3_URL = "/trends/";
+const S3_URL = "/trends";
 
 const GET_STATUS_POLL_TIMEOUT = 1000;
 
