@@ -1,6 +1,6 @@
 ---
 title: Explore Digital Assistant Devices
-image: alexa.jpg
+image: digital_assistant_devices.jpg
 price: book your rent for free (if available)
 #buttonlabel: Request availability#
 ---
