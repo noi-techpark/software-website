@@ -19,7 +19,7 @@
             </div>
             <div class="menu menu-horizontal">
                 {{ range .Site.Menus.footer.Reverse }}
-                <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a> {{end}}
+                <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}" target="_blank">{{ .Name }}</a> {{end}}
             </div>
         </div>
         <div class="desktop-half map">
