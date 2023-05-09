@@ -87,12 +87,12 @@ name   = "Contatto"
 weight = 20
 
 [[languages.en.menu.footer]]
-url    = "https://noi.bz.it/privacy-cookie-policy"
+url    = "https://noi.bz.it/en/privacy"
 name   = "Privacy"
 weight = 10
 
 [[languages.en.menu.footer]]
-url    = "https://noi.bz.it/privacy-cookie-policy"
+url    = "https://noi.bz.it/en/cookies"
 name   = "Cookies"
 weight = 20
 
@@ -102,12 +102,12 @@ name   = "Contact"
 weight = 30
 
 [[languages.de.menu.footer]]
-url    = "https://noi.bz.it/privacy-cookie-policy"
+url    = "https://noi.bz.it/de/privacy"
 name   = "Privacy"
 weight = 10
 
 [[languages.de.menu.footer]]
-url    = "https://noi.bz.it/privacy-cookie-policy"
+url    = "https://noi.bz.it/de/cookies"
 name   = "Cookies"
 weight = 20
 
@@ -117,12 +117,12 @@ name   = "Kontakt"
 weight = 30
 
 [[languages.it.menu.footer]]
-url    = "https://noi.bz.it/privacy-cookie-policy"
+url    = "https://noi.bz.it/it/privacy"
 name   = "Privacy"
 weight = 10
 
 [[languages.it.menu.footer]]
-url    = "https://noi.bz.it/privacy-cookie-policy"
+url    = "https://noi.bz.it/it/cookies"
 name   = "Cookies"
 weight = 20
 
