@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 ---
 title: Stable diffusion
 image1: Cover_Studio_DBMS_Suedtirol_247px.jpg

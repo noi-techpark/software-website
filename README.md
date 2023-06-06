@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 # software.bz.it
 
 Repository for the [Free Software Lab](https://software.bz.it) website created with [Hugo](https://gohugo.io/).
