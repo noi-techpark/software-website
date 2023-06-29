@@ -110,8 +110,12 @@ SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
                         {{ if .IsHome }}
                         <div style="width: 70%;">
                             <h1>{{ .Title }}</h1>
-                            {{ if not .IsPage }}{{ .Content }}{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content
-                            }}{{ end }}
+                            {{ if not .IsPage }}
+                            {{ .Content }}
+                            {{ else }}
+                            {{ $index := .GetPage "../" }}
+                            {{ $index.Content }}
+                            {{ end }}
                         </div>
                         <div class="sponsor"></div>
                         {{ else }}
