@@ -39,8 +39,8 @@ header {
             border-bottom: 1px solid rgba(0, 0, 0, 0.16);
             .container .header-wrap {
                 #logo {
-                    padding-right: 50px;
-                    border-right: 1px solid rgba(0, 0, 0, 0.16);
+                    //padding-right: 50px;
+                    //border-right: 1px solid rgba(0, 0, 0, 0.16);
                 }
                 #logo-description {
                     display: none;
@@ -81,17 +81,18 @@ header {
                     margin-left: 30px;
                 }
                 .menu {
-                    padding: 0 25px;
+                    //padding: 0 25px;
                     @media (max-width: 979px) {
                         display: none;
                     }
                     ul {
                         list-style: none;
                         li {
-                            padding: 12.5px;
-                            &.current {
+                            padding: 25px;
+                            padding-left: 0px;
+                            /*&.current {
                                 text-decoration: underline;
-                            }
+                            }*/
                             &:hover {
                                 text-decoration: underline;
                             }
