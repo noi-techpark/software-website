@@ -18,10 +18,10 @@
                             {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if ne .Name "Home" }}
                             <li class="{{ if eq $currentPage.Title .Name}}current{{ end }}">
                                 <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">
-                                {{ .Name }}
+                                    {{ .Name }}
                                 </a>
                             </li>
-                            {{end}} {{end}}
+                            {{end}}{{end}}
                         </ul>
                     </div>
                     {{ partial "lang.html" . }}
@@ -33,8 +33,9 @@
                 </div>
                 <div class="header-wrap">
                     <div id="logo">
-                        <a href="/">
-                            <svg version="1.1" viewBox="0 0 110.84 39.804" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="clipPath93"><rect y=".1" width="110.84" height="39.9" style="fill:#f50057;opacity:.493"/></clipPath></defs>
+                        <a target="_blank" href="https:/noi.bz.it">
+                            <img src="../NOI_1_BK.svg" width="125px" />
+                            <!--<svg version="1.1" viewBox="0 0 110.84 39.804" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="clipPath93"><rect y=".1" width="110.84" height="39.9" style="fill:#f50057;opacity:.493"/></clipPath></defs>
                                 <style type="text/css">
                                     .st0{fill:#000000;}
                                     .st1{fill:#000000;}
@@ -91,16 +92,16 @@
                                     <path class="st4" d="m60 39.9 15.5-12.4-18.5-7.4z" style="fill:#ffffff;stroke:#1a171b"/>
                                     <path class="st12" d="m60 39.9h12.9l2.6-12.4z" style="fill:#ffffff;stroke:#1a171b"/>
                                 </g>
-                                </svg>
+                                </svg>-->
                         </a>
                     </div>
-                    <div id="logo-description">
+                    <!--<div id="logo-description">
                     </div>
                     <div class="title">
                         Free Software Lab
-                    </div>
+                    </div>-->
                 </div>
-                
+
             </div>
         </div>
         <div class="header-bottom container">
@@ -109,13 +110,15 @@
                     {{ if .IsHome }}
                     <div style="width: 70%;">
                         <h1>{{ .Title }}</h1>
-                        {{ if not .IsPage }}{{ .Content }}{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}
+                        {{ if not .IsPage }}{{ .Content }}{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{
+                        end }}
                     </div>
                     <div class="sponsor"></div>
                     {{ else }}
                     <div>
                         <h1>{{ .Title }}</h1>
-                        <!--{{ if not .IsPage }}-->{{ .Content }}<!--{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}-->
+                        <!--{{ if not .IsPage }}-->{{ .Content
+                        }}<!--{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}-->
                     </div>
                     {{ end }}
                 </div>

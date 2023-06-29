@@ -22,6 +22,11 @@ name   = "Home"
 weight = 0
 
 [[languages.en.menu.main]]
+url    = "/"
+name   = "Free Software Lab"
+weight = 10
+
+[[languages.en.menu.main]]
 url    = "/services"
 name   = "Services"
 weight = 10

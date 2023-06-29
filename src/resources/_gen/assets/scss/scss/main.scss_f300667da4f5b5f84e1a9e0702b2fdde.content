@@ -899,9 +899,6 @@ header {
     right: 0; }
     header #header-top.is-active {
       border-bottom: 1px solid rgba(0, 0, 0, 0.16); }
-      header #header-top.is-active .container .header-wrap #logo {
-        padding-right: 50px;
-        border-right: 1px solid rgba(0, 0, 0, 0.16); }
       header #header-top.is-active .container .header-wrap #logo-description {
         display: none; }
       header #header-top.is-active .container .header-wrap .title {
@@ -936,9 +933,11 @@ header {
       header #header-top .container .header-wrap .menu ul {
         list-style: none; }
         header #header-top .container .header-wrap .menu ul li {
-          padding: 12.5px; }
-          header #header-top .container .header-wrap .menu ul li.current {
-            text-decoration: underline; }
+          padding: 25px;
+          padding-left: 0px;
+          /*&.current {
+                                text-decoration: underline;
+                            }*/ }
           header #header-top .container .header-wrap .menu ul li:hover {
             text-decoration: underline; }
       header #header-top .container .header-wrap .languages {
