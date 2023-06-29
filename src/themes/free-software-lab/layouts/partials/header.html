@@ -12,6 +12,26 @@
         <div id="header-top">
             <div class="container flex">
                 <div class="header-wrap">
+                    <div class="sponsor"></div>
+                    <div class="menu">
+                        <ul class="flex">
+                            {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if ne .Name "Home" }}
+                            <li class="{{ if eq $currentPage.Title .Name}}current{{ end }}">
+                                <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">
+                                {{ .Name }}
+                                </a>
+                            </li>
+                            {{end}} {{end}}
+                        </ul>
+                    </div>
+                    {{ partial "lang.html" . }}
+                    <div id="menu-toggle" class="hamburger hamburger--squeeze">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-wrap">
                     <div id="logo">
                         <a href="/">
                             <svg version="1.1" viewBox="0 0 110.84 39.804" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="clipPath93"><rect y=".1" width="110.84" height="39.9" style="fill:#f50057;opacity:.493"/></clipPath></defs>
@@ -80,26 +100,7 @@
                         Free Software Lab
                     </div>
                 </div>
-                <div class="header-wrap">
-                    <div class="sponsor"></div>
-                    <div class="menu">
-                        <ul class="flex">
-                            {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if ne .Name "Home" }}
-                            <li class="{{ if eq $currentPage.Title .Name}}current{{ end }}">
-                                <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">
-                                {{ .Name }}
-                                </a>
-                            </li>
-                            {{end}} {{end}}
-                        </ul>
-                    </div>
-                    {{ partial "lang.html" . }}
-                    <div id="menu-toggle" class="hamburger hamburger--squeeze">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner"></div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <div class="header-bottom container">
