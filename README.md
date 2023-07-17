@@ -8,7 +8,7 @@ SPDX-License-Identifier: CC0-1.0
 
 Repository for the [Free Software Lab](https://software.bz.it) website created with [Hugo](https://gohugo.io/).
 
-![REUSE Compliance](https://github.com/noi-techpark/software-website/actions/workflows/reuse.yml/badge.svg)
+[![REUSE Compliance](https://github.com/noi-techpark/software-website/actions/workflows/reuse.yml/badge.svg)](https://github.com/noi-techpark/odh-docs/wiki/REUSE#badges)
 [![CI/CD](https://github.com/noi-techpark/software-website/actions/workflows/main.yml/badge.svg)](https://github.com/noi-techpark/software-website/actions/workflows/main.yml)
 
 ## Table of contents
