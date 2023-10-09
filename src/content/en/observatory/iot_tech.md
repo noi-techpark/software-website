@@ -1,4 +1,5 @@
 
+
 ---
 title: IoT Analysis of the State of the Technological Art
 image1: BeaconSuedtirol_TechnologyStateOfTheArt_EN_247px.jpg

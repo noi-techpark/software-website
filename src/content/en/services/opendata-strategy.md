@@ -1,3 +1,5 @@
+
+
 ---
 title: Data Strategy
 image: opendata_strategy.JPG

@@ -1,3 +1,5 @@
+
+
 ---
 title: Explore Digital Assistant Devices
 image: digital_assistant_devices.jpg

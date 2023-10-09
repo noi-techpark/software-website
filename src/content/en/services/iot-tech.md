@@ -1,3 +1,5 @@
+
+
 ---
 title: IoT Strategy
 image: iot.jpg

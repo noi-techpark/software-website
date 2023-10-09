@@ -1,3 +1,5 @@
+
+
 ---
 title: Stable diffusion
 image1: Cover_Studio_DBMS_Suedtirol_247px.jpg

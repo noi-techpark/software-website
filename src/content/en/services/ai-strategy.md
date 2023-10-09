@@ -1,3 +1,5 @@
+
+
 ---
 title: AI Strategy
 image: ai.jpg

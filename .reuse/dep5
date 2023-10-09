@@ -1,0 +1,16 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: software-website
+Upstream-Contact: NOI Techpark <digital@noi.bz.it>
+Source: https://github.com/noi-techpark/software-website
+
+Files: .github/* .gitignore .pre-commit-config.yaml docker/* mail-client/*.json mail-client/infrastructure/* mail-client/.gitignore src/resources/* src/static/* src/*.toml src/themes/free-software-lab/LICENSE src/config.toml.uli src/themes/free-software-lab/static/*.svg src/content/en/services/* src/content/*
+Copyright: (c) NOI Techpark <digital@noi.bz.it>
+License: CC0-1.0
+
+Files: src/public/*
+Copyright: (c) NOI Techpark <digital@noi.bz.it>
+License: AGPL-3.0-or-later
+
+Files: src/themes/free-software-lab/assets/scss/hamburgers/* src/themes/free-software-lab/static/css/hamburgers.css src/themes/free-software-lab/static/css/hamburgers.css.map
+Copyright: (c) 2016 Jonathan Suh <hello@jonsuh.com> (jonsuh.com)
+License: MIT

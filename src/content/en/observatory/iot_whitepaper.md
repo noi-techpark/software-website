@@ -1,4 +1,5 @@
 
+
 ---
 title: IoT Application Areas and Guidelines for R&D Projects
 image1: BeaconSuedtirol_WhitePaper_EN_247px.jpg

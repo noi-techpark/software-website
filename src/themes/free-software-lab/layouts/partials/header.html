@@ -1,26 +1,34 @@
-{{ partial "head.html" . }}
+{{/*
+SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
 
-<body>
-    <header>
-        <div id="header-top">
-            <div class="container flex">
-                <div class="header-wrap">
-                    <div class="sponsor"></div>
-                    <div class="menu">
-                        <ul class="flex">
-                            {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if ne .Name "Home" }}
-                            <li class="{{ if eq $currentPage.Title .Name}}current{{ end }}">
-                                <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">
-                                    {{ .Name }}
-                                </a>
-                            </li>
-                            {{end}}{{end}}
-                        </ul>
-                    </div>
-                    {{ partial "lang.html" . }}
-                    <div id="menu-toggle" class="hamburger hamburger--squeeze">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner"></div>
+    SPDX-License-Identifier: AGPL-3.0-or-later
+    */}}
+
+
+    {{ partial "head.html" . }}
+
+    <body>
+        <header>
+            <div id="header-top">
+                <div class="container flex">
+                    <div class="header-wrap">
+                        <div class="sponsor"></div>
+                        <div class="menu">
+                            <ul class="flex">
+                                {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if ne .Name "Home" }}
+                                <li class="{{ if eq $currentPage.Title .Name}}current{{ end }}">
+                                    <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">
+                                        {{ .Name }}
+                                    </a>
+                                </li>
+                                {{end}}{{end}}
+                            </ul>
+                        </div>
+                        {{ partial "lang.html" . }}
+                        <div id="menu-toggle" class="hamburger hamburger--squeeze">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,50 +94,55 @@
                                     <path class="st12" d="m60 39.9h12.9l2.6-12.4z" style="fill:#ffffff;stroke:#1a171b"/>
                                 </g>
                                 </svg>-->
-                        </a>
-                    </div>
-                    <!--<div id="logo-description">
+                            </a>
+                        </div>
+                        <!--<div id="logo-description">
                     </div>
                     <div class="title">
                         Free Software Lab
                     </div>-->
-                </div>
-
-            </div>
-        </div>
-        <div class="header-bottom container">
-            <div class="card center-area odd">
-                <div class="flex center-y">
-                    {{ if .IsHome }}
-                    <div style="width: 70%;">
-                        <h1>{{ .Title }}</h1>
-                        {{ if not .IsPage }}{{ .Content }}{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{
-                        end }}
                     </div>
-                    <div class="sponsor"></div>
-                    {{ else }}
-                    <div>
-                        <h1>{{ .Title }}</h1>
-                        <!--{{ if not .IsPage }}-->{{ .Content
-                        }}<!--{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}-->
-                    </div>
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-        <div id="menu-wrap-mobile" class="flex">
-            <div class="container">
-                {{ partial "lang.html" . }}
-                <div class="menu">
-                    <ul>
-                        {{ range .Site.Menus.main }} {{ if ne .Name "Home" }}
-                        <li>
-                            <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
-                        </li>
-                        {{end}} {{ end }}
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-    </header>
+                </div>
+            </div>
+            <div class="header-bottom container">
+                <div class="card center-area odd">
+                    <div class="flex center-y">
+                        {{ if .IsHome }}
+                        <div style="width: 70%;">
+                            <h1>{{ .Title }}</h1>
+                            {{ if not .IsPage }}
+                            {{ .Content }}
+                            {{ else }}
+                            {{ $index := .GetPage "../" }}
+                            {{ $index.Content }}
+                            {{ end }}
+                        </div>
+                        <div class="sponsor"></div>
+                        {{ else }}
+                        <div>
+                            <h1>{{ .Title }}</h1>
+                            <!--{{ if not .IsPage }}-->
+                            {{ .Content }}
+                            <!--{{ else }}{{ $index := .GetPage "../" }}{{ $index.Content }}{{ end }}-->
+                        </div>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div id="menu-wrap-mobile" class="flex">
+                <div class="container">
+                    {{ partial "lang.html" . }}
+                    <div class="menu">
+                        <ul>
+                            {{ range .Site.Menus.main }} {{ if ne .Name "Home" }}
+                            <li>
+                                <a class="menu-item-link" href="{{ .URL | absLangURL | safeURL }}">{{ .Name }}</a>
+                            </li>
+                            {{end}} {{ end }}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>

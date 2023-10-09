@@ -11,12 +11,15 @@ env:
 
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     env:
       HOME: '.'
     steps:
       - name: Checkout source code
         uses: actions/checkout@v2
+
+      - name: REUSE Compliance Check
+        uses: fsfe/reuse-action@v1
  
       - name: Install hugo
         run: sudo apt-get install hugo
@@ -40,7 +43,7 @@ jobs:
         working-directory: mail-client
 
   deploy-test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: github.ref == 'refs/heads/main'
     needs: test
     concurrency: deploy-test
@@ -73,7 +76,7 @@ jobs:
           folder: ./target
 
   deploy-prod:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     if: github.ref == 'refs/heads/prod'
     needs: test
     concurrency: deploy-prod

@@ -1,3 +1,5 @@
+
+
 ---
 image:  beacon.jpg
 title:  Explore Beacons 
