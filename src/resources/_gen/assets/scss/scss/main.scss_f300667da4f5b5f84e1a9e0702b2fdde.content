@@ -1,3 +1,13 @@
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 @import url("https://fonts.testingmachine.eu/source-sans-pro/style.css");
 html,
 body {
@@ -873,6 +883,11 @@ input {
     bottom: 0;
     transform: rotate(-90deg); }
 
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 header {
   z-index: 100;
   padding-top: 90px; }
@@ -1045,6 +1060,11 @@ header {
       border: none !important; }
     header #header-top .title {
       display: none !important; } }
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 footer {
   height: 60vh;
   margin: 0;
@@ -1154,6 +1174,11 @@ footer {
     background: var(--color-background);
     color: var(--color-primary); }
 
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 #home .banner {
   width: 100%;
   height: 60vh;
@@ -1210,6 +1235,11 @@ footer {
     #home .container .card.odd .images {
       margin-bottom: 0; } }
 
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 #services h2 {
   margin-top: 25px; }
 
@@ -1328,6 +1358,11 @@ footer {
     padding-left: 50px !important;
     padding-right: 75px !important; } }
 
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 #observatory {
   margin-bottom: 30px; }
   #observatory .container {
@@ -1377,6 +1412,11 @@ footer {
           margin-bottom: 75px; }
         #observatory .container .card.odd .images {
           margin-bottom: 0; } }
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 #trends {
   margin-bottom: 12vh;
   width: 100%; }
@@ -1470,6 +1510,11 @@ button[disabled] {
     padding-left: 4vw;
     padding-top: 2vw; } }
 
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 #services-single h2 {
   margin: 50px 0;
   text-transform: uppercase; }
@@ -1503,6 +1548,11 @@ button[disabled] {
       max-width: 100%;
       margin: 50px 0 0 0; } }
 
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 #experts .cards {
   border-bottom: 1px solid #cccccc; }
   #experts .cards .card {
@@ -1540,6 +1590,11 @@ button[disabled] {
     #experts .cards .card .content .description {
       width: 100%; } }
 
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 .contact {
   width: 800px;
   margin-bottom: 75px; }
@@ -1570,6 +1625,11 @@ button[disabled] {
       margin-top: 25px; }
     .contact form #agreement {
       margin-top: 75px; } }
+/*
+ * SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+ *
+ * SPDX-License-Identifier: AGPL-3.0-or-later
+ */
 #testenv h2 {
   margin-top: 25px; }
 
