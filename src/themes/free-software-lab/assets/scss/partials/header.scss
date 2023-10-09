@@ -9,7 +9,7 @@ header {
     .title {
         text-transform: uppercase;
     }
-    #logo {}
+    //#logo {}
     #logo-description {
         height: 41px;
         width: 125px;
@@ -32,10 +32,10 @@ header {
         &.is-active {
             border-bottom: 1px solid rgba(0, 0, 0, 0.16);
             .container .header-wrap {
-                #logo {
-                    //padding-right: 50px;
-                    //border-right: 1px solid rgba(0, 0, 0, 0.16);
-                }
+                /*#logo {
+                    padding-right: 50px;
+                    border-right: 1px solid rgba(0, 0, 0, 0.16);
+                }*/
                 #logo-description {
                     display: none;
                 }
