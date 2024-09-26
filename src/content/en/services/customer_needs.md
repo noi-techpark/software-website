@@ -4,7 +4,7 @@
 image: needs.jpeg
 title: Use cases definition
 price: € 3'500.00  + VAT 
-labbonus: true
+labbonus: false
 --- 
 
 This service is the foundation for your customer-centric product or service development, thanks to customer needs and potential use cases discovery. 
