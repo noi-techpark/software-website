@@ -33,7 +33,7 @@ weight = 10
 
 [[languages.en.menu.main]]
 url    = "/testenv"
-name   = "Devices"
+name   = "Lab Infrastructure"
 weight = 20
 
 [[languages.en.menu.main]]
