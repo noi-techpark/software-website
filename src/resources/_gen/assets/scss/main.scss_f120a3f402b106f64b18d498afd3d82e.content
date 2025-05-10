@@ -13,7 +13,7 @@ html,
 body {
   background: white;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.4;
   font-weight: 400;
   margin: 0;
@@ -1026,7 +1026,7 @@ header {
           padding: 10px 0; }
           header #menu-wrap-mobile .menu ul li a {
             letter-spacing: 0.02em;
-            font-size: 45px;
+            font-size: 3rem;
             line-height: 133%;
             text-transform: uppercase; }
     header #menu-wrap-mobile .bottom-decoration {
@@ -1095,7 +1095,7 @@ footer {
     position: relative;
     padding: 50px 0;
     padding-right: 100px;
-    font-size: 18px; }
+    font-size: 1rem; }
     footer .content b {
       font-weight: 600; }
     footer .content .light {
@@ -1113,7 +1113,8 @@ footer {
       background: transparent; }
       footer .content .menu-horizontal a {
         color: white;
-        text-transform: none; }
+        text-transform: none;
+        font-size: 1rem; }
         footer .content .menu-horizontal a::before {
           background-color: white; }
         footer .content .menu-horizontal a:hover:hover {
