@@ -24,7 +24,8 @@ header {
         margin-bottom: -29px;
     }
     .sponsor {
-        background-image: url('../sponsor.png');
+        background-image: url('../sponsor.svg');
+        background-repeat: no-repeat;
         background-size: contain;
     }
     #header-top {
@@ -65,7 +66,7 @@ header {
                 height: 90px;
                 position: relative;
                 #logo {
-                    padding-right: 15px;
+                    //padding-right: 15px;
                     height: 100%;
                     display: flex;
                     overflow: hidden;
@@ -211,8 +212,12 @@ header {
             width: 100%;
         }
         .sponsor {
-            width: 333px;
-            height: 56px;
+            width: 700px;
+            height: 75px;
+            margin-top: 15px;
+            margin-right: 0px;
+            margin-bottom: auto;
+            margin-left: 0px;            
         }
     }
     // Responsive
