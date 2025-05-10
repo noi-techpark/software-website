@@ -1,7 +1,7 @@
 baseURL = "https://example.com"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "NOI Free Software Lab"
+title = "NOI | Free Software Lab"
 theme = "free-software-lab"
 googleAnalytics = ""
 
