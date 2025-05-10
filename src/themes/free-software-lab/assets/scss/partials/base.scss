@@ -23,10 +23,16 @@ a {
 }
 
 h1 {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 3rem;
     text-transform: uppercase;
     margin: 0;
+    padding: 0;
+    
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;    
 }
 
 h2 {
@@ -42,9 +48,9 @@ h2 {
 // Layout 
 .container {
     max-width: 1920px;
-    margin-right: 10%;
-    margin-left: 10%;
-    width: 80%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
     @media (max-width: 1499px) {
         margin-right: 5%;
         margin-left: 5%;
