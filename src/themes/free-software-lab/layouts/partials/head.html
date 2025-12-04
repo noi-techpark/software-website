@@ -16,6 +16,24 @@
 
     <title>{{ .Title }} - {{.Site.Title}}</title>
 
+    {{/* Open Graph metadata for link previews */}}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ .Site.Title }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+
+    <meta property="og:title" content="{{ with .Title }}{{ . }} – {{ $.Site.Title }}{{ else }}{{ $.Site.Title }}{{ end }}">
+    <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}Our Free Software Lab in NOI Techpark is the right place for software developers, CIOs and CTOs to experiment with new digital technologies like LoRaWAN, beacons, 5G and voice assistants.{{ end }}">
+
+    <!-- Social card preview image (approx. 1200×630). Supports .jpg or .png, currently using .jpg -->
+    <meta property="og:image" content="{{ with .Params.og_image }}{{ . | absURL }}{{ else }}{{ "/images/freesoftwarelab-og.jpg" | absURL }}{{ end }}">
+
+    {{/* Twitter preview metadata */}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ with .Title }}{{ . }} – {{ $.Site.Title }}{{ else }}{{ $.Site.Title }}{{ end }}">
+    <meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}Our Free Software Lab in NOI Techpark is the right place for software developers, CIOs and CTOs to experiment with new digital technologies like LoRaWAN, beacons, 5G and voice assistants.{{ end }}">
+    <!-- Social card preview image (approx. 1200×630). Supports .jpg or .png, currently using .jpg -->
+    <meta name="twitter:image" content="{{ with .Params.og_image }}{{ . | absURL }}{{ else }}{{ "/images/freesoftwarelab-og.jpg" | absURL }}{{ end }}">
+
     {{ $sass := resources.Get "scss/main.scss" }} {{ $style := $sass | toCSS }}
 
     <link rel="stylesheet" href="{{ $style.Permalink }}" media="screen" />
@@ -46,7 +64,7 @@
           var u = "https://digital.matomo.cloud/";
           _paq.push(['setTrackerUrl', u + 'matomo.php']);
           _paq.push(['setSiteId', '3']);
-          var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+          var d = document, g = d.createElement('script'), s=d.getElementsByTagName('script')[0];
           g.async = true; g.src = '//cdn.matomo.cloud/digital.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
       })();
     </script>

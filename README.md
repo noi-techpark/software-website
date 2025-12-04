@@ -130,3 +130,41 @@ Then install the pre-commit hook via the config file by running:
 ```bash
 pre-commit install
 ```
+## Social cards (Open Graph & Twitter)
+
+The Free Software Lab website exposes Open Graph and Twitter metadata so that
+links shared on chat tools (e.g. Microsoft Teams) and social networks show a
+rich preview (title, description and image).
+
+### Default social card image
+
+The default image used for all pages is:
+
+- **Path:** `src/static/images/freesoftwarelab-og.jpg`
+- **Recommended size:** `1200 × 630` px (approx. `1.91:1` aspect ratio)
+- **Used by:** both `og:image` (Open Graph) and `twitter:image`
+
+If you just want to update the global social card image:
+
+1. Create/prepare a new image at `1200 × 630` px.
+2. Replace the existing file at  
+   `src/static/images/freesoftwarelab-og.jpg`  
+   (keep the **same file name and path**).
+3. Run the site locally with `hugo server -s src` and open  
+   `http://localhost:1313` in your browser.
+4. Use a social preview browser plugin (e.g. “Social Share Preview”) to verify
+   that the new image is picked up correctly.
+
+No template changes are required as long as the file name and path stay the same.
+
+### Page-specific social card image (optional)
+
+Content editors can override the global image for a single page by setting the
+`og_image` parameter in the page’s front matter. Example:
+
+```yaml
+---
+title: "My custom page"
+description: "Short description for link previews."
+og_image: "/images/my-custom-card.jpg"
+---
