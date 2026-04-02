@@ -36,15 +36,15 @@ url    = "/testenv"
 name   = "Lab Infrastructure"
 weight = 20
 
-[[languages.en.menu.main]]
-url    = "/observatory"
-name   = "Observatory"
-weight = 30
+#[[languages.en.menu.main]]
+#url    = "/observatory"
+#name   = "Observatory"
+#weight = 30
 
-[[languages.en.menu.main]]
-url    = "/trends"
-name   = "Trends"
-weight = 30
+#[[languages.en.menu.main]]
+#url    = "/trends"
+#name   = "Trends"
+#weight = 30
 
 [[languages.en.menu.main]]
 url    = "/contact"
