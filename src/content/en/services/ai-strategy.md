@@ -1,11 +1,17 @@
 
 
 ---
-title: AI Strategy
-image: ai.jpg
+title: Orientation
+image: needs.jpeg
 price: (price on request)  
 labbonus: false
 ---
-Our team and our experts will help you to find out the opportunities laid down by Artificial Intelligence/Machine Learning and to identify the right way to introduce this technology in your business.
+Direct technology in-depth workshop with the company functional to focus
+on possible developments/investments related with following topics:  ​
+- Artificial Intelligence (AI)​
+- Internet of Things (IoT)​
+- Data​
+- Cybersecurity​
+- Digital Sovereignty​
 
 <!--more--> 
