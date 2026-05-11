@@ -2,7 +2,7 @@
 
 ---
 image: compliance.jpeg
-title: Open Source Compliance policy & strategy
+title: Open Source Compliance & CRA readiness
 price: (price on request) 
 labbonus: false
 --- 
