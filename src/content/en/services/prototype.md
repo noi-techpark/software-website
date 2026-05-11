@@ -2,13 +2,18 @@
 
 ---
 image: prototype.jpg
-title: Prototype/MVP Development
+title: Test Before Invest
 price: (price on request)
 labbonus: true
 ---
 
-Create a prototype in a short time and at low cost to understand the potential of your idea: through a network of experts, the Free Software Lab helps you to develop a prototype with innovative technologies that makes your idea more concrete and valuable.
-
+Use of testing infrastructure for R&D prototype experimentation related with
+following topics: ​ ​
+- Artificial Intelligence (AI)​
+- Internet of Things (IoT)​
+- Data​
+- Cybersecurity​
+- Digital Sovereignty​
 
 
 <!--more--> 
