@@ -1,6 +1,7 @@
 
 
 ---
+order: 3
 image: community_building.jpg
 title: Community Building
 price: (price on request)

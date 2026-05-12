@@ -17,7 +17,7 @@
 -->
     <div class="container">
         <div class="cards">
-            {{ range .Pages }}
+            {{ range .Pages.ByParam "order" }}
             <div class="card desktop-half">
                 <div class="card-content">
                     <div class="image" style="background-image: url('/services/{{ .Params.Image }}')" onclick="window.location='{{ .Permalink }}'"></div>
