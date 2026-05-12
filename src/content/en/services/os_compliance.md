@@ -1,8 +1,9 @@
 
 
 ---
+order: 4
 image: compliance.jpeg
-title: Open Source Compliance & CRA readiness
+title: SBOM & CRA compliance
 price: (price on request) 
 labbonus: false
 --- 

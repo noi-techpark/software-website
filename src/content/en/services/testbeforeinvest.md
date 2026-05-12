@@ -1,6 +1,7 @@
 
 
 ---
+order: 2
 image: prototype.jpg
 title: Test Before Invest
 price: (price on request)
