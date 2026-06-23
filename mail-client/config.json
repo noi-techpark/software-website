@@ -11,7 +11,7 @@
     },
     "mailOptions" : {
         "from": "from@domain.com",
-        "to": "to@domain.com",
+        "to": "freesoftwarelab@noi.bz.it",
         "subject": "Default subject",
         "text": "DefaultText"
     }

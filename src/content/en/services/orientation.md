@@ -2,7 +2,7 @@
 
 ---
 order: 1
-title: Orientation
+title: Orientation - Strategic Technology Roadmap Workshop
 image: needs.jpeg
 price: (price on request)  
 labbonus: false
